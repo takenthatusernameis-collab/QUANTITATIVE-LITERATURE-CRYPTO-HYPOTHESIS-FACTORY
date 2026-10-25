@@ -189,3 +189,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Data: 3720 unique 8h funding intervals (2024-03-01 01:00:00–2025-03-31 02:00:00 UTC), 10923 hourly candles paired → 3720 obs. OOS split 2024-11-10: train 2232, test 1488.
 - H2 basis=perp−index. AR(1): train β=0.01061 (hl~0.153 intervals), test β=-0.00748 (unstable/negative). corr(|funding_t|, Δbasis_{t+1})=-0.00448 (n=3719), negligible.
 - Verdict: mean reversion weak/unstable in OOS, no funding-magnitude scaling, effect size small vs rt costs (7e-4); falsification criteria met for tradability. No trading recommendations. H1 remains untested (needs second venue).
+
+## Cycle 30 — Venue-substituted H1 cross-venue spread (Hyperliquid vs KuCoin) (2026-10-25T21:25:00Z)
+- Venues: Hyperliquid fundingHistory hourly (2023-11-14–2026-10-25) summed to 8h UTC blocks; KuCoin Futures XBTUSDM funding-rates 8h (2023-11-15–2025-10-14). OKX recent-only overlap insufficient; Bybit/Binance blocked.
+- Overlap: 359 obs (2025-06-17 08:00:00–2025-10-14 16:00:00 UTC), 70/30 split (251/108).
+- H1 (substituted): ΔF = funding_Hyperliquid_8h_sum − funding_KuCoin_8h. No-change persistence ΔF_{t+1}=ΔF_t: directional accuracy 0.850 (91/107), mean |ΔF| = 1.24e-4.
+- Fees not modeled for this pair; magnitude small relative to typical roundtrip costs, tradability unknown pending fee-aware evaluation.
+- Verdict: Persistence observed under venue substitution; fee-aware falsification required. No trading recommendations. No datasets redistributed.

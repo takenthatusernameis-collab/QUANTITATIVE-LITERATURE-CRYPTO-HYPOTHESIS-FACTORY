@@ -243,8 +243,10 @@ No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/fa
 - Verdict: Mean reversion exists but effect is extremely fast and weakly related to funding magnitude; basis deviations small relative to roundtrip costs (~7e-4). H2 mechanism partially observable but not clearly tradable under Deribit fee structure; falsification: (i) mean reversion present but (ii) reversion < 1 interval and (iii) no funding-scaling signal; effect size insufficient vs costs. H1: cross-venue spread not computable from single venue (deferred). No trading recommendations.
 
 
-## Cycle 29 — Venue-substituted H2 basis test on Deribit (2026-10-25, strict)
-- Venue substitution (documented): Deribit BTC-PERPETUAL is BTC-settled/inverse (instrument_type reversed), settlement_period perpetual, contract_size 10; spot proxy = Deribit index_price (price_index btc_usd); funding = interest_8h (not signed fundingRate). H1 cross-venue spread not computable from single venue (deferred). Fees from get_instrument: maker_commission 0.00015, taker_commission 0.00035, rt ~0.00070.
-- Data: funding history 2024-01-01 chunked fetch → 3720 unique 8h intervals (2024-03-01 01:00:00–2025-03-31 02:00:00 UTC). Hourly candles (tradingview) fetched in chunks → 10923 candles; paired to 8h funding intervals by nearest hour → 3720 paired obs. OOS split 2024-11-10 00:00:00 UTC: train 2232, test 1488.
-- H2 basis = perp_price − index_price. AR(1) on basis: train β=0.01061 → half-life ~0.153 intervals; test β = -0.00748 (near-zero/negative in test window) → mean reversion effect not stable/positive in holdout; overall extremely fast if present. Correlation(|funding_t|, Δbasis_{t+1}) = -0.00448 (n=3719), negligible funding-magnitude scaling.
-- Verdict (falsification): Mean reversion is weak/unstable across OOS and shows negligible scaling with funding magnitude. Basis deviations small relative to roundtrip costs (~7e-4). H2 mechanism observable in limited form but not tradable under stated costs; falsification criteria met in effect-size/cost terms. No trading recommendations. H1 remains untested (needs second venue).
+## Cycle 30 — H1 venue-substituted test (Hyperliquid vs KuCoin, 2026-10-25)
+- Venues (reachable): Hyperliquid (hourly fundingHistory summed to 8h UTC blocks), KuCoin Futures XBTUSDM (8h). Binance/Bybit blocked in env; OKX recent-only overlap insufficient.
+- Overlap: 359 8h observations (2025-06-17 08:00:00–2025-10-14 16:00:00 UTC). Split 70/30 train/test (251/108).
+- H1 definition (substituted): ΔF = funding_Hyperliquid_8h_sum − funding_KuCoin_8h (period rates as returned).
+- No-change persistence (ΔF_{t+1}=ΔF_t): directional accuracy 0.850 (91/107) on test; mean |ΔF| = 1.24e-4.
+- Costs: fees not yet modeled for this pair; magnitude small relative to typical roundtrip costs, tradability unknown pending fee-aware evaluation.
+- Verdict: Persistence observed under venue substitution (not original Binance−Bybit); requires fee-aware falsification. No trading recommendations. No datasets redistributed.
