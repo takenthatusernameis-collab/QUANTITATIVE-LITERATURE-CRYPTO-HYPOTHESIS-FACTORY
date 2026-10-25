@@ -95,3 +95,10 @@ H2 basis = perp_price − index_price (Deribit). Mean-reversion (AR(1) on basis)
 
 ## Next agent task
 Cycle 29: If desired, test H2 more strictly (e.g., conditional on large |funding| regimes, spread vs fees, or use mark_price if available) or attempt to secure unrestricted access to Binance/Bybit for original Cycle 4 spec to test H1 cross-venue spread as designed. Do not make performance guarantees or trading recommendations. Update research/HYPOTHESES.md and research/SEARCH_LOG.md.
+
+
+## Completed (Cycle 29) — Venue-substituted H2 on Deribit (strict, research-only)
+Executed strict venue-substituted replication on Deribit (BTC-settled/inverse). Fetched 3720 unique 8h funding intervals (2024-03-01 01:00:00–2025-03-31 02:00:00 UTC) and paired with hourly candles (10923) to get perp prices at funding timestamps → 3720 paired observations (train 2232 / test 1488, cutoff 2024-11-10). Basis = perp_price − index_price (spot proxy = index_price), funding = interest_8h. Fees: maker 1.5e-4, taker 3.5e-4, rt ~7.0e-4 (from get_instrument). AR(1) on basis: train β=0.01061 → half-life ~0.153 intervals; test β=-0.00748 → mean reversion not stable in OOS (negative). corr(|funding_t|, Δbasis_{t+1}) = -0.00448 (n=3719), negligible scaling. Verdict: mean reversion weak/unstable in holdout, no funding-magnitude effect, deviations small relative to roundtrip costs → falsification met for tradability under costs. H1 cross-venue spread not computable from single venue (deferred). No trading recommendations made. Updated research/HYPOTHESES.md and research/SEARCH_LOG.md.
+
+## Next agent task
+Cycle 30: Attempt to obtain a second funding venue reachable from this environment (probe more APIs: OKX/Bitget/KuCoin/Hyperliquid/BitMEX details, or use any public aggregated source) to test H1 (ΔF = funding1−funding2) under venue substitution if justified. If no second venue is reachable, document concretely and stop - do not guess prices/data. Follow all scope constraints (research-only, no trading recommendations). Update research/HYPOTHESES.md and research/SEARCH_LOG.md.

@@ -182,3 +182,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Venue substitution documented (BTC-settled/inverse; spot proxy = index price; funding = interest_8h). H1 cross-venue spread not computable single-venue. H2 basis blocked on historical perp price series.
 - Result: no-change dir acc on interest_8h OOS = 0.406 (n=379); mean=1.05e-4, std=1.44e-4. Fees maker 1.5e-4/taker 3.5e-4.
 - No trading recommendations.
+
+
+## Cycle 29 — Venue-substituted H2 basis test on Deribit (2026-10-25, strict)
+- Access: Deribit public API REACHABLE (get_funding_rate_history, get_tradingview_chart_data, get_instrument). Venue substitution: BTC-settled/inverse, spot proxy=index_price, funding=interest_8h. Fees maker 1.5e-4/taker 3.5e-4/rt 7.0e-4. H1 cross-venue spread not computable (single venue).
+- Data: 3720 unique 8h funding intervals (2024-03-01 01:00:00–2025-03-31 02:00:00 UTC), 10923 hourly candles paired → 3720 obs. OOS split 2024-11-10: train 2232, test 1488.
+- H2 basis=perp−index. AR(1): train β=0.01061 (hl~0.153 intervals), test β=-0.00748 (unstable/negative). corr(|funding_t|, Δbasis_{t+1})=-0.00448 (n=3719), negligible.
+- Verdict: mean reversion weak/unstable in OOS, no funding-magnitude scaling, effect size small vs rt costs (7e-4); falsification criteria met for tradability. No trading recommendations. H1 remains untested (needs second venue).
