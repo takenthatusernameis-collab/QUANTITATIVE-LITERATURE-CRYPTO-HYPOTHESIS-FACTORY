@@ -76,6 +76,36 @@ H2 falsification:
 - [ ] Update research/HYPOTHESES.md and research/SEARCH_LOG.md with results/limitations.
 - [ ] No trading recommendations.
 
+## Data-acquisition specs (Cycle 4 — research-only; no data downloaded)
+
+### Sources & endpoints (public docs; free; verify at collection time)
+- Binance Futures (USDT-M): fundingRate history endpoint; markPriceKlines; aggTrades/klines for BTCUSDT perp and BTCUSDT spot; fee schedule page (maker/taker, funding interval 8h).
+- Bybit V5: funding rate history; kline endpoint (linear perp BTCUSDT); spot BTCUSDT; fee schedule page.
+- Coverage target: match Inan 2025 window 2024-01-11 to 2025-03-17, 8h obs (~1000 intervals); document gaps/retention limits.
+
+### Timestamp alignment rules
+- Ground truth = exchange-reported fundingTime (ms). Align spot/perp observations to nearest bar with close time <= fundingTime (no forward fill from future). Record interval start/end and settlement.
+- Decision time t = funding interval close; features use data with timestamp < t (or <= with explicit settlement rule documented).
+- Missing intervals: list, no imputation across gaps >1 interval without sensitivity note.
+
+### OOS split & walk-forward
+- Time-based split only; holdout >= ~4 months (match Inan OOS ~384 obs from 2024-11-10). Prefer expanding in-sample through 2024-11-09, OOS 2024-11-10→2025-03-17.
+- Walk-forward: rolling 3-month train / 1-month test if Bybit instability; report regime subsplits (pre/high-vol).
+
+### Baselines
+- H1: no-change forecast of ΔF; DAR-style one-step-ahead as candidate (fit not executed here).
+- H2: no-arbitrage implied funding (AHJ) as reference; basis reversion regression.
+
+### Cost model components (spec only; no computation)
+- Trading fees round-trip (maker/taker per venue), slippage assumption (conceptual, e.g., quoted spread), funding paid/received at 8h, borrowing/short constraints, liquidation mechanics if leveraged. Document assumptions; sensitivity to fee tiers.
+
+### Falsification tests (explicit)
+- H1: (i) ΔF directional accuracy ≤50% OOS; (ii) gross spread <2× round-trip costs; (iii) instability in high-vol subsample; (iv) no-change beats candidate net-of-fees.
+- H2: (i) no significant mean reversion; (ii) reversion >3 intervals; (iii) effect only in crisis subsamples; (iv) sign flips by contract type.
+
+### Licensing/limits
+- Public API docs; rate limits per venue; terms of use at collection time; no redistribution of raw data beyond validator's own use; record access labels.
+
 H1 — Cross-venue funding spread persistence (proxy: ΔF = funding_rate_Binance − funding_rate_Bybit for BTC 8h).
 Claim: DAR-type one-step-ahead forecasts of ΔF have directional accuracy > 55% out-of-sample and a fee-aware spread strategy (short higher, long lower, with modeled entry/exit costs) earns positive annualized net return over a 4-month OOS window.
 Observable proxies: directional accuracy of ΔF forecast; annualized net return; trade count; max drawdown.
