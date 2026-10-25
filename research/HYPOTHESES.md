@@ -229,3 +229,10 @@ No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/fa
 - Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
 - Kraken: spot ticker reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
+
+## Cycle 25 — Validation attempt (2026-10-25T19:34:58Z, blocked)
+- Action: Retried validation per HANDOFF (Cycle 25) following Cycle 4 data-acquisition specs exactly from current environment.
+- Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → HTTP 451 via CloudFront with payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
+- Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront `error:The Amazon CloudFront distribution is configured to block access from your country` (COUNTRY_BLOCKED). No data collected.
+- Kraken: spot ticker reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
