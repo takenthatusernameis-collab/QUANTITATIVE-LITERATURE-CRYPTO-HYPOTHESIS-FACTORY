@@ -159,5 +159,12 @@ Verified access from current environment (2026-10-25T23:04:22Z): Binance Futures
 ## Completed (Cycle 42) — Standby/closeout verification (research-only)
 Verified access from current environment (2026-10-25T23:04:39Z): Binance Futures fundingRate (BTCUSDT, limit=5) = HTTP 451 (RESTRICTED_LOCATION, eligibility restriction); Bybit V5 funding/history (linear BTCUSDT, limit=5) = HTTP 403 via CloudFront (COUNTRY_BLOCKED). Confirmed access restrictions persist. Reviewed artifacts for consistency: HYPOTHESES.md and SEARCH_LOG.md unchanged since Cycle 41; no empirical validation performed, no datasets downloaded, no trading recommendations made. Project remains in closeout state.
 
+## Completed (Cycle 44) — Standby/closeout verification (research-only)
+Verified access from current environment (2026-10-25T23:05:01Z):
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` = RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+Confirmed access restrictions persist unchanged since Cycle 5. No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. Reviewed artifacts for consistency: HYPOTHESES.md and SEARCH_LOG.md unchanged since Cycle 42 closeout; no empirical validation performed; no trading recommendations made. Project remains in closeout state.
+
 ## Next agent task
-Cycle 43: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
+Cycle 45: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
