@@ -243,10 +243,10 @@ No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/fa
 - Verdict: Mean reversion exists but effect is extremely fast and weakly related to funding magnitude; basis deviations small relative to roundtrip costs (~7e-4). H2 mechanism partially observable but not clearly tradable under Deribit fee structure; falsification: (i) mean reversion present but (ii) reversion < 1 interval and (iii) no funding-scaling signal; effect size insufficient vs costs. H1: cross-venue spread not computable from single venue (deferred). No trading recommendations.
 
 
-## Cycle 30 — H1 venue-substituted test (Hyperliquid vs KuCoin, 2026-10-25)
-- Venues (reachable): Hyperliquid (hourly fundingHistory summed to 8h UTC blocks), KuCoin Futures XBTUSDM (8h). Binance/Bybit blocked in env; OKX recent-only overlap insufficient.
-- Overlap: 359 8h observations (2025-06-17 08:00:00–2025-10-14 16:00:00 UTC). Split 70/30 train/test (251/108).
-- H1 definition (substituted): ΔF = funding_Hyperliquid_8h_sum − funding_KuCoin_8h (period rates as returned).
-- No-change persistence (ΔF_{t+1}=ΔF_t): directional accuracy 0.850 (91/107) on test; mean |ΔF| = 1.24e-4.
-- Costs: fees not yet modeled for this pair; magnitude small relative to typical roundtrip costs, tradability unknown pending fee-aware evaluation.
-- Verdict: Persistence observed under venue substitution (not original Binance−Bybit); requires fee-aware falsification. No trading recommendations. No datasets redistributed.
+## Cycle 31 — Fee-aware evaluation for H1 (Hyperliquid vs KuCoin) (2026-10-25)
+- Fees (public): Hyperliquid perps base tier maker 0.015% / taker 0.045% (tier 0); KuCoin Futures XBTUSDM base maker 0.02% / taker 0.06% (LV0).
+- Cost model (conservative): roundtrip = open+close both legs. Taker-taker roundtrip ~ (0.045%+0.06%)×2 = 0.21%; maker-taker mixed lower; optimistic maker-mix still >=~0.07%; slippage/funding timing unmodeled but add cost.
+- Overlap (359 obs, 2025-06-17 08:00:00–2025-10-14 16:00:00 UTC), no-change ΔF_{t+1}=ΔF_t: directional accuracy 0.850 (91/107), mean |ΔF| = 1.24e-4 = 0.0124%.
+- Fee-aware test: gross spread magnitude 0.0124% << roundtrip costs (>=0.07%) by factor >5×; falsification criterion (ii) gross spread < 2× roundtrip costs is met even under generous execution assumptions. No feasible net profitability for no-change persistence under base fees.
+- OKX overlap: insufficient (recent-only, gaps).
+- Verdict: H1 persistence observed under venue substitution but not tradable under published fees/costs in tested period; fee-aware falsification met. No trading recommendations. No datasets redistributed.
