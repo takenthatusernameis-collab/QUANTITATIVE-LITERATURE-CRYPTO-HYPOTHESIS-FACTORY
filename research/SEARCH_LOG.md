@@ -82,3 +82,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Bybit V5: `HEAD https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=50` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
 - Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted environment or approved proxy/alternative venue.
+
+## Cycle 15 — 2026-10-25T17:46:29Z (attempt, blocked)
+- Action: Retried validation per HANDOFF (Cycle 15) following Cycle 4 data-acquisition specs exactly from current environment.
+- Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=100` → RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
+- Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=50` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+- Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted environment or approved proxy/alternative venue.
