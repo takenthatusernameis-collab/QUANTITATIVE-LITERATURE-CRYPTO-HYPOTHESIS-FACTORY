@@ -153,10 +153,26 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Verdict: Blocked (data access). H1/H2 remain untested; deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
 
 ## Cycle 25 — 2026-10-25T19:34:58Z (Blocked: data access, same env)
-- Action: Retried per HANDOFF (Cycle 25) following Cycle 4 data-acquisition specs exactly from current environment.
+- Action: Retried validation per HANDOFF (Cycle 25) following Cycle 4 data-acquisition specs exactly from current environment.
 - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront; payload RESTRICTED_LOCATION (code 0, eligibility restriction).
 - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED).
 - Kraken spot ticker (XBTUSD): reachable (sanity check only, not in spec).
 - No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed.
 - Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec).
 - Verdict: Blocked (data access). H1/H2 remain untested; deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
+
+## Cycle 26 — 2026-10-25T19:55:26Z (Blocked: data access, same env) + alternative-venue discovery
+- Action: Retried validation per HANDOFF (Cycle 26) following Cycle 4 data-acquisition specs exactly from current environment.
+  - Binance Futures fundingRate (BTCUSDT, limit=5): RESTRICTED_LOCATION (code 0, eligibility restriction).
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED).
+  - Kraken spot ticker (XBTUSD): reachable (sanity check only, not in spec).
+- Outcome: No datasets downloaded from required venues; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on Binance/Bybit data.
+- **Alternative-venue discovery (NEW):** Probed other free public crypto APIs for reachability. **Deribit public API — REACHABLE** and returns real BTC 8h funding history:
+  - `GET https://www.deribit.com/api/v2/public/get_funding_rate_history?instrument_name=BTC-PERPETUAL&start_timestamp=...&end_timestamp=...&count=...` → JSON-RPC array of `{timestamp (ms), index_price, interest_8h, interest_1h, prev_index_price}` at 8h (28800000 ms) intervals. Requires `start_timestamp`. Verified coverage across the Inan 2025 window (2024-01-11 → 2025-03-17); a full-window request (count=100000) returned 744 rows.
+  - `GET /api/v2/public/get_instrument?instrument_name=BTC-PERPETUAL` → maker_commission 1.5e-4, taker_commission 3.5e-4, lot_size 1, contract_size 10, settlement_period "perpetual", quote_currency USD (BTC-settled/inverse contract, not USDT-M).
+  - `GET /api/v2/public/get_order_book?instrument_name=BTC-PERPETUAL&depth=1` → last_price, index_price, mark_price, bids/asks.
+  - `GET /api/v2/public/get_last_trades_by_instrument?instrument_name=BTC-PERPETUAL&count=N` → trade prices/timestamps.
+  - POST body variants rejected (use GET with query params).
+  - Other probed: CoinGecko (200), CoinMetrics (200), Bitfinex (200) — REACHABLE but no 8h funding history; BitMEX (403); OKX (000/timed out); Hyperliquid (000/timed out); cryptodatadownload (000/timed out).
+- Scope note: Deribit is NOT in the Cycle 4 spec (Binance/Bybit). Venue substitution requires documented justification and restating H1/H2 for that venue (H1 cross-venue spread needs two funding venues — Deribit alone cannot build a Binance−Bybit spread; H2 basis uses Deribit index price as spot proxy and `interest_8h` as funding). No Deribit data downloaded, no tests executed — discovery only. See HANDOFF.md Cycle 26.
+- Verdict: Blocked (data access) for spec venues; a REACHABLE alternative venue (Deribit) identified for a documented venue-substituted replication in the next cycle. No trading recommendations made.
