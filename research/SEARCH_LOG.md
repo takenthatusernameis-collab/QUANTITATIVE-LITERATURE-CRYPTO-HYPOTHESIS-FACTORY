@@ -97,3 +97,12 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Timestamp alignment/OOS split/baselines/cost model/falsification tests: not executed (no datasets).
 - Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE(not in spec).
 - Verdict: Blocked (data access). H1/H2 remain untested; deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
+
+## Cycle 18 — 2026-10-25T18:05:02Z (Blocked: data access, same env)
+- Action: Retried validation per HANDOFF (Cycle 18) following Cycle 4 data-acquisition specs exactly from current environment.
+- Binance Futures fundingRate (BTCUSDT, limit=100): HTTP 200 error `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message by mistake."}` (RESTRICTED_LOCATION). No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=50): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+- Kraken spot ticker (XBTUSD): reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Timestamp alignment/OOS split/baselines/cost model/falsification tests: not executed (no datasets).
+- Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec).
+- Verdict: Blocked (data access). H1/H2 remain untested; deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
