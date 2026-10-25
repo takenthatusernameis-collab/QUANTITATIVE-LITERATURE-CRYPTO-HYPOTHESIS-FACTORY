@@ -32,3 +32,5 @@ Cycle 1 — 2026-10-25. Scope: 4 discovery routes, web search only (no paid acce
 Cycle 2 — 2026-10-25. Route A source appraisal + mechanism extraction; synthesized H1/H2. No empirical validation performed.
 
 Cycle 4 — 2026-10-25. Implemented research-only validation plan as concrete data-acquisition specs: public endpoints for BTC 8h funding (Binance/Bybit), spot/perp prices, fee schedules; timestamp alignment rules, look-ahead prevention, OOS split >=~4 months holdout, walk-forward, baseline definitions, cost model components, falsification tests per H1/H2, licensing/limits. No data downloaded, no backtests/computations. No trading recommendations. Updated research/HYPOTHESES.md.
+
+Cycle 5 — 2026-10-25. Independent validator attempt blocked: Binance/Bybit free public APIs geographically restricted in this environment; no data collected; no falsification tests run; no computations. Kraken spot ticker sanity check only (not spec source). Hypotheses untested; deferred to unrestricted environment. No trading recommendations.
