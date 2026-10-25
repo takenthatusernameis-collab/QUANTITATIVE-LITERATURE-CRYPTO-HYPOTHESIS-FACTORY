@@ -159,3 +159,8 @@ No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/fa
 - Coverage/gaps: No BTC 8h funding/spot/perp datasets downloaded from required venues. No timestamps aligned, no OOS>=~4m holdout enforced, no baselines/cost model/falsification tests executed.
 - Limitations: Geographic/network restrictions persist in this environment.
 - Failure-mode verdict: Blocked (data access). Hypotheses H1/H2 remain untested; defer to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
+
+### Cycle 12 attempt (blocked — data access)
+- Access labels: Binance Futures = blocked (RESTRICTED_LOCATION), Bybit V5 = blocked (COUNTRY_BLOCKED), Kraken spot = reachable (not in Cycle 4 spec).
+- Coverage: 0% of required series (no BTC 8h funding + spot/perp for Binance/Bybit). Gaps: geographic/API restrictions in current environment.
+- Tests executed: none (blocked). Falsification verdicts: N/A (untested). Limitations/failure modes recorded as access-blocked; hypotheses remain untested pending unrestricted network / approved proxy/alternative venue.

@@ -54,3 +54,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Kraken spot Ticker (api.kraken.com/0/public/Ticker?pair=XBTUSD): reachable (sanity check only; not in spec)
 - Outcome: No datasets downloaded. No timestamp alignment/OOS/baselines/cost model/falsification tests executed. Hypotheses remain untested. Access labels/gaps/limitations recorded.
 - Verdict: Blocked in current environment. Defer to unrestricted network environment or approved proxy/alternative venue with documented justification.
+
+### Cycle 12 (2026-10-25) — Blocked (data access)
+- Retried per HANDOFF from current environment following Cycle 4 specs exactly.
+- Binance Futures fundingRate (BTCUSDT limit=1): location restriction error (RESTRICTED_LOCATION) per Binance terms eligibility.
+- Bybit V5 funding/history (linear BTCUSDT limit=1): CloudFront blocked (COUNTRY_BLOCKED).
+- Kraken spot ticker (XBTUSD): reachable as sanity check only; not in Cycle 4 spec (no 8h funding/perp series required).
+- Result: No data downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. Hypotheses H1/H2 untested; deferred. No trading recommendations.
