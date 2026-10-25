@@ -29,3 +29,6 @@ Cycle 1 — 2026-10-25. Scope: 4 discovery routes, web search only (no paid acce
 ## Coverage limits
 - No paywalled sources used. All access was free abstract/full text via public pages, arXiv, SSRN, university repositories, journal open pages, and practitioner research notes.
 - Search was not exhaustive; no backward/forward citation chasing was performed this cycle (deferred to Cycle 2 if it changes a ranking).
+Cycle 2 — 2026-10-25. Route A source appraisal + mechanism extraction; synthesized H1/H2. No empirical validation performed.
+
+Cycle 3 — 2026-10-25. Research-only validation design for H1/H2 (scope-compliant). Documented free-data feasibility, timestamp alignment/look-ahead prevention, OOS split, baselines, conceptual cost model, falsification tests per hypothesis, and validation checklist. No datasets downloaded, no backtests/paper trading/performance calculations executed. No trading recommendations made. Updated research/HYPOTHESES.md with validation plan.

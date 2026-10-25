@@ -23,10 +23,58 @@ Source appraisal and mechanism extraction. No empirical validation performed.
 - Key findings: with appropriate interest term, basis can be zero; otherwise price is discounted expectation at random sampling time; quanto requires convexity correction; perpetuals replicable.
 - Limitations: theoretical; assumes no arbitrage, constant rates/params; no empirical validation of pricing residuals; crypto treated as application not testbed.
 
-## Mechanism synthesis
-Funding rate persistence (DAR) + contract-design anchoring intensity (AHJ) + capital-constrained arbitrage/basis risk (Gornall) jointly imply: (a) short-horizon funding is weakly predictable and unstable; (b) cross-venue funding spreads are the tradable object, not single-venue levels; (c) basis risk and execution costs dominate gross signal.
+## Research-only validation plan (Cycle 3)
 
-## Hypotheses (falsifiable, no empirical validation here)
+Scope: literature-to-test design only. No datasets downloaded, no backtests/paper trading/performance metrics computed. Designed for a separate validator using free sources.
+
+### Free data sources (documented)
+- Funding rates (8h), BTC perpetuals: Binance public API docs (funding rate history endpoints) — PUBLIC_DOCUMENTATION/FULL_TEXT_FREE (endpoint docs public); Bybit public API docs (funding history) — same. History coverage/retention may vary; licensing/terms to verify at collection time.
+- Spot prices: Binance/Bybit public market data (klines/trades/tickers) — free per public docs, rate limits apply.
+- Perp prices: same venues, mark/index/last price as available — free per docs.
+- Fee schedules: public fee pages for each venue (maker/taker, funding, settlement) — PUBLIC_DOCUMENTATION.
+- Reference: Inan (2025) uses BTC/USDT, Binance & Bybit, 2024-01-11 to 2025-03-17, 8h; treat as coverage target to match or justify deviations.
+
+Essential inputs classification (H1/H2): LIKELY_FREE_LIMITATIONS_UNCHECKED (public routes exist but history/coverage/rate limits/licensing uncertain).
+
+### Timestamp alignment & look-ahead prevention
+- Use exchange-reported timestamps (funding interval timestamps) as ground truth; align spot/perp to nearest valid bar or explicit snapshot at funding settlement time.
+- Enforce strict temporal ordering: all features known at decision time t must have timestamps < decision timestamp (or <= with explicit settlement rules). No forward-filling from future.
+- Account for funding settlement timing (8h cycles) and venue timezone/interval conventions.
+- Document any missing intervals; do not impute across large gaps without sensitivity note.
+
+### OOS design
+- Split: in-sample / out-of-sample with >= ~4 months holdout (match Inan-style OOS scale). Prefer time-based split (no random shuffle).
+- Walk-forward: consider rolling/re-expanding windows if stability is a concern (Bybit instability noted).
+- Regime splits: pre/during high-volatility periods where feasible (document).
+
+### Baselines & cost model (conceptual)
+- Baseline (H1): no-change forecast of ΔF = funding_Binance − funding_Bybit.
+- Strategy concept (H1): cross-venue spread (short higher expected funding, long lower) — fee-aware; model entry/exit costs, funding payments timing, leverage/stylized not required if not measured.
+- Cost components to specify (not compute): trading fees (round-trip), slippage (conceptual), funding paid/received, borrowing/short constraints, liquidation mechanics (if leveraged) — document assumptions.
+- H2: basis = perp − spot; compare to AHJ no-arbitrage intuition; track half-life of deviations conceptually without computing numeric half-life here.
+
+### Falsification tests (per hypothesis)
+H1 falsification:
+- Directional accuracy of ΔF forecast ≤ 50% in OOS (no signal).
+- Fee-aware gross spread < 2× round-trip costs (structure breaks).
+- Stability collapses across regimes / Bybit-like instability makes strategy unviable.
+- Benchmark (no-change) beats DAR-style forecast net-of-fees.
+
+H2 falsification:
+- No significant mean reversion of basis deviations in tested conditions.
+- Reversion slower than ~3 funding intervals (capital/arb frictions dominate).
+- Effect only in crisis subsamples, absent in normal periods.
+- Sign flips by exchange/contract type (inverse vs linear) breaking mechanism.
+
+### Validation checklist (for separate validator)
+- [ ] Verify free access/docs for all sources; record access labels and limits.
+- [ ] Define exact data schema + timestamps + interval coverage.
+- [ ] Implement timestamp alignment + look-ahead checks.
+- [ ] Define OOS split and walk-forward rules.
+- [ ] Specify baselines and cost model components with documented assumptions.
+- [ ] Run only falsification tests; report failure-mode verdicts, no performance guarantees.
+- [ ] Update research/HYPOTHESES.md and research/SEARCH_LOG.md with results/limitations.
+- [ ] No trading recommendations.
 
 H1 — Cross-venue funding spread persistence (proxy: ΔF = funding_rate_Binance − funding_rate_Bybit for BTC 8h).
 Claim: DAR-type one-step-ahead forecasts of ΔF have directional accuracy > 55% out-of-sample and a fee-aware spread strategy (short higher, long lower, with modeled entry/exit costs) earns positive annualized net return over a 4-month OOS window.
