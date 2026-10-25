@@ -211,9 +211,14 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Kraken spot ticker (XBTUSD): reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec). Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
 
-## Cycle 44 — 2026-10-25T23:05:01Z (Standby/closeout verification, research-only)
-- Action: Verified access from current environment per Cycle 44 HANDOFF.
-  - Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
-  - Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
-  - Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
-- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec). Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
+## Cycle 46 — 2026-10-25T23:36:04Z (Standby/closeout verification, research-only)
+- Action: Verified access from current environment per Cycle 46 HANDOFF.
+  - Binance Futures fundingRate (BTCUSDT, limit=5): RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+- Outcome: No datasets downloaded; no tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist. Project in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
+
+## Cycle 47 — 2026-10-25T23:36:20Z (Standby/closeout verification, research-only)
+- Action: Verified access from current environment per Cycle 47 HANDOFF.
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+- Outcome: No datasets downloaded; no tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist. Project in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
