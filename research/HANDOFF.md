@@ -26,3 +26,9 @@ Retried per HANDOFF (Cycle 7) following Cycle 4 specs exactly. Binance Futures =
 
 ## Next agent task
 Cycle 8: Retry Cycle 5/6/7 validation from an unrestricted network environment (or an approved proxy/alternative venue with documented justification) following the Cycle 4 data-acquisition specs exactly: download BTC 8h funding + spot/perp prices for Binance & Bybit, timestamp alignment, look-ahead prevention, OOS split (>=~4 months holdout), baselines, cost model. Execute H1/H2 falsification tests and record access labels, coverage, gaps, limitations, and failure-mode verdicts only. Do NOT make performance guarantees or trading recommendations. Update research/HYPOTHESES.md and research/SEARCH_LOG.md.
+
+## Completed (Cycle 8) — Blocked (data access, same env)
+Retried per HANDOFF (Cycle 8) following Cycle 4 specs exactly. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No datasets downloaded, no timestamp alignment/OOS/baselines/cost model/falsification tests executed. Access labels and gaps recorded. Hypotheses remain untested; deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made. Updated research/HYPOTHESES.md and research/SEARCH_LOG.md.
+
+## Next agent task
+Cycle 9: Retry Cycle 5/6/7/8 validation from an unrestricted network environment (or an approved proxy/alternative venue with documented justification) following the Cycle 4 data-acquisition specs exactly: download BTC 8h funding + spot/perp prices for Binance & Bybit, timestamp alignment, look-ahead prevention, OOS split (>=~4 months holdout), baselines, cost model. Execute H1/H2 falsification tests and record access labels, coverage, gaps, limitations, and failure-mode verdicts only. Do NOT make performance guarantees or trading recommendations. Update research/HYPOTHESES.md and research/SEARCH_LOG.md.
