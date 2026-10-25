@@ -216,8 +216,15 @@ No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/fa
 - Kraken: spot ticker reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
 
-## Cycle 20 — Validation attempt (2026-10-25T18:46:04Z, blocked)
-- Action: Retried validation per HANDOFF (Cycle 20) following Cycle 4 data-acquisition specs exactly from current environment.
+## Cycle 21 — Validation attempt (2026-10-25T19:13:13Z, blocked)
+- Action: Retried validation per HANDOFF (Cycle 21) following Cycle 4 data-acquisition specs exactly from current environment.
+- Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
+- Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+- Kraken: spot ticker reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 untested. Access gaps/limitations recorded. Deferred to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
+
+## Cycle 22 — Validation attempt (2026-10-25T19:13:37Z, blocked)
+- Action: Retried validation per HANDOFF (Cycle 22) following Cycle 4 data-acquisition specs exactly from current environment.
 - Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
 - Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
 - Kraken: spot ticker reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
