@@ -44,3 +44,13 @@ Cycle 8 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATI
 Cycle 9 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No data downloaded; no alignment/OOS/baselines/costs/tests executed. Hypotheses remain untested. No trading recommendations.
 
 Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No data downloaded; no alignment/OOS/baselines/costs/tests executed. Hypotheses remain untested. No trading recommendations.
+
+## Cycle 11 — Blocked (data access, same env)
+- Date/time (UTC): 2026-10-25T16:45:00Z
+- Goal: Retry Cycle 5/6/7/8/9/10 validation per HANDOFF and Cycle 4 data-acquisition specs (BTC 8h funding + spot/perp for Binance & Bybit), with timestamp alignment/look-ahead prevention/OOS>=~4m/ baselines/cost model and H1/H2 falsification tests. No perf/trading recs.
+- Attempts:
+  - Binance Futures fundingRate (fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1): RESTRICTED_LOCATION (code 0/msg Service unavailable from a restricted location...)
+  - Bybit V5 funding/history (api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1): COUNTRY_BLOCKED (CloudFront block)
+  - Kraken spot Ticker (api.kraken.com/0/public/Ticker?pair=XBTUSD): reachable (sanity check only; not in spec)
+- Outcome: No datasets downloaded. No timestamp alignment/OOS/baselines/cost model/falsification tests executed. Hypotheses remain untested. Access labels/gaps/limitations recorded.
+- Verdict: Blocked in current environment. Defer to unrestricted network environment or approved proxy/alternative venue with documented justification.

@@ -153,3 +153,9 @@ Retried per HANDOFF (Cycle 10) following Cycle 4 specs exactly from this environ
 - Bybit V5 (`https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1`): COUNTRY_BLOCKED — access blocked.
 - Kraken spot ticker: reachable (sanity check only) — not in spec.
 No datasets downloaded; no timestamp alignment/OOS split/baselines/cost model/falsification tests executed. Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec). Gaps: both primary venues blocked; no approved proxy/alternative venue with documented justification available. Hypotheses remain untested. No trading recommendations made.
+
+## Cycle 11 — Data access / validation status
+- Access labels: Binance Futures = blocked (RESTRICTED_LOCATION), Bybit V5 = blocked (COUNTRY_BLOCKED), Kraken spot = reachable (not in Cycle 4 spec).
+- Coverage/gaps: No BTC 8h funding/spot/perp datasets downloaded from required venues. No timestamps aligned, no OOS>=~4m holdout enforced, no baselines/cost model/falsification tests executed.
+- Limitations: Geographic/network restrictions persist in this environment.
+- Failure-mode verdict: Blocked (data access). Hypotheses H1/H2 remain untested; defer to unrestricted network environment or approved proxy/alternative venue with documented justification. No trading recommendations made.
