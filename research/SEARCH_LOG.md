@@ -176,3 +176,9 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Other probed: CoinGecko (200), CoinMetrics (200), Bitfinex (200) — REACHABLE but no 8h funding history; BitMEX (403); OKX (000/timed out); Hyperliquid (000/timed out); cryptodatadownload (000/timed out).
 - Scope note: Deribit is NOT in the Cycle 4 spec (Binance/Bybit). Venue substitution requires documented justification and restating H1/H2 for that venue (H1 cross-venue spread needs two funding venues — Deribit alone cannot build a Binance−Bybit spread; H2 basis uses Deribit index price as spot proxy and `interest_8h` as funding). No Deribit data downloaded, no tests executed — discovery only. See HANDOFF.md Cycle 26.
 - Verdict: Blocked (data access) for spec venues; a REACHABLE alternative venue (Deribit) identified for a documented venue-substituted replication in the next cycle. No trading recommendations made.
+
+## Cycle 27 — Venue-substituted replication on Deribit (2026-10-25)
+- Access: Deribit public API REACHABLE. Downloaded BTC-PERPETUAL funding history 2024-01-11→2025-03-17 (10266 hourly rows; 1284 eight-hour obs; 903 IS / 381 OOS, cutoff 2024-11-10).
+- Venue substitution documented (BTC-settled/inverse; spot proxy = index price; funding = interest_8h). H1 cross-venue spread not computable single-venue. H2 basis blocked on historical perp price series.
+- Result: no-change dir acc on interest_8h OOS = 0.406 (n=379); mean=1.05e-4, std=1.44e-4. Fees maker 1.5e-4/taker 3.5e-4.
+- No trading recommendations.
