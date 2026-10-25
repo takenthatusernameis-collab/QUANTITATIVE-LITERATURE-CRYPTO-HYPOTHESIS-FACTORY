@@ -196,3 +196,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Reused overlap 359 obs (2025-06-17 08:00:00–2025-10-14 16:00:00 UTC), no-change persistence: dir acc 0.850 (91/107), mean |ΔF|=1.24e-4 (0.0124%).
 - Fee-aware falsification: gross spread << roundtrip costs (factor >5×) even with optimistic execution → criterion (ii) met (gross < 2× fees). OKX overlap insufficient to extend.
 - Verdict: H1 shows persistence under venue substitution but not tradable under base fees; falsified for tradability in this period. No trading recommendations. No datasets redistributed. Updated research/HYPOTHESES.md and research/HANDOFF.md.
+
+## Cycle 32 — 2026-10-25T21:46:24Z (Synthesis & documentation closeout, research-only)
+- Action: Completed prior task from HANDOFF (Cycle 29 next agent task). Consolidated findings from venue-substituted replications.
+- H1 (Binance−Bybit, original): blocked (RESTRICTED_LOCATION/COUNTRY_BLOCKED). Venue substitution Hyperliquid vs KuCoin (359 obs 2025-06-17–2025-10-14): no-change dir acc 0.850 on test but mean |ΔF|=1.24e-4 vs roundtrip costs >=0.07% (taker-mix) → fee-aware falsification met (gross < 2× fees). Not tradable under published fees.
+- H2 (Deribit): AR(1) mean reversion unstable OOS (train positive hl~0.15, test negative), corr(|funding|, Δbasis_{t+1}) negligible, costs ~7e-4 → falsified for tradability.
+- Access: Binance/Bybit unreachable; Deribit/Hyperliquid/KuCoin reachable. Original spec requires unrestricted access/proxy.
+- Verdict: Both hypotheses tested under documented venue substitutions with fee-aware falsification; no tradable edge found. Research-only, no trading recommendations. Updated HANDOFF/HYPOTHESES.
