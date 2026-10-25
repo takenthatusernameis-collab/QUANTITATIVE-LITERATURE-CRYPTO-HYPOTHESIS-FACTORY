@@ -203,3 +203,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - H2 (Deribit): AR(1) mean reversion unstable OOS (train positive hl~0.15, test negative), corr(|funding|, Δbasis_{t+1}) negligible, costs ~7e-4 → falsified for tradability.
 - Access: Binance/Bybit unreachable; Deribit/Hyperliquid/KuCoin reachable. Original spec requires unrestricted access/proxy.
 - Verdict: Both hypotheses tested under documented venue substitutions with fee-aware falsification; no tradable edge found. Research-only, no trading recommendations. Updated HANDOFF/HYPOTHESES.
+
+## Cycle 40 — 2026-10-25T23:03:39Z (Standby/closeout verification, research-only)
+- Action: Verified access from current environment per Cycle 40 HANDOFF.
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+  - Kraken spot ticker (XBTUSD): reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec). Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
