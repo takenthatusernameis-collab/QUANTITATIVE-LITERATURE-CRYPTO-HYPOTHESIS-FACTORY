@@ -42,3 +42,5 @@ Cycle 7 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATI
 Cycle 8 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No data downloaded; no alignment/OOS/baselines/costs/tests executed. Hypotheses remain untested. No trading recommendations.
 
 Cycle 9 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No data downloaded; no alignment/OOS/baselines/costs/tests executed. Hypotheses remain untested. No trading recommendations.
+
+Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCATION; Bybit V5 = COUNTRY_BLOCKED; Kraken reachable (not in spec). No data downloaded; no alignment/OOS/baselines/costs/tests executed. Hypotheses remain untested. No trading recommendations.
