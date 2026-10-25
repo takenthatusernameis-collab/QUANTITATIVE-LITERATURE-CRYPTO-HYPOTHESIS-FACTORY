@@ -118,3 +118,10 @@ Failure modes: (i) no significant mean reversion; (ii) reversion slower than 3 i
 
 ## Cycle 5 — Independent validation attempt (2026-10-25)
 Attempted to execute falsification tests per data-acquisition specs using free public endpoints. Access result: Binance Futures API and Bybit V5 API both blocked from this environment (Binance: "Service unavailable from a restricted location"; Bybit: CloudFront country block). Kraken public spot ticker reachable (sanity check only), but Kraken is not a specified source and no funding/perp series were collected. No datasets downloaded, no timestamps aligned, no OOS split executed, no baselines/cost computations, no falsification verdicts produced. Access labels: Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE (not in spec). Conclusion: validation deferred/blocked by data access; hypotheses remain untested. No trading recommendations.
+
+## Cycle 6 — Validation attempt (2026-10-25)
+Attempted to execute Cycle 6 per HANDOFF: retry validation from current environment following Cycle 4 data-acquisition specs exactly.
+- Binance Futures (`https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=10`): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location..."}` — RESTRICTED_LOCATION, access blocked.
+- Bybit V5 (`https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=10`): CloudFront country block error — COUNTRY_BLOCKED, access blocked.
+- Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): reachable (sanity check only) — REACHABLE but not in Cycle 4 spec (no BTC 8h funding/perp series on Kraken matching required fields).
+No data downloaded; timestamp alignment/OOS/baselines/cost model/falsification tests not executed. Access labels recorded. Gaps: both primary venues blocked in this environment; no approved proxy/alternative venue with documented justification available. Hypotheses remain untested. No trading recommendations made.
