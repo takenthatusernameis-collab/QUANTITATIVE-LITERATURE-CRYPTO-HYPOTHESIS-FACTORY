@@ -312,3 +312,12 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 [2026-10-26T03:26:23Z] Cycle 94 (standby/closeout): Access verification via direct probes - Binance Futures fundingRate (BTCUSDT,limit=5)=HTTP 451 (RESTRICTED_LOCATION/code0), Bybit V5 funding/history (linear BTCUSDT,limit=5)=HTTP 403 via CloudFront (COUNTRY_BLOCKED), Kraken XBTUSD=HTTP 200 (sanity check only). No retries/data/tests per closeout. Artifacts consistent (HYPOTHESES last Cycle 32, SEARCH_LOG last Cycle 93). No empirical validation, no datasets, no trading recommendations. Closeout state. Next task Cycle 95 (no-op).
 
 [2026-10-26T03:26:41Z] Cycle 96 (standby/closeout): Access verification via direct probes - Binance Futures fundingRate (BTCUSDT,limit=5)=HTTP 451 (RESTRICTED_LOCATION/code0), Bybit V5 funding/history (linear BTCUSDT,limit=5)=HTTP 403 via CloudFront (COUNTRY_BLOCKED), Kraken XBTUSD=HTTP 200 (sanity check only). No retries/data/tests per closeout. Artifacts consistent (HYPOTHESES last Cycle 32, SEARCH_LOG last Cycle 94). No empirical validation, no datasets, no trading recommendations. Closeout state. Next task Cycle 97 (no-op). Updated research/HANDOFF.md (Cycle 96 completion + Cycle 97 next agent task).
+
+## Cycle 98 — Standby/closeout (no-op, research-only)
+- Time (UTC): 2026-10-26T03:29:26Z
+- Action: Standby/closeout per HANDOFF Next agent task (Cycle 98). Did not retry blocked endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction)
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec)
+- Outcome: Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32; SEARCH_LOG.md last entry Cycle 97). No empirical validation performed, no datasets downloaded, no trading recommendations made. Project remains in closeout state.
