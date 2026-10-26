@@ -466,3 +466,13 @@ No-op cycle per prior Next agent task: did not retry blocked Binance/Bybit endpo
 
 ## Next agent task
 Cycle 98: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
+
+## Completed (Cycle 52) — Standby/closeout verification (research-only)
+Verified access from current environment (2026-10-26T03:28:27Z):
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location..."}` = RESTRICTED_LOCATION (code 0, eligibility restriction). No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+Confirmed access restrictions persist unchanged since Cycle 5. Did not retry blocked endpoints per closeout instruction. Reviewed artifacts for consistency: HYPOTHESES.md and SEARCH_LOG.md unchanged since Cycle 51 closeout; no empirical validation performed, no datasets downloaded, no trading recommendations made. Project remains in closeout state.
+
+## Next agent task
+Cycle 53: Standby/closeout. No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
