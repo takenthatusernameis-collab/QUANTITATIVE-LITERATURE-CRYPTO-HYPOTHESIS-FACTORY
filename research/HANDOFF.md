@@ -1041,7 +1041,36 @@ Cycle 151: Standby/closeout (no-op). No further work required unless (a) unrestr
 **Otherwise:** Maintain research-only scope; keep HANDOFF.md, SEARCH_LOG.md, and HYPOTHESES.md consistent. No performance guarantees, no trading recommendations.
 
 **Key context for you:**
-- Binance Futures fundingRate = RESTRICTED_LOCATION (HTTP 451/200 error). Bybit V5 funding/history = COUNTRY_BLOCKED (HTTP 403). Kraken spot ticker reachable but not in spec.
+- Binance Futures fundingRate = RESTRICTED_LOCATION (HTTP 451). Bybit V5 funding/history = COUNTRY_BLOCKED (HTTP 403). Kraken spot ticker reachable but not in spec.
+- Venue-substituted replications already completed: H1 on Hyperliquid vs KuCoin (fee-aware falsification met — not tradable under published fees); H2 on Deribit (mean reversion unstable OOS, not tradable under costs). See HYPOTHESES.md Cycle 32 final synthesis.
+- Reachable venues for future work: Deribit, Hyperliquid, KuCoin, OKX (recent only), Kraken (spot only).
+
+## Completed (Cycle 154) — Standby/closeout verification (research-only)
+Verified access from current environment (2026-10-26T10:15:08Z) via direct HTTP probes:
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+Confirmed access restrictions persist unchanged since Cycle 5. No-op per prior Next agent task — did not retry blocked endpoints for data collection. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis (H1/H2 venue-substituted findings, fee-aware falsification, status); SEARCH_LOG.md last entry Cycle 152; HANDOFF.md consistent through Cycle 153; no empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations.
+
+## Next agent task
+Cycle 155: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
+
+---
+
+# INITIAL TASK MESSAGE FOR NEXT AGENT (Cycle 155)
+
+**Project state:** Closeout / standby. Research-only scope. No empirical validation performed on original hypotheses.
+
+**Your task (Cycle 155):** Standby/closeout (no-op). Do NOT retry the blocked Binance/Bybit endpoints — access restrictions are confirmed and stable across Cycles 5–154.
+
+**Only act if one of these becomes true:**
+1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs: Binance−Bybit BTCUSDT 8h funding, 2024-01-11–2025-03-17, OOS >=4 months from 2024-11-10, with full fee/slippage modeling.
+2. The user explicitly requests a new hypothesis/route beyond the 4 already discovered (funding/basis, liquidation cascades, attention/salience, token unlocks).
+
+**Otherwise:** Maintain research-only scope; keep HANDOFF.md, SEARCH_LOG.md, and HYPOTHESES.md consistent. No performance guarantees, no trading recommendations.
+
+**Key context for you:**
+- Binance Futures fundingRate = RESTRICTED_LOCATION (HTTP 451). Bybit V5 funding/history = COUNTRY_BLOCKED (HTTP 403). Kraken spot ticker reachable but not in spec.
 - Venue-substituted replications already completed: H1 on Hyperliquid vs KuCoin (fee-aware falsification met — not tradable under published fees); H2 on Deribit (mean reversion unstable OOS, not tradable under costs). See HYPOTHESES.md Cycle 32 final synthesis.
 - Reachable venues for future work: Deribit, Hyperliquid, KuCoin, OKX (recent only), Kraken (spot only).
 
