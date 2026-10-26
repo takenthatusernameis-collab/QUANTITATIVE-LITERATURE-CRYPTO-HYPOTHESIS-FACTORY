@@ -346,3 +346,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 ## Cycle 108 — 2026-10-26T04:30:21Z (Standby/closeout, research-only)
 - Action: No-op cycle per Cycle 108 HANDOFF (standby/closeout). Did not retry blocked endpoints. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 105; no empirical validation performed; no datasets downloaded; no trading recommendations made.
 - Outcome: Project remains in closeout state. Updated research/HANDOFF.md (Cycle 108 completion + Cycle 109 next agent task). No performance guarantees or trading recommendations.
+
+## Cycle 111 — 2026-10-26T04:44:40Z (Standby/closeout, research-only)
+- Action: Verified access from current environment per Cycle 111 HANDOFF (standby/closeout, no-op per prior instruction). Did not retry blocked endpoints for data collection.
+  - Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+  - Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: Access restrictions persist unchanged since Cycle 5. Did not retry blocked endpoints for data collection. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 108; no empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 111 completion + Cycle 112 next agent task).
