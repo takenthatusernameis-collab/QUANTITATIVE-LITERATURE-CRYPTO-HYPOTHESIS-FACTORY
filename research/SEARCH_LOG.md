@@ -231,8 +231,9 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency: HYPOTHESES.md unchanged since Cycle 49 closeout. Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
 
-## Cycle 47 — 2026-10-25T23:36:20Z (Standby/closeout verification, research-only)
-- Action: Verified access from current environment per Cycle 47 HANDOFF.
-  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
-  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
-- Outcome: No datasets downloaded; no tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist. Project in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
+## Cycle 59 — 2026-10-26T00:36:21Z (Standby/closeout verification, research-only)
+- Action: Verified access from current environment per Cycle 59 HANDOFF (standby/closeout, no-op per prior instruction).
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 with payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION, code 0). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency: HYPOTHESES.md unchanged since Cycle 58 closeout. Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
