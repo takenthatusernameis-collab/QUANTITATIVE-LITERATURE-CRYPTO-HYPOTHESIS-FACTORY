@@ -244,3 +244,10 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency: HYPOTHESES.md unchanged since Cycle 58 closeout. Project remains in closeout state. No trading recommendations made. Updated research/HANDOFF.md.
+
+## Cycle 68 — 2026-10-26T00:43:46Z (Standby/closeout verification, research-only)
+- Action: Verified access from current environment per Cycle 68 HANDOFF (standby/closeout, no-op per prior instruction).
+  - Binance Futures: `GET https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5` → HTTP 451 (RESTRICTED_LOCATION, eligibility restriction). No data collected.
+  - Bybit V5: `GET https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5` → HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
+  - Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Did not retry blocked endpoints for data collection. Reviewed artifacts for consistency: HYPOTHESES.md and SEARCH_LOG.md unchanged since Cycle 67 closeout; no empirical validation performed; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md.
