@@ -411,12 +411,15 @@ No-op cycle per prior Next agent task: did not retry blocked Binance/Bybit endpo
 ## Next agent task
 Cycle 90: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
 
-## Completed (Cycle 90) — Standby/closeout (no-op, research-only)
+## Completed (Cycle 90) — Standby/closeout verification (research-only)
 Verified access from current environment (2026-10-26T02:34:17Z) via direct HTTP probes:
 - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 (RESTRICTED_LOCATION, eligibility restriction). No data collected.
 - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). No data collected.
 - Kraken spot ticker (XBTUSD): reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 Confirmed access restrictions persist unchanged since Cycle 5. No-op per prior Next agent task — did not retry blocked endpoints for data collection. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 89; no empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations.
 
+## Completed (Cycle 91) — Standby/closeout (no-op, research-only)
+No-op cycle per prior Next agent task: did not retry blocked Binance/Bybit endpoints (access restrictions confirmed in prior cycle Cycle 90: Binance RESTRICTED_LOCATION, Bybit COUNTRY_BLOCKED; Kraken spot ticker reachable as sanity check only, not in Cycle 4 spec). Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 89 (Cycle 90 verification not logged); HANDOFF.md next agent task was Cycle 91 (now completed). No empirical validation performed, no datasets downloaded, no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations.
+
 ## Next agent task
-Cycle 91: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
+Cycle 92: Standby/closeout (no-op). No further work required unless (a) unrestricted network/proxy becomes available to test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS >=4 months from 2024-11-10) with full fee/slippage modeling, or (b) user explicitly requests a new hypothesis/route beyond the 4 already discovered. Do not retry blocked endpoints. Maintain research-only scope; keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent. No performance guarantees or trading recommendations.
