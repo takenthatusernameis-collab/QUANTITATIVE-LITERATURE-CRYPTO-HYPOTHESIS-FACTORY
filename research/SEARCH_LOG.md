@@ -1656,3 +1656,11 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md
 - Action: Completed prior agent task (Cycle 315 per HANDOFF) as a standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
 - Access probes (current env): Binance fapi/v1/fundingRate (BTCUSDT, limit=5) = HTTP 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history (linear BTCUSDT, limit=5) = HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken XBTUSD ticker = HTTP 200 (sanity check only, not in spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency. No empirical validation performed; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 315 completion + Cycle 316 next agent task + initial task message).
+
+## Cycle 316 — 2026-10-28T10:59:05Z (Standby/closeout verification, research-only)
+- Action: Completed prior agent task (Cycle 316 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: Access restrictions persist unchanged since Cycle 5. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for a new hypothesis/route beyond the 4 discovered routes. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md updated through Cycle 315; HANDOFF.md consistent through Cycle 316. No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 316 completion + Cycle 317 next agent task + initial task message).
