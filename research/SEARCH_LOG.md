@@ -348,6 +348,14 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
   - Kraken: `GET https://api.kraken.com/0/public/Ticker?pair=XBTUSD` → HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
 - Outcome: Access restrictions persist unchanged since Cycle 5. Did not retry blocked endpoints for data collection. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 104; no empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 105 completion + Cycle 106 next agent task).
 
+## Cycle 319 — 2026-10-28T13:53:00Z (Standby/closeout verification, research-only)
+- Action: Completed prior agent task (Cycle 318 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; HANDOFF.md last updated Cycle 319). No empirical validation performed, no datasets downloaded, no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 319 completion + Cycle 320 next agent task + initial task message).
+
 ## Cycle 108 — 2026-10-26T04:30:21Z (Standby/closeout, research-only)
 - Action: No-op cycle per Cycle 108 HANDOFF (standby/closeout). Did not retry blocked endpoints. Reviewed artifacts for consistency: HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 105; no empirical validation performed; no datasets downloaded; no trading recommendations made.
 - Outcome: Project remains in closeout state. Updated research/HANDOFF.md (Cycle 108 completion + Cycle 109 next agent task). No performance guarantees or trading recommendations.
