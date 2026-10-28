@@ -204,6 +204,11 @@ Cycle 10 — 2026-10-25. Retried per HANDOFF. Binance Futures = RESTRICTED_LOCAT
 - Access: Binance/Bybit unreachable; Deribit/Hyperliquid/KuCoin reachable. Original spec requires unrestricted access/proxy.
 - Verdict: Both hypotheses tested under documented venue substitutions with fee-aware falsification; no tradable edge found. Research-only, no trading recommendations. Updated HANDOFF/HYPOTHESES.
 
+## Cycle 289 — 2026-10-28T05:10:43Z (Standby/closeout no-op, research-only)
+- Action: Completed prior agent task (Cycle 289) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env): Binance Futures fundingRate (BTCUSDT, limit=5) = HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear BTCUSDT, limit=5) = HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) = HTTP 200 (reachable, sanity check only, not in spec). No funding/perp series collected.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; HANDOFF.md last updated Cycle 289). No empirical validation performed; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 289 completion + Cycle 290 next agent task + initial task message).
+
 ## Cycle 40 — 2026-10-25T23:03:39Z (Standby/closeout verification, research-only)
 - Action: Verified access from current environment per Cycle 40 HANDOFF.
   - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 200 with error payload `{"code":0,"msg":"Service unavailable from a restricted location according to 'b. Eligibility'..."}` (RESTRICTED_LOCATION). No data collected.
