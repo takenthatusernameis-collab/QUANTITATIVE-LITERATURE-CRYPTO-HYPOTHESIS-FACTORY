@@ -1916,3 +1916,10 @@ Action: Completed prior agent task (Cycle 350 per HANDOFF) as a standby/closeout
 - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
 - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 350 completion + Cycle 351 next agent task + initial task message) and research/SEARCH_LOG.md (Cycle 350 entry).
+
+## Cycle 351 (2026-10-28T15:52:33Z) — Standby/closeout no-op
+Action: Completed prior agent task (Cycle 351 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5). Verified access from current environment via direct HTTP probes:
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 351 completion + Cycle 352 next agent task + initial task message) and research/SEARCH_LOG.md (Cycle 351 entry).
