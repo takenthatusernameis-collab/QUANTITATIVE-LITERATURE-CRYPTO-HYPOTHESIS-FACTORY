@@ -1608,3 +1608,8 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md
 - Verified access (current env): Binance fapi/v1/fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION). Bybit v5/market/funding/history BTCUSDT linear limit=5 → HTTP 403 (COUNTRY_BLOCKED). Kraken XBTUSD ticker → HTTP 200 (sanity only).
 - Action: No data collection, no endpoint retries for original spec, no empirical validation, no trading recommendations. Reviewed HANDOFF/SEARCH_LOG/HYPOTHESES consistency.
 - Updated artifacts: research/HANDOFF.md (Cycle 307 completion + Cycle 308 next task + initial task message), research/SEARCH_LOG.md (this entry). Project remains in closeout/standby.
+
+## Cycle 308 — Standby/closeout no-op (research-only) [2026-10-28T09:59:16Z]
+- Access verified: Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 → COUNTRY_BLOCKED. Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only, not in spec).
+- Action: No data collection, no endpoint retries for original spec, no empirical validation, no trading recommendations. Reviewed HANDOFF/SEARCH_LOG/HYPOTHESES consistency.
+- Updated artifacts: research/HANDOFF.md (Cycle 308 completion + Cycle 309 next task + initial task message), research/SEARCH_LOG.md (this entry). Project remains in closeout/standby.
