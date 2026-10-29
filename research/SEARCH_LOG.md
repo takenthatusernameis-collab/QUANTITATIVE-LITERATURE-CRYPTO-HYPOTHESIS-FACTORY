@@ -2521,3 +2521,9 @@ Standby/closeout no-op. Verified access: Binance HTTP 451 (RESTRICTED_LOCATION),
 - Verified access via direct HTTP probes: Binance Futures fundingRate (BTCUSDT, limit=5) = HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear BTCUSDT, limit=5) = HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) = HTTP 200 (reachable, sanity check only, not in spec). No funding/perp series collected.
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state.
 - Updated research/HANDOFF.md (Cycle 328 completion + Cycle 329 next agent task + initial task message), research/TASK_CYCLE_329.md, and this entry.
+
+## Cycle 298 — 2026-10-29T07:21:00Z (standby/closeout no-op)
+- Prior task: Cycle 297 per HANDOFF.
+- Access probes (current env): Binance fapi/v1/fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION). Bybit v5/market/funding/history linear BTCUSDT limit=5 → HTTP 403 (COUNTRY_BLOCKED). Kraken XBTUSD ticker → HTTP 200 (sanity only).
+- Actions: Standby/closeout no-op. No data collection, no empirical validation, no trading recommendations. Reviewed HANDOFF/SEARCH_LOG/HYPOTHESES for consistency.
+- Outcome: Restrictions unchanged; neither activation condition met (no unrestricted proxy; no explicit user request for new hypothesis/route). Project remains in closeout/standby.
