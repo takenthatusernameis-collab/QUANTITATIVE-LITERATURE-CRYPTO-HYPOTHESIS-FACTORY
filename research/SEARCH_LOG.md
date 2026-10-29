@@ -2349,3 +2349,11 @@ Access probes: Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION); Bybit
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - Outcome: No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 335 completion + Cycle 336 next agent task + initial task message) and research/SEARCH_LOG.md (Cycle 335 entry).
+
+## Cycle 336 — 2026-10-29T02:27:49Z (Standby/closeout no-op, research-only)
+- Action: Completed prior agent task (Cycle 335 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in Cycle 4 spec). No funding/perp series collected.
+- Outcome: Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md last entry Cycle 335). No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 336 completion + Cycle 337 next agent task + initial task message).
