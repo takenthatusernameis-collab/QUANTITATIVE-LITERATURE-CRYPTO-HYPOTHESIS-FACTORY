@@ -3185,3 +3185,7 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - Completed Cycle 395 as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition met (no unrestricted network/proxy; no explicit user request for new hypothesis/route). Project remains in closeout/standby. Updated research/HANDOFF.md (Cycle 395 completion + Cycle 396 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 395 entry), and research/TASK_CYCLE_396.md.
+
+## Cycle 396 (2026-10-29T22:11:53Z) — standby/closeout no-op
+- Verified access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200 (sanity only). No data collected.
+- No empirical validation; no trading recommendations. Project remains in closeout/standby.
