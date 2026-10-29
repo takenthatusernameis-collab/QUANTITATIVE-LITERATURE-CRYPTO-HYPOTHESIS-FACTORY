@@ -3240,3 +3240,11 @@ Completed standby/closeout no-op (Cycle 399). Access verified: Binance 451, Bybi
   - Bybit V5 market ticker (linear BTCUSDT): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - Completed Cycle 403 as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_403.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition met (no unrestricted network/proxy; no explicit user request for new hypothesis/route). Project remains in closeout/standby. Updated research/HANDOFF.md (Cycle 403 completion + Cycle 404 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 403 entry), and research/TASK_CYCLE_404.md.
+
+## Cycle 404 — 2026-10-29T23:53:32Z (Standby/closeout no-op, research-only)
+- Read prior agent task from durable handoff (research/HANDOFF.md: Cycle 403 completed; Next agent task Cycle 404; initial task message research/TASK_CYCLE_404.md).
+- Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 market ticker (linear BTCUSDT): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- Completed Cycle 404 as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_404.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition met (no unrestricted network/proxy; no explicit user request for new hypothesis/route). Project remains in closeout/standby. Updated research/HANDOFF.md (Cycle 404 completion + Cycle 405 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 404 entry), and research/TASK_CYCLE_405.md.
