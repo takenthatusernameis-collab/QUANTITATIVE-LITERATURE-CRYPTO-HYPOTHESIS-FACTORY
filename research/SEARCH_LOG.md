@@ -2888,3 +2888,15 @@ Access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No data collected. Co
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/HYPOTHESES.md, and research/TASK_CYCLE_370.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 370 completion + Cycle 371 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 370 entry), and research/TASK_CYCLE_371.md.
+
+## Cycle 355 — 2026-10-29T16:12:00Z (Standby/closeout no-op, research-only)
+- Action: Completed prior agent task (Cycle 354 per HANDOFF) as a standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec).
+  - Deribit (/api/v2/public/tickers): HTTP 400 → reachable host (expected unauthenticated probe code).
+  - Hyperliquid (/info): HTTP 405 → reachable host.
+  - KuCoin (/api/v1/market/stats): HTTP 200 → reachable.
+  - OKX (/api/v5/public/instruments): HTTP 200 → reachable host.
+- Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; HANDOFF.md last updated Cycle 355). No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 355 completion + Cycle 356 next agent task + initial task message) and research/TASK_CYCLE_356.md.
