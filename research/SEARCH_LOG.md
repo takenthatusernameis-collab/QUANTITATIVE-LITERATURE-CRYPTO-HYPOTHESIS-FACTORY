@@ -2625,3 +2625,8 @@ Action: Standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints. V
 - Action: Completed prior agent task (Cycle 348 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
 - Access probes (current env): Binance Futures fundingRate (BTCUSDT, limit=5)=HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear BTCUSDT, limit=5)=HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD)=HTTP 200 (reachable, sanity check only, not in spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency. Project remains in closeout state. No empirical validation performed; no trading recommendations made. Updated research/HANDOFF.md (Cycle 348 completion + Cycle 349 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 348 entry), research/TASK_CYCLE_349.md.
+
+## Cycle 349 — Completed (standby/closeout no-op, research-only) [2026-10-29T10:27:XXZ]
+- Action: Completed prior agent task (Cycle 349 per HANDOFF) as a standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints.
+- Access probes: Binance 451, Bybit 403, Kraken 200. No data collected.
+- Outcome: No empirical validation. Project remains in closeout state. Updated HANDOFF, SEARCH_LOG, TASK_CYCLE_350.md.
