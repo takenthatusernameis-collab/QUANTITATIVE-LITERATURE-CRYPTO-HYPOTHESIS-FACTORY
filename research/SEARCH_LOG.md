@@ -2880,3 +2880,11 @@ Access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No data collected. Co
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 353 completion + Cycle 354 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 353 entry), and research/TASK_CYCLE_354.md.
+
+## Cycle 370 — 2026-10-29T15:20:50Z (Standby/closeout no-op, research-only)
+- Action: Completed prior agent task (Cycle 369 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/HYPOTHESES.md, and research/TASK_CYCLE_370.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 370 completion + Cycle 371 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 370 entry), and research/TASK_CYCLE_371.md.
