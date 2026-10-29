@@ -263,3 +263,26 @@ Re-verified access from current environment per HANDOFF Cycle 355:
 - Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec; note: lowercase `ticker` path returns 404 — case-sensitive endpoint).
 - Deribit (`/api/v2/public/tickers`), Hyperliquid (`/info`), KuCoin (`/api/v1/market/stats`), OKX (`/api/v5/market/tickers`): reachable (HTTP 200 / expected 400 for unauthenticated probes); used only for venue-substituted replications, not part of original spec.
 No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Access gaps persist unchanged since Cycle 5. No trading recommendations made.
+
+## Cycle 346 — Access re-confirmation [2026-10-29T12:14:39Z, blocked]
+Re-verified access from current environment per HANDOFF Cycle 346:
+- Binance Futures (): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 (): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
+- Deribit (): HTTP 400 → reachable host (expected unauthenticated probe code); used only for venue-substituted replications, not part of original spec.
+- Hyperliquid (): HTTP 200 → reachable host; used only for venue-substituted replications, not part of original spec.
+- KuCoin ( or market stats): HTTP 200 → reachable; used only for venue-substituted replications, not part of original spec.
+- OKX (): HTTP 200 → reachable host; used only for venue-substituted replications, not part of original spec.
+No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Access gaps persist unchanged since Cycle 5. No trading recommendations made.
+
+
+## Cycle 346 — Access re-confirmation [2026-10-29T12:15:21Z, blocked]
+Re-verified access from current environment per HANDOFF Cycle 346:
+- Binance Futures (https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 (https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (https://api.kraken.com/0/public/Ticker?pair=XBTUSD): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
+- Deribit (/api/v2/public/tickers): HTTP 400 → reachable host (expected unauthenticated probe code); used only for venue-substituted replications, not part of original spec.
+- Hyperliquid (/info): HTTP 200 → reachable host; used only for venue-substituted replications, not part of original spec.
+- KuCoin (/api/v1/contracts/BTCUSDT): HTTP 200 → reachable; used only for venue-substituted replications, not part of original spec.
+- OKX (/api/v5/public/instruments): HTTP 200 → reachable host; used only for venue-substituted replications, not part of original spec.
+No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Access gaps persist unchanged since Cycle 5. No trading recommendations made.
