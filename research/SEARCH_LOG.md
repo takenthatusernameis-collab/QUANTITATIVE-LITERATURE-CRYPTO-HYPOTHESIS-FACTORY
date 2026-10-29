@@ -2375,3 +2375,8 @@ Access probes: Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION); Bybit
 - Action: Completed prior agent task (Cycle 343 per HANDOFF) as standby/closeout no-op. No retries of blocked Binance/Bybit endpoints.
 - Access: Binance Futures fundingRate BTCUSDT limit=5 → HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history linear BTCUSDT limit=5 → HTTP 403 COUNTRY_BLOCKED (CloudFront); Kraken XBTUSD → HTTP 200 (sanity check only). No data collected.
 - Outcome: No empirical validation, no datasets, no trading recommendations. Both activation conditions false. Artifacts consistent. Project in closeout state. Updated HANDOFF.md (Cycle 343 completion + Cycle 344 next task + initial message).
+
+## Cycle 344 — Standby/closeout no-op (research-only) [2026-10-29T02:35:49Z]
+- Action: Completed prior agent task (Cycle 344 per HANDOFF) as standby/closeout no-op. No retries of blocked Binance/Bybit endpoints.
+- Access: Binance Futures fundingRate BTCUSDT limit=5 → HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history linear BTCUSDT limit=5 → HTTP 403 COUNTRY_BLOCKED (CloudFront); Kraken XBTUSD → HTTP 200 (sanity check only). No data collected.
+- Outcome: No empirical validation, no datasets, no trading recommendations. Both activation conditions false. Artifacts consistent. Project in closeout state. Updated HANDOFF.md (Cycle 344 completion + Cycle 345 next task + initial message).
