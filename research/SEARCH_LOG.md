@@ -2635,3 +2635,15 @@ Action: Standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints. V
 - Action: Completed prior agent task (Cycle 349 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
 - Access probes (current env, direct HTTP): Binance Futures fundingRate (BTCUSDT, limit=5) = HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear BTCUSDT, limit=5) = HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) = HTTP 200 (reachable, sanity check only, not in spec). No funding/perp series collected.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 355 re-confirmation; HANDOFF.md last updated Cycle 350). No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 350 completion + Cycle 351 next agent task + initial task message), research/TASK_CYCLE_351.md.
+
+## Cycle 351 — Standby/closeout no-op (2026-10-29T10:31:36Z)
+- Read prior agent task from durable handoff (research/HANDOFF.md: Cycle 350 completed; Next Agent Task Cycle 351).
+- Action: Completed prior agent task (Cycle 350) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403).
+- Verified access from current environment via direct HTTP probes (Cycle 351):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made.
+- Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes.
+- Project remains in closeout state. No performance guarantees or trading recommendations.
+- Updated research/HANDOFF.md (Cycle 351 completion + Cycle 352 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 351 entry), and research/TASK_CYCLE_352.md.
