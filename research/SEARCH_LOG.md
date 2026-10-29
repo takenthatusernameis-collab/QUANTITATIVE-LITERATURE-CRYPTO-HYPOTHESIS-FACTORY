@@ -2498,3 +2498,8 @@ Standby/closeout no-op. Verified access: Binance HTTP 451 (RESTRICTED_LOCATION),
 - Verified access: Binance futures fundingRate HTTP 451 (RESTRICTED_LOCATION), Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED), Kraken spot ticker HTTP 200 (sanity check only). No data collected.
 - Reviewed HANDOFF.md, SEARCH_LOG.md, HYPOTHESES.md — consistent. No empirical validation, no datasets, no trading recommendations. Activation conditions not met (no unrestricted network/proxy, no user request for new hypothesis/route). Project remains in closeout/standby.
 - Updated research/HANDOFF.md (Cycle 324 completion + Cycle 325 next task + initial task message) and research/TASK_CYCLE_325.md created.
+
+## Cycle 325 — Standby/closeout no-op (2026-10-29T06:24:49Z)
+- Verified access: Binance futures fundingRate HTTP 451 (RESTRICTED_LOCATION), Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED), Kraken spot ticker HTTP 200 (sanity check only). No data collected.
+- Reviewed HANDOFF.md, SEARCH_LOG.md, HYPOTHESES.md — consistent. No empirical validation, no datasets, no trading recommendations. Activation conditions not met (no unrestricted network/proxy, no user request for new hypothesis/route). Project remains in closeout/standby.
+- Updated research/HANDOFF.md (Cycle 325 completion + Cycle 326 next task + initial task message) and research/TASK_CYCLE_326.md created.
