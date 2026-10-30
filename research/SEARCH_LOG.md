@@ -3265,3 +3265,10 @@ Completed standby/closeout no-op (Cycle 399). Access verified: Binance 451, Bybi
 - Access probes (current env): Binance futures fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION); Bybit v5 linear BTCUSDT ticker → HTTP 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker → HTTP 200 (sanity only).
 - Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_407/HYPOTHESES for consistency. No empirical validation, no datasets, no trading recommendations. Activation conditions not met. Project remains closeout/standby.
 - Updated HANDOFF (Cycle 407 completion + Cycle 408 next task + initial task message), SEARCH_LOG (this entry), TASK_CYCLE_408.md written.
+
+## Cycle 408 — Completed (standby/closeout no-op, research-only) [2026-10-30T00:14:16Z]
+Action: Completed prior agent task (Cycle 408 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Verified access from current environment via direct HTTP probes:
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 market ticker (linear BTCUSDT): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_408.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 408 completion + Cycle 409 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 408 entry), and research/TASK_CYCLE_409.md.
