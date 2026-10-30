@@ -84,3 +84,9 @@ Cycle 440 — 2026-10-30T19:00:58Z (standby/closeout no-op, research-only)
 - Probes: Binance fapi/v1/fundingRate BTCUSDT limit=5 → 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history linear BTCUSDT limit=5 → 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker → 200 (sanity only).
 - Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_471.md/HYPOTHESES for consistency. No empirical validation, no datasets, no trading recommendations. No activation conditions met. Project remains in closeout/standby.
 - Updated HANDOFF (Cycle 471 completion + Cycle 472 next/initial), created/updated TASK_CYCLE_472.md, appended this entry.
+
+## Cycle 472 — Standby/closeout no-op, research-only (2026-10-30T21:22:23Z)
+- Completed Cycle 471 per handoff as standby/closeout.
+- Probes: Binance fapi/v1/fundingRate BTCUSDT limit=5 → 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history linear BTCUSDT limit=5 → 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker → 200 (sanity only).
+- Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_472.md/HYPOTHESES for consistency. No empirical validation, no datasets, no trading recommendations. No activation conditions met. Project remains in closeout/standby.
+- Updated HANDOFF (Cycle 472 completion + Cycle 473 next/initial), created TASK_CYCLE_473.md.
