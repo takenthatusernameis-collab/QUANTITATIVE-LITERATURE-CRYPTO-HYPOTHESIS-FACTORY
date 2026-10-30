@@ -3505,3 +3505,7 @@ Standby/closeout no-op. Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No da
   - KuCoin (/api/v1/market/stats?symbol=BTCUSDT): HTTP 200 → reachable; venue-substituted replication only, not in spec.
   - OKX (/api/v5/public/instruments?instType=SWAP): HTTP 200 → reachable; venue-substituted replication only, not in spec.
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; HANDOFF.md last entry Cycle 379; SEARCH_LOG.md last entry Cycle 416). No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. Updated research/HANDOFF.md (Cycle 417 completion + Cycle 418 next agent task + initial task message).
+
+## Cycle 352 (2026-10-30T07:21:19Z)
+- Probes: Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 (RESTRICTED_LOCATION). Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED). Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec).
+- Outcome: No data collected. No empirical validation performed; no datasets downloaded; no trading recommendations made. Standby/closeout no-op. Updated HANDOFF.md (Cycle 352 completion + Cycle 353 next agent task + initial task message) and TASK_CYCLE_353.md.
