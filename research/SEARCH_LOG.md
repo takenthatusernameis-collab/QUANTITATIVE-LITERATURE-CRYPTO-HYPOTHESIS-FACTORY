@@ -3428,3 +3428,6 @@ Standby/closeout no-op. HTTP probes: Binance 451, Bybit 403, Kraken 200. No data
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis). No empirical validation performed; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations.
+
+## Cycle 370 [2026-10-30T05:01:XXZ]
+Standby/closeout no-op. Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No data collected. Artifacts kept consistent.
