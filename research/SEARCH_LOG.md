@@ -3348,3 +3348,9 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md
 - Access probes (current env): Binance Futures fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history linear BTCUSDT limit=5 → HTTP 403 via CloudFront (COUNTRY_BLOCKED); Kraken XBTUSD ticker → HTTP 200 (sanity check only).
 - Reviewed HANDOFF.md, SEARCH_LOG.md, HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. No activation conditions met (no unrestricted network/proxy; no new user request). Project remains in closeout/standby.
 - Updated HANDOFF.md (Cycle 345 completion + Cycle 346 next agent task + initial task message), SEARCH_LOG.md (this entry), and TASK_CYCLE_346.md.
+
+## Cycle 346 — Entry [2026-10-30T01:58:39Z]
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 346 completion + Cycle 347 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 346 entry), and research/TASK_CYCLE_347.md.
