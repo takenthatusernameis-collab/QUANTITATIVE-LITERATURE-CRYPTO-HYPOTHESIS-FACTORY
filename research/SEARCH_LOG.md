@@ -127,3 +127,7 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_472.md
 - Verified access (current env): Binance fundingRate BTCUSDT limit=5 -> HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history linear BTCUSDT limit=5 -> HTTP 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker -> HTTP 200 (sanity check only).
 - Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_476.md/TASK_CYCLE_477.md/HYPOTHESES for consistency. No empirical validation, no datasets, no trading recommendations. Activation conditions not met (no unrestricted proxy; no new hypothesis/route request). Project remains in closeout/standby.
 - Updated HANDOFF (Cycle 477 completion + Cycle 478 next/initial), created TASK_CYCLE_478.md, appended this entry.
+
+## Cycle 478 — Standby/closeout no-op (2026-10-30T23:04:01Z)
+- Verified access: Binance 451, Bybit 403, Kraken 200. No data collected.
+- No new hypothesis/route. Closeout state maintained.
