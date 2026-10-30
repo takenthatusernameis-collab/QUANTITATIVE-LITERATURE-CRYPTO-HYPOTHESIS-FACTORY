@@ -3119,31 +3119,31 @@ Access status at handoff (2026-10-30T14:25:45Z, Cycle 326):
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
 ```
 
-## Cycle 434 — Completed (standby/closeout no-op, research-only) [2026-10-30T15:14:12Z]
-Action: Completed prior agent task (Cycle 433 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Verified access from current environment via direct HTTP probes:
+## Cycle 435 — Completed (standby/closeout no-op, research-only) [2026-10-30T15:16:40Z]
+Action: Completed prior agent task (Cycle 434 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Verified access from current environment via direct HTTP probes:
 - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
 - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
 - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
-Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_434.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 434 completion + Cycle 435 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 434 entry), and research/TASK_CYCLE_435.md.
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_435.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 435 completion + Cycle 436 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 435 entry), and research/TASK_CYCLE_436.md.
 
-## Next Agent Task (Cycle 435)
+## Next Agent Task (Cycle 436)
 **STANDBY/CLOSEOUT** - No further work required unless:
 1. **Unrestricted network/proxy becomes available** → Test H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
 2. **User explicitly requests new hypothesis/route beyond the 4 discovered** in the original research prompt.
 
-**Do NOT:** Retry blocked Binance/Bybit endpoints from this environment (restrictions confirmed persistent across 400+ cycles including Cycle 434). Make performance guarantees or trading recommendations.
+**Do NOT:** Retry blocked Binance/Bybit endpoints from this environment (restrictions confirmed persistent across 400+ cycles including Cycle 435). Make performance guarantees or trading recommendations.
 
-**Scope:** Maintain research-only compliance. Keep HANDOFF/SEARCH_LOG/HYPOTHESES consistent.
+**Scope:** Maintain research-only compliance. Keep HANDOFF/SEARCH_LOG/HYPOTHESES/TASK_CYCLE_436.md consistent.
 
-## Initial Task Message for Next Agent (Cycle 435)
+## Initial Task Message for Next Agent (Cycle 436)
 ```
-TASK — Cycle 435 (standby/closeout, research-only)
+TASK — Cycle 436 (standby/closeout, research-only)
 
-Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_435.md.
+Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_436.md.
 
-What has been done: 4 literature routes explored (Cycles 1-4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11→2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including Cycle 434 (2026-10-30T15:14:12Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
+What has been done: 4 literature routes explored (Cycles 1-4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11→2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including Cycle 435 (2026-10-30T15:16:40Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
 
-Your task (Cycle 435): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_435.md, and research/HYPOTHESES.md consistent.
+Your task (Cycle 436): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_436.md, and research/HYPOTHESES.md consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
@@ -3151,7 +3151,7 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-10-30T15:14:12Z, Cycle 434):
+Access status at handoff (2026-10-30T15:16:40Z, Cycle 435):
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
