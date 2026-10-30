@@ -3439,3 +3439,9 @@ Standby/closeout no-op. Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No da
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 - Outcome: No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original Binance/Bybit spec. Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis). No empirical validation performed; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations.
+
+## Cycle 373 — 2026-10-30T05:04:39Z (standby/closeout no-op)
+- Read research/HANDOFF.md (Cycle 372 completion + Cycle 373 next task). Read research/SEARCH_LOG.md and research/HYPOTHESES.md for consistency (research-only).
+- Verified network access (current env): Binance Futures fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history linear BTCUSDT limit=5 → HTTP 403 via CloudFront (COUNTRY_BLOCKED); Binance /api/v3/time → HTTP 451; Bybit v5 market/time → HTTP 403. No data collected.
+- No unrestricted network/proxy available; no user request for new hypothesis/route beyond the 4 discovered. Remained in research-only compliance, no performance guarantees/trading recommendations, no datasets downloaded.
+- Updated research/HANDOFF.md (Cycle 373 completion, Cycle 374 next task + initial message), research/SEARCH_LOG.md (this entry), created research/TASK_CYCLE_374.md.
