@@ -3485,3 +3485,11 @@ Standby/closeout no-op. Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No da
 ## Cycle 377 — Standby/closeout no-op [2026-10-30T06:24:19Z]
 - Completed prior agent task (Cycle 377) as standby/closeout no-op. No blocked endpoints retried for data. Access probes: Binance 451, Bybit 403, Kraken 200. No empirical validation. No trading recommendations. Updated research/HANDOFF.md (Cycle 377 completion + Cycle 378 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 377 entry), and research/TASK_CYCLE_378.md.
 - Cycle 378: Completed prior agent task as standby/closeout no-op. Verified access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. Updated HANDOFF/SEARCH_LOG/TASK_CYCLE_379.md.
+
+## Cycle 379 — 2026-10-30T06:28:02Z (Standby/closeout no-op, research-only)
+- Action: Completed prior agent task (Cycle 379 per HANDOFF) as a standby/closeout no-op per HANDOFF Next agent task. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access probes (current env):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via CloudFront = RESTRICTED_LOCATION (eligibility restriction). No data collected.
+  - Bybit V5 market/tickers (linear BTCUSDT): HTTP 403 via CloudFront = COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 = reachable (sanity check only, not in spec). No funding/perp series collected.
+- Outcome: Access restrictions persist unchanged since Cycle 5. Reviewed artifacts for consistency (HYPOTHESES.md last updated Cycle 32 final synthesis; SEARCH_LOG.md updated). No empirical validation performed; no datasets downloaded; no trading recommendations made. Project remains in closeout state. No performance guarantees or trading recommendations. Updated research/HANDOFF.md (Cycle 379 completion + Cycle 380 next agent task + initial task message), research/SEARCH_LOG.md (Cycle 379 entry), and research/TASK_CYCLE_380.md.
