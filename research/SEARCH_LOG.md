@@ -616,3 +616,6 @@ Cycle 608 — standby/closeout no-op (2026-10-31T20:32:00Z): Verified access (Bi
 Cycle 610 — standby/closeout no-op (2026-10-31T21:23:14Z): Verified access (Binance 451, Bybit 403, Kraken 200). No data collection. No activation conditions. Updated HANDOFF (Cycle 610 completion + Cycle 611 next task), TASK_CYCLE_610.md (marked complete), TASK_CYCLE_611.md (created), SEARCH_LOG.
 
 Cycle 613 — standby/closeout no-op (2026-10-31T21:27:12Z): Verified access (Binance 451, Bybit 403, Kraken 200). No data collection. No activation conditions. Updated HANDOFF (Cycle 613 completion + Cycle 614 next task), TASK_CYCLE_613.md (marked complete), TASK_CYCLE_614.md (created), SEARCH_LOG.
+
+## Cycle 615 — standby/closeout no-op (research-only) [2026-10-31T21:29:02Z]
+- Standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints. Verified access: Binance 451, Bybit 403, Kraken 200. No empirical validation, no datasets, no trading recommendations.
