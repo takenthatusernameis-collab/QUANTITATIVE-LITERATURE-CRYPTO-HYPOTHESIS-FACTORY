@@ -283,3 +283,9 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md, research/TASK_CYCLE_507.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 507 completion + Cycle 508 next task + initial message), created/updated research/TASK_CYCLE_507.md (marked complete/compliant), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+
+## Cycle 508 — Completed (standby/closeout no-op, research-only) [2026-10-31T03:00:14Z]
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_508.md, and research/HYPOTHESES.md for consistency. No activation conditions met. Artifacts updated: HANDOFF.md (Cycle 508 completion + Cycle 509 next task + initial message), created/updated research/TASK_CYCLE_508.md, SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
