@@ -506,3 +506,10 @@ Standby/closeout no-op. Access probes: Binance HTTP 451, Bybit HTTP 403, Kraken 
 
 ## Cycle 515 — 2026-10-31T18:20:55Z (standby/closeout no-op, research-only)
 - Completed Cycle 514 task per HANDOFF. Verified access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No data collected. No activation conditions met. Updated HANDOFF for Cycle 515 completion + Cycle 516 next task; created TASK_CYCLE_515.md. Project remains closeout/standby.
+
+## Cycle 592 — 2026-10-31T18:24:59Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 591 per HANDOFF) as standby/closeout no-op. Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_591.md, research/TASK_CYCLE_592.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 592 completion + Cycle 593 next task + initial message), TASK_CYCLE_592.md (marked complete), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
