@@ -19,3 +19,5 @@ Access status at handoff (2026-10-31T03:00:51Z, Cycle 509):
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
+---
+Completed (Cycle 510): standby/closeout no-op. Access probes 2026-10-31T03:03:39Z: Binance 451, Bybit 403, Kraken 200. No data collected. Artifacts updated.
