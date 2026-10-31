@@ -1,5 +1,3 @@
-# TASK — Cycle 517 (standby/closeout, research-only)
+# TASK — Cycle 517 (standby/closeout, research-only) — COMPLETED 2026-10-31T04:58:07Z
 
-Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_517.md.
-
-Your task (Cycle 517): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_517.md, and research/HYPOTHESES.md consistent.
+Standby/closeout no-op. Verified access: Binance HTTP 451 (RESTRICTED_LOCATION), Bybit HTTP 403 (COUNTRY_BLOCKED), Kraken HTTP 200 (sanity). No data collected. No activation conditions met. Updated artifacts for Cycle 517 completion and Cycle 518 next task.
