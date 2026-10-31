@@ -165,3 +165,8 @@ Access status at handoff (2026-10-31T05:02:55Z, Cycle 519):
 - Verified access: Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker HTTP 200 (sanity check only). No data collected.
 - No empirical validation; no datasets downloaded; no trading recommendations.
 - Updated research/HANDOFF.md, research/TASK_CYCLE_507.md, research/HYPOTHESES.md.
+
+## Cycle 508 — Standby/closeout no-op (research-only) [2026-10-31T08:51:57Z]
+- Verified access: Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker HTTP 200 (sanity check only). No data collected.
+- No empirical validation; no datasets downloaded; no trading recommendations.
+- Updated research/HANDOFF.md, research/TASK_CYCLE_508.md, research/HYPOTHESES.md.
