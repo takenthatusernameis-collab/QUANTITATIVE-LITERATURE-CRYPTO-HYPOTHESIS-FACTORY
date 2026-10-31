@@ -473,3 +473,11 @@ Standby/closeout no-op. Access probes: Binance HTTP 451, Bybit HTTP 403, Kraken 
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_588.md, research/TASK_CYCLE_589.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 589 completion + Cycle 590 next task + initial message), TASK_CYCLE_589.md (marked complete), TASK_CYCLE_590.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
 ===STATUS: Cycle 590 done===
+
+## Cycle 590 — 2026-10-31T17:23:40Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 590 per HANDOFF) as standby/closeout no-op. Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_590.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 590 completion + Cycle 591 next task + initial message), TASK_CYCLE_590.md (marked complete), TASK_CYCLE_591.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+===STATUS: Cycle 591 done===
