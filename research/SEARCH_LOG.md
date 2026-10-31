@@ -493,3 +493,6 @@ Standby/closeout no-op. Access probes: Binance HTTP 451, Bybit HTTP 403, Kraken 
 - Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_562/HYPOTHESES for consistency.
 - No data collection, no empirical validation, no trading recommendations. No activation conditions met.
 - Updated HANDOFF (Cycle 563 completion + Cycle 564 next task + initial message), marked TASK_CYCLE_563.md complete, created TASK_CYCLE_564.md.
+
+## Cycle 564 — 2026-10-31T17:26:XXZ (standby/closeout no-op, research-only)
+- Completed Cycle 563 task per HANDOFF. Verified access: Binance fapi/v1/fundingRate HTTP 451 (RESTRICTED_LOCATION), Bybit v5/market/history-funding-rate HTTP 403 (COUNTRY_BLOCKED), Kraken Ticker HTTP 404 (not usable). No data collected, no validation performed. No activation conditions met. Updated HANDOFF for Cycle 564 completion + Cycle 565 next task; created/updated TASK_CYCLE_564.md. Project remains closeout/standby.
