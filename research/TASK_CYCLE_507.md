@@ -1,13 +1,19 @@
-# TASK_CYCLE_507 — Standby/Closeout No-Op (Completed)
+# TASK_CYCLE_507.md — Cycle 507 (standby/closeout, research-only)
 
-## Context
-From HANDOFF Cycle 506 completion: standby/closeout. Binance/Bybit remain blocked (451/403). No unrestricted network/proxy, no user request for new hypothesis/route beyond 4 discovered.
+## Prior Agent Task (Cycle 506 per HANDOFF)
+Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md, research/TASK_CYCLE_507.md, and research/HYPOTHESES.md consistent.
 
-## Task
-Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_507.md, and research/HYPOTHESES.md consistent.
+## Action Taken (Cycle 507)
+- Completed standby/closeout no-op per HANDOFF Next Agent Task for Cycle 506.
+- Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403).
+- Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 via api.binance.com → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md, research/TASK_CYCLE_507.md, and research/HYPOTHESES.md for consistency.
+- No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations.
 
-Only act if one of these occurs:
-1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
-2. The user explicitly requests a new hypothesis/route beyond the 4 already discovered.
-
-Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
+## Artifacts Updated
+- Updated research/HANDOFF.md (Cycle 507 completion + Cycle 508 next agent task + initial task message)
+- Created/updated research/TASK_CYCLE_507.md (this file)
+- Updated research/SEARCH_LOG.md (Cycle 507 entry)
