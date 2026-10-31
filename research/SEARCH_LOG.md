@@ -342,3 +342,13 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md
   - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_516.md, research/TASK_CYCLE_517.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 517 completion + Cycle 518 next task + initial message), TASK_CYCLE_517.md (marked complete), TASK_CYCLE_518.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+
+## Cycle 518 — 2026-10-31T04:59:43Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 517 per HANDOFF) as standby/closeout no-op. Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_517.md, research/TASK_CYCLE_518.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 518 completion + Cycle 519 next task + initial message), SEARCH_LOG.md (this entry), updated research/TASK_CYCLE_518.md (marked complete). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+
+## Cycle 519 — 2026-10-31T04:59:43Z (standby/closeout no-op, research-only)
+- Initial task message written: research/TASK_CYCLE_519.md. Next agent task recorded in HANDOFF.md. Standby/closeout maintained.
