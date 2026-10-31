@@ -2,7 +2,7 @@
 
 Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_621.md.
 
-What has been done: 4 literature routes explored (Cycles 1-4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11→2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including Cycle 620 (2026-10-31T22:24:08Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
+What has been done: 4 literature routes explored (Cycles 1-4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11→2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including Cycle 621 (2026-10-31T22:24:30Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
 
 Your task (Cycle 621): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_621.md, and research/HYPOTHESES.md consistent.
 
@@ -17,5 +17,3 @@ Access status at handoff (2026-10-31T22:24:08Z, Cycle 620):
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
-""" filePath">
-/home/runner/work/QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY/QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY/research/TASK_CYCLE_621.md
