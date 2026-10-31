@@ -683,6 +683,13 @@ Cycle 613 — standby/closeout no-op (2026-10-31T21:27:12Z): Verified access (Bi
   - Kraken spot ticker (XBTUSD): HTTP 404 → not usable (sanity check only, not in spec). No funding/perp series collected.
 - No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_627.md, research/TASK_CYCLE_628.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 628 completion + Cycle 629 next task + initial message), marked TASK_CYCLE_628.md complete, created TASK_CYCLE_629.md, SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
 
+## Cycle 630 — 2026-10-31T23:17:09Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 629 per HANDOFF) as standby/closeout no-op. Re-verified access from current environment via direct HTTP probes (2026-10-31T23:17:09Z):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_629.md, research/TASK_CYCLE_630.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 630 completion + Cycle 631 next task + initial message), marked TASK_CYCLE_630.md complete, created TASK_CYCLE_631.md, SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+
 ## Cycle 629 — 2026-10-31T23:16:02Z (standby/closeout no-op, research-only)
 - Completed prior agent task (Cycle 628 per HANDOFF) as standby/closeout no-op. Re-verified access from current environment via direct HTTP probes (2026-10-31T23:16:02Z):
   - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
