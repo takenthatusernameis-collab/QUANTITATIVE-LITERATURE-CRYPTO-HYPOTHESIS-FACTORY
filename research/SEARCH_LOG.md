@@ -544,3 +544,10 @@ Cycle 507 — standby/closeout no-op; Binance 451, Bybit 403, Kraken 200; no dat
 
 ## Cycle 599 — 2026-10-31T19:26:47Z (standby/closeout no-op, research-only)
 - Completed prior agent task (Cycle 598 per HANDOFF) as standby/closeout no-op. Verified access: Binance fapi/v1/fundingRate BTCUSDT -> 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history linear BTCUSDT -> 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker -> 200 (sanity check). No data collected. No empirical validation, no datasets, no trading recommendations. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered routes). Artifacts updated: HANDOFF.md (Cycle 599 completion + Cycle 600 next task + initial message), TASK_CYCLE_599.md (created/updated), SEARCH_LOG.md (this entry). Project remains closeout/standby.
+
+## Cycle 600 — 2026-10-31T20:21:51Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 599 per HANDOFF) as standby/closeout no-op. Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_599.md, research/TASK_CYCLE_600.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered routes). Artifacts updated: HANDOFF.md (Cycle 600 completion + Cycle 601 next task + initial message), TASK_CYCLE_600.md (marked complete), TASK_CYCLE_601.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
