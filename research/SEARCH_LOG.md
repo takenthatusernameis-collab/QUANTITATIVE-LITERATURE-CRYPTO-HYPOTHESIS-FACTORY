@@ -481,3 +481,9 @@ Standby/closeout no-op. Access probes: Binance HTTP 451, Bybit HTTP 403, Kraken 
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
 - No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_590.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 590 completion + Cycle 591 next task + initial message), TASK_CYCLE_590.md (marked complete), TASK_CYCLE_591.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
 ===STATUS: Cycle 591 done===
+
+## Cycle 507 — 2026-10-31T17:24:25Z (standby/closeout no-op)
+- Verified access: Binance fapi/v1/fundingRate BTCUSDT -> 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history linear BTCUSDT -> 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker -> 200 (sanity check).
+- Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_506/HYPOTHESES for consistency.
+- No data collection, no empirical validation, no trading recommendations. No activation conditions met.
+- Updated HANDOFF (Cycle 507 completion + Cycle 508 next task + initial message), created TASK_CYCLE_507.md.
