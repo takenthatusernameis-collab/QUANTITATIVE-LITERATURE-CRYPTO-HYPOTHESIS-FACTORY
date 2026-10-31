@@ -497,5 +497,12 @@ Standby/closeout no-op. Access probes: Binance HTTP 451, Bybit HTTP 403, Kraken 
 ## Cycle 564 — 2026-10-31T17:26:XXZ (standby/closeout no-op, research-only)
 - Completed Cycle 563 task per HANDOFF. Verified access: Binance fapi/v1/fundingRate HTTP 451 (RESTRICTED_LOCATION), Bybit v5/market/history-funding-rate HTTP 403 (COUNTRY_BLOCKED), Kraken Ticker HTTP 404 (not usable). No data collected, no validation performed. No activation conditions met. Updated HANDOFF for Cycle 564 completion + Cycle 565 next task; created/updated TASK_CYCLE_564.md. Project remains closeout/standby.
 
+## Cycle 516 — 2026-10-31T18:21:27Z (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 515 per HANDOFF) as standby/closeout no-op. Verified access from current environment via direct HTTP probes:
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- No empirical validation, no datasets, no trading recommendations. Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_515.md, research/TASK_CYCLE_516.md, and research/HYPOTHESES.md for consistency. No activation conditions met (no unrestricted network/proxy for original H1; no explicit user request for new hypothesis/route beyond 4 discovered). Artifacts updated: HANDOFF.md (Cycle 516 completion + Cycle 517 next task + initial message), TASK_CYCLE_516.md (marked complete), TASK_CYCLE_517.md (created), SEARCH_LOG.md (this entry). Project remains in closeout/standby state. No performance guarantees or trading recommendations.
+
 ## Cycle 515 — 2026-10-31T18:20:55Z (standby/closeout no-op, research-only)
 - Completed Cycle 514 task per HANDOFF. Verified access: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No data collected. No activation conditions met. Updated HANDOFF for Cycle 515 completion + Cycle 516 next task; created TASK_CYCLE_515.md. Project remains closeout/standby.
