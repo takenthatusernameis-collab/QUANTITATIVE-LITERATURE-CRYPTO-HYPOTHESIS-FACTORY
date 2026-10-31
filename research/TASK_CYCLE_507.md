@@ -40,3 +40,18 @@ Completed Cycle 506 per HANDOFF Next Agent Task as standby/closeout no-op.
 - research/HANDOFF.md (Cycle 507 completion + Cycle 508 next agent task + initial task message)
 - research/TASK_CYCLE_507.md (created)
 - research/SEARCH_LOG.md (Cycle 507 entry)
+# TASK CYCLE 507 — Standby/Closeout (research-only)
+
+**Status:** Pending
+
+## Task
+Complete prior agent task (Cycle 506 per HANDOFF) as a standby/closeout no-op per HANDOFF Next Agent Task (Cycle 507).
+
+## Required actions
+- Do NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403).
+- Verify access from current environment via direct HTTP probes (Binance fundingRate BTCUSDT limit=5, Bybit funding/history linear BTCUSDT limit=5, Kraken Ticker XBTUSD as sanity check).
+- Review research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_506.md, and research/HYPOTHESES.md for consistency.
+- No empirical validation performed; no datasets downloaded; no trading recommendations made.
+- Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes.
+- Project remains in closeout state. No performance guarantees or trading recommendations.
+- Update research/HANDOFF.md (Cycle 507 completion + Cycle 508 next agent task + initial task message), create/update research/TASK_CYCLE_507.md, and update research/SEARCH_LOG.md (Cycle 507 entry).
