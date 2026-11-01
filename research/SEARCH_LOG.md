@@ -1,3 +1,10 @@
+## 2026-11-01T04:15:27Z — Cycle 664 (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 664 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct HTTP probes (2026-11-01T04:15:27Z):
+  - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_664.md, research/TASK_CYCLE_665.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_664.md complete, created research/TASK_CYCLE_665.md, and updated research/SEARCH_LOG.md (Cycle 664 entry).
+
 ## 2026-11-01T04:14:15Z — Cycle 662 (standby/closeout no-op, research-only)
 - Completed prior agent task (Cycle 662 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct HTTP probes (2026-11-01T04:14:15Z):
   - Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.

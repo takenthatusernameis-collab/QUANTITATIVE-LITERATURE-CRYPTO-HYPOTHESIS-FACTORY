@@ -17,3 +17,10 @@ Access status at handoff (2026-11-01T04:14:53Z, Cycle 663):
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
+
+## Cycle 664 — Completed (standby/closeout no-op, research-only) [2026-11-01T04:15:27Z]
+Completed the above task as a standby/closeout no-op per HANDOFF Next Agent Task. Re-verified access via direct HTTP probes (2026-11-01T04:15:27Z):
+- Binance Futures fundingRate (BTCUSDT, limit=5): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 funding/history (linear BTCUSDT, limit=5): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_663.md, research/TASK_CYCLE_664.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Created research/TASK_CYCLE_665.md; updated research/HANDOFF.md and research/SEARCH_LOG.md (Cycle 664 entry).
