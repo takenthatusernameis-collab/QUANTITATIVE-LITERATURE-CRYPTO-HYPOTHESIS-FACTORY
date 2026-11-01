@@ -1175,3 +1175,10 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_718.md
 - Access unchanged (not retried): Binance HTTP 451 RESTRICTED_LOCATION; Bybit HTTP 403 COUNTRY_BLOCKED; Kraken HTTP 200 sanity check only.
 - Conditions: (a) no unrestricted network/proxy to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered. No empirical validation, no data collected, no trading recommendations.
 - Artifacts: Updated research/HANDOFF.md (Cycle 752 completion, Cycle 753 next), created research/TASK_CYCLE_752.md with completion, wrote initial task for Cycle 753.
+
+## Cycle 755 — Access re-confirmation (2026-11-01T14:01:30Z, blocked)
+Re-verified access from current environment per HANDOFF Cycle 755:
+- Binance Futures (`https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1`): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 (`https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1`): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
+No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Access gaps persist unchanged since Cycle 5. No trading recommendations made. Standby/closeout no-op per HANDOFF.
