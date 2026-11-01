@@ -963,3 +963,13 @@ Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_684.md
 
 ## Cycle 686 — Completed (standby/closeout no-op, research-only) [2026-11-01T07:04:45Z]
 Standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints. Re-verified consistency of HANDOFF/SEARCH_LOG/TASK_CYCLE_685-686/HYPOTHESES. No empirical validation; no datasets; no recommendations. Neither activation condition occurred. Project remains in closeout state.
+
+## Cycle 687 — Standby/closeout no-op (research-only) [2026-11-01T07:07:24Z]
+- Completed prior agent task (Cycle 686 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task.
+- Did NOT retry blocked Binance/Bybit endpoints for data collection (restrictions persist since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403).
+- Re-verified access from current environment via direct HTTP probes (2026-11-01T07:07:24Z): Binance Futures fundingRate BTCUSDT limit=5 → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history linear BTCUSDT limit=5 → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker XBTUSD → HTTP 200 (sanity check only, not in spec).
+- Reviewed HANDOFF.md, SEARCH_LOG.md, TASK_CYCLE_686.md, TASK_CYCLE_687.md, HYPOTHESES.md for consistency.
+- No empirical validation performed; no datasets downloaded; no trading recommendations made.
+- Neither activation condition met: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes.
+- Project remains in CLOSEOUT/STANDBY. No performance guarantees or trading recommendations.
+- Marked TASK_CYCLE_687.md complete; created TASK_CYCLE_688.md; updated HANDOFF.md.
