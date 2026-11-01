@@ -1334,3 +1334,5 @@ No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsific
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
   - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec).
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_773.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_773.md complete, created research/TASK_CYCLE_774.md, updated research/HANDOFF.md (Cycle 773 completion + Cycle 774 next task + initial task message).
+
+- Cycle 820: standby/closeout no-op. No blocked endpoints retried. No new work. Updated HANDOFF.md (Cycle 820 completion + Cycle 821 next task + initial task message), created research/TASK_CYCLE_821.md.
