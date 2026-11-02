@@ -1692,3 +1692,7 @@ No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsific
   - Kraken endpoints tested: different paths return different codes (non-blocking, sanity check only, not in spec). No funding/perp series collected.
   - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec).
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_901.md, research/TASK_CYCLE_902.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_902.md complete with this entry, created research/TASK_CYCLE_903.md (initial task message), updated research/HANDOFF.md (Cycle 902 completion + Cycle 903 next task + initial task message), and updated research/SEARCH_LOG.md (Cycle 902 entry).
+
+## Cycle 906 [2026-11-02T18:09:40Z]
+- Confirmed access restrictions (direct curl): Binance fapi/v1/fundingRate → HTTP 451 (RESTRICTED_LOCATION), Bybit v5/market/funding/history → HTTP 403 (COUNTRY_BLOCKED), Kraken 0/public/Ticker → HTTP 200 (sanity check).
+- Standby/closeout no-op performed. No data collection attempted on blocked endpoints. Artifacts updated for Cycle 906.
