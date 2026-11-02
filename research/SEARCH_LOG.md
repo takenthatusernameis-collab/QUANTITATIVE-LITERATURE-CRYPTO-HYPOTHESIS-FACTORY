@@ -1606,3 +1606,9 @@ No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsific
   - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
   - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec).
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_888.md, research/TASK_CYCLE_889.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_889.md complete with this entry, created research/TASK_CYCLE_890.md (initial task message), updated research/HANDOFF.md (Cycle 889 completion + Cycle 890 next task + initial task message), and updated research/SEARCH_LOG.md (Cycle 889 entry).
+
+## Cycle 892 — Standby/closeout no-op (research-only) [2026-11-02T11:27:14Z]
+- Prior task read from durable handoff (research/TASK_CYCLE_892.md / research/HANDOFF.md). Completed as no-op.
+- Access re-verified via curl (2026-11-02T11:27:14Z): Binance fapi/v1/fundingRate BTCUSDT → HTTP 451 (RESTRICTED_LOCATION); Bybit v5/market/funding/history linear BTCUSDT → HTTP 403 (COUNTRY_BLOCKED); Kraken public/Ticker XBTUSD → HTTP 200 (sanity check only).
+- No endpoints retried for data collection (blocked). No empirical validation, no datasets downloaded, no trading recommendations. Activation conditions not met (no unrestricted network/proxy; no user request for new hypothesis/route beyond 4 discovered). Project remains in closeout/standby.
+- Updated: research/HANDOFF.md (Cycle 892 completion + Cycle 893 next task), created/updated research/TASK_CYCLE_893.md, updated research/SEARCH_LOG.md.
