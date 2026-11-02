@@ -22,4 +22,4 @@ Access status at handoff (2026-11-01T20:47:34Z, Cycle 798):
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
 
-**COMPLETED (Cycle 799)** — Standby/closeout no-op performed per HANDOFF. No further work was required under current conditions. Access restrictions confirmed persistent (unchanged since Cycle 5; last re-verified 2026-11-01T20:49:02Z via direct curl): Binance HTTP 451 (RESTRICTED_LOCATION), Bybit HTTP 403 (COUNTRY_BLOCKED), Kraken HTTP 200 (sanity check only). Did NOT retry blocked endpoints per HANDOFF.
+**COMPLETED (Cycle 799)** — Standby/closeout no-op performed per HANDOFF. No further work was required under current conditions. Access restrictions confirmed persistent (unchanged since Cycle 5; last re-verified 2026-11-02T14:22:08Z via direct curl): Binance HTTP 451 (RESTRICTED_LOCATION), Bybit HTTP 403 (COUNTRY_BLOCKED), Kraken HTTP 200 (sanity check only). Did NOT retry blocked endpoints per HANDOFF.
