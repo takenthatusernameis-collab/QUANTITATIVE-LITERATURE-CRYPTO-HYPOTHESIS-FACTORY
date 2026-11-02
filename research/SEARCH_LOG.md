@@ -1430,6 +1430,14 @@ No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsific
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_857.md, research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. No performance guarantees or trading recommendations.
 - Updated research/HANDOFF.md (Cycle 857 completion + Cycle 858 next agent task + initial task message), marked research/TASK_CYCLE_857.md complete, created research/TASK_CYCLE_858.md.
 
+## 2026-11-02T05:29:45Z — Cycle 859 (standby/closeout no-op, research-only)
+- Completed prior agent task (Cycle 859 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-02T05:29:45Z):
+  - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+  - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec).
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_859.md, research/TASK_CYCLE_860.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_859.md complete with this entry, created research/TASK_CYCLE_860.md (initial task message), updated research/HANDOFF.md (Cycle 859 completion + Cycle 860 next task + initial task message), and updated research/SEARCH_LOG.md (Cycle 859 entry).
+
 ## 2026-11-02T05:28:16Z — Cycle 858 (standby/closeout no-op, research-only)
 - Completed prior agent task (Cycle 858 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-02T05:28:16Z):
   - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
