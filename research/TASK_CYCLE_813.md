@@ -17,4 +17,6 @@ Access status at handoff (2026-11-02T15:59:57Z, Cycle 812):
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 - Deribit, Hyperliquid, KuCoin, OKX: reachable (used only for venue-substituted replications; not part of original spec)
+
+**COMPLETED (Cycle 813)** — Standby/closeout no-op performed per HANDOFF. Access re-verified via direct curl (2026-11-02T16:04:07Z): Binance HTTP 451 (RESTRICTED_LOCATION), Bybit HTTP 403 (COUNTRY_BLOCKED), Kraken HTTP 200 (sanity check only). Did NOT retry blocked endpoints per HANDOFF. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state.
 "
