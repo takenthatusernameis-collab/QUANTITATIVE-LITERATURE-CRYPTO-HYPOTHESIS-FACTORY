@@ -1,4 +1,4 @@
-TASK — Cycle 1017 (standby/closeout, research-only)
+TASK — Cycle 1018 (standby/closeout, research-only)
 
 Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_1017.md.
 
@@ -16,7 +16,9 @@ Cycle 1016 completed as standby/closeout no-op per HANDOFF. Did NOT retry blocke
 Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1015.md, research/TASK_CYCLE_1016.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state.
 
 
-Your task (Cycle 1017): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1016.md, research/TASK_CYCLE_1017.md, and research/HYPOTHESES.md consistent.
+Cycle 1017 completed as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints.
+
+Your task (Cycle 1018): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1016.md, research/TASK_CYCLE_1017.md, and research/HYPOTHESES.md consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
