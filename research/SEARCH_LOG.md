@@ -2010,3 +2010,14 @@ Cycle 956: Standby/closeout no-op (research-only). Read prior agent task from du
 - Re-verified access: Binance HTTP 451 (RESTRICTED_LOCATION), Bybit HTTP 403 (COUNTRY_BLOCKED), Kraken HTTP 200 (sanity), Deribit HTTP 200, Hyperliquid HTTP 405, KuCoin HTTP 200, OKX HTTP 200. No original-spec data collection possible.
 - Reviewed artifacts for consistency (HANDOFF, TASK_CYCLE_1002, TASK_CYCLE_1003, HYPOTHESES). No empirical validation; no trading recommendations.
 - Updated HANDOFF to Cycle 1004, created TASK_CYCLE_1004.md, marked TASK_CYCLE_1003.md complete with entry.
+
+## 2026-11-03T14:17:01Z — Cycle 1004 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 1004 per HANDOFF) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-03T14:17:01Z):
+  - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec).
+  - Deribit: HTTP 200 (reachable).
+  - Hyperliquid: HTTP 405 (reachable).
+  - KuCoin: HTTP 200 → reachable.
+  - OKX: HTTP 200 (reachable).
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1004.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1004.md complete with this entry, wrote research/TASK_CYCLE_1005.md (initial task message), updated research/HANDOFF.md (Cycle 1004 completion + Cycle 1005 next task + initial task message).
