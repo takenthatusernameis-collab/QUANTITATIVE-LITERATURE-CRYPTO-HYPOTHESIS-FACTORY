@@ -1,3 +1,12 @@
+## 2026-11-03T14:08:59Z — Cycle 1000 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 1000 per HANDOFF) as standby/closeout no-op. Re-verified access: Binance Futures fundingRate → HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history → HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker → HTTP 200 (sanity check only). No data collected. Neither activation condition occurred. Updated research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1000.md, research/TASK_CYCLE_1001.md. Project remains in closeout/standby.
+
+## 2026-11-03T13:16:49Z — Cycle 999 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 999 per HANDOFF) as standby/closeout no-op. Re-verified access: Binance Futures fundingRate → HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history → HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker → HTTP 200 (sanity check only). No data collected. Neither activation condition occurred. Updated research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_999.md, research/TASK_CYCLE_1000.md. Project remains in closeout/standby.
+
+## 2026-11-03T13:16:19Z — Cycle 998 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 998 per HANDOFF) as standby/closeout no-op. Re-verified access: Binance Futures fundingRate → HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history → HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker → HTTP 200 (sanity check only). No data collected. Neither activation condition occurred. Updated research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_998.md, research/TASK_CYCLE_999.md. Project remains in closeout/standby.
+
 ## 2026-11-03T13:14:09Z — Cycle 997 (standby/closeout no-op, research-only)
 - Completed prior agent task from durable handoff (Cycle 997 per HANDOFF) as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-03T13:14:09Z):
   - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
