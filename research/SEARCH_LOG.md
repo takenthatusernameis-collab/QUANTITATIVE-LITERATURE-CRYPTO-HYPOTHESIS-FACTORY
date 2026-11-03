@@ -2111,3 +2111,14 @@ Cycle 956: Standby/closeout no-op (research-only). Read prior agent task from du
   - KuCoin: HTTP 200 → reachable.
   - OKX: HTTP 200 (reachable).
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1008.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1008.md complete with this entry, wrote research/TASK_CYCLE_1009.md (initial task message), updated research/HANDOFF.md (Cycle 1008 completion + Cycle 1009 next task + initial task message), and updated research/SEARCH_LOG.md (Cycle 1008 entry).
+
+## 2026-11-03T18:31:27Z — Cycle 1021 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 1021 per HANDOFF) as standby/closeout no-op per HANDOFF Next Agent Task. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged since Cycle 5: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-03T18:31:27Z):
+  - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec). No funding/perp series collected.
+  - Deribit: HTTP 200 (reachable host, not in spec).
+  - Hyperliquid: HTTP 405 (reachable host, not in spec).
+  - KuCoin: HTTP 200 → reachable (used only for venue-substituted replications; not part of original spec).
+  - OKX: HTTP 200 (reachable host, not in spec).
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1020.md, research/TASK_CYCLE_1021.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1021.md complete with this entry, wrote research/TASK_CYCLE_1022.md (initial task message), updated research/HANDOFF.md (Cycle 1021 completion + Cycle 1022 next task + initial task message).
