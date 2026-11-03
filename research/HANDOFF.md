@@ -19,7 +19,7 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-03T18:46:30Z, Cycle 1025):
+Access status at handoff (2026-11-03T18:47:24Z, Cycle 1026):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
