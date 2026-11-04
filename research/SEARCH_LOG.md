@@ -2729,3 +2729,10 @@ Cycle 1154 (2026-11-04T12:05:48Z): Standby/closeout no-op. Re-verified Binance F
 ---
 2026-11-04T14:12:40Z | Cycle 1171 | Standby/closeout no-op (prior task Cycle 1171). Re-verified Binance HTTP 451 RESTRICTED_LOCATION, Bybit HTTP 403 COUNTRY_BLOCKED, Kraken 200. Updated HANDOFF→Cycle 1172, created TASK_CYCLE_1172.md, marked TASK_CYCLE_1171.md complete.
 2026-11-04T14:14:20Z | Cycle 1172 | Standby/closeout no-op (prior task Cycle 1172). Re-verified Binance HTTP 451 RESTRICTED_LOCATION, Bybit HTTP 403 COUNTRY_BLOCKED, Kraken 200. Updated HANDOFF→Cycle 1173, created TASK_CYCLE_1173.md, marked TASK_CYCLE_1172.md complete.
+
+## 2026-11-04T14:17:30Z — Cycle 1175 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 1175 per HANDOFF) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-04T14:17:30Z):
+  - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 → RESTRICTED_LOCATION.
+  - Bybit V5 funding/history (linear BTCUSDT, limit=1): HTTP 403 → COUNTRY_BLOCKED.
+  - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec).
+- Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1174.md, research/TASK_CYCLE_1175.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1175.md complete with this entry, updated research/HANDOFF.md (Cycle 1175 completion + Cycle 1176 next task + initial task message), wrote research/TASK_CYCLE_1176.md (initial task message for next agent), and updated research/SEARCH_LOG.md (Cycle 1175 entry).
