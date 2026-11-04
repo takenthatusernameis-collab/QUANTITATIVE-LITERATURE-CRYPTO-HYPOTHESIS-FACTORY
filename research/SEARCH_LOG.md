@@ -2646,3 +2646,5 @@ Cycle 1152: Standby/closeout no-op. Access re-verified 2026-11-04T11:22:28Z (Bin
 Cycle 1154: Standby/closeout no-op. Access re-verified 2026-11-04T11:26:09Z (Binance 451 RESTRICTED_LOCATION, Bybit 403 COUNTRY_BLOCKED, Kraken 200). No activation conditions met; no data collection, no validation, no trading recommendations. Updated HANDOFF.md (Cycle 1154→1155), wrote TASK_CYCLE_1155.md.
 
 Cycle 1155: Standby/closeout no-op. Access re-verified 2026-11-04T11:27:01Z (Binance 451 RESTRICTED_LOCATION, Bybit 403 COUNTRY_BLOCKED, Kraken 200). No activation conditions met; no data collection, no validation, no trading recommendations. Updated HANDOFF.md (Cycle 1155→1156), wrote TASK_CYCLE_1156.md.
+---
+Cycle 1154 (2026-11-04T12:05:48Z): Standby/closeout no-op. Re-verified Binance Futures fundingRate HTTP 451 RESTRICTED_LOCATION, Bybit V5 funding/history HTTP 403 COUNTRY_BLOCKED, Kraken spot ticker HTTP 200. No empirical validation, no datasets downloaded, no trading recommendations. Neither activation condition met (no unrestricted network/proxy, no user request for new hypothesis/route). Updated HANDOFF to Cycle 1155, wrote TASK_CYCLE_1155.md.
