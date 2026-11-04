@@ -19,3 +19,5 @@ Access status at handoff (2026-11-04T06:24:11Z, Cycle 1115):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker: HTTP 200 (reachable, not in spec)
+
+Cycle 1116 marked complete (standby/closeout no-op, research-only). Did NOT retry blocked Binance/Bybit endpoints for data collection. Re-verified access via direct curl (2026-11-04T06:27:47Z): Binance Futures fundingRate HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker HTTP 200 (sanity check only, not in spec). Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1115.md, research/TASK_CYCLE_1116.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state.
