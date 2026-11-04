@@ -2685,3 +2685,9 @@ Cycle 1154 (2026-11-04T12:05:48Z): Standby/closeout no-op. Re-verified Binance F
   - Bybit V5 funding/history (linear BTCUSDT, limit=1): HTTP 403 → COUNTRY_BLOCKED.
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec).
 - Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1162.md, research/TASK_CYCLE_1163.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1163.md complete with this entry, updated research/HANDOFF.md (Cycle 1163 completion + Cycle 1164 next task + initial task message), created research/TASK_CYCLE_1164.md (initial task message for next agent), and updated research/SEARCH_LOG.md (Cycle 1163 entry).
+
+### Cycle 1164 (2026-11-04T13:10:27Z) — Standby/closeout no-op
+- Access re-verified (direct curl): Binance fapi/v1/fundingRate BTCUSDT limit=1 → HTTP 451 (RESTRICTED_LOCATION, blocked). Bybit v5/market/funding/history linear BTCUSDT limit=1 → HTTP 403 (COUNTRY_BLOCKED, blocked). Kraken XBTUSD ticker → HTTP 200 (sanity check only, not in spec).
+- Reviewed artifacts for consistency: research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1163.md, research/TASK_CYCLE_1164.md, research/HYPOTHESES.md.
+- No empirical validation; no datasets downloaded; no trading recommendations. Activation conditions not met (no unrestricted network/proxy; no new hypothesis/route request). Closeout state maintained.
+- Marked research/TASK_CYCLE_1164.md complete; updated research/HANDOFF.md to Cycle 1164 completion + Cycle 1165 next task + initial task message; wrote research/TASK_CYCLE_1165.md; updated SEARCH_LOG.md (this entry).
