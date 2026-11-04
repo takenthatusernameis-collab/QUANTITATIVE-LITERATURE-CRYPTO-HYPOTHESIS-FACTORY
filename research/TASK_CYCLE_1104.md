@@ -1,4 +1,4 @@
-## Cycle 1104 — Standby/closeout (research-only)
+## Cycle 1104 — Standby/closeout (research-only) — COMPLETED
 
 TASK — Cycle 1104 (standby/closeout, research-only). Initial task message: research/TASK_CYCLE_1104.md.
 
@@ -8,6 +8,8 @@ What has been done: 4 literature routes explored (Cycles 1-4); H1 (cross-venue f
 
 Cycle 1103 completed as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-04T05:35:52Z): Binance Futures fundingRate HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker HTTP 200 (sanity check only, not in spec). Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1102.md, research/TASK_CYCLE_1103.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state.
 
+Cycle 1104 completed as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-04T05:36:04Z): Binance Futures fundingRate HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker HTTP 200 (sanity check only, not in spec). Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1103.md, research/TASK_CYCLE_1104.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state.
+
 Your task (Cycle 1104): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1103.md, research/TASK_CYCLE_1104.md, and research/HYPOTHESES.md consistent.
 
 Only act if one of these occurs:
@@ -16,7 +18,7 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-04T05:35:52Z, Cycle 1103):
+Access status at handoff (2026-11-04T05:36:04Z, Cycle 1104):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker: HTTP 200 (reachable, not in spec)
