@@ -1,5 +1,7 @@
-## Cycle 1117 — Standby/closeout (research-only)
+## Cycle 1117 — Standby/closeout (research-only) — COMPLETED
 TASK — Cycle 1117 (standby/closeout, research-only). Initial task message: research/TASK_CYCLE_1117.md.
+
+Cycle 1117 completed as standby/closeout no-op per HANDOFF. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-04T07:15:17Z): Binance Futures fundingRate HTTP 451 RESTRICTED_LOCATION; Bybit V5 funding/history HTTP 403 COUNTRY_BLOCKED; Kraken spot ticker HTTP 200 (sanity check only, not in spec). Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1116.md, research/TASK_CYCLE_1117.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state. Marked research/TASK_CYCLE_1117.md complete with this entry, updated research/HANDOFF.md (Cycle 1117 completion + Cycle 1118 next task + initial task message), wrote research/TASK_CYCLE_1118.md (initial task message for next agent), and updated research/SEARCH_LOG.md (Cycle 1117 entry).
 
 Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_1116.md.
 
