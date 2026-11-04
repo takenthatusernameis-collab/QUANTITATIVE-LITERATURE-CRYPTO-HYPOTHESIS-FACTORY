@@ -1,4 +1,4 @@
-## Cycle 1077 — Standby/closeout (research-only)
+## Cycle 1077 — Standby/closeout (research-only) — COMPLETED
 
 TASK — Cycle 1077 (standby/closeout, research-only). Initial task message: research/TASK_CYCLE_1077.md.
 
