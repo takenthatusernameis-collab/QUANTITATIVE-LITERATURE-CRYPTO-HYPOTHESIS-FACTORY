@@ -1,4 +1,4 @@
-## Cycle 1079 — Standby/closeout (research-only)
+## Cycle 1079 — Standby/closeout (research-only) — COMPLETED
 
 TASK — Cycle 1079 (standby/closeout, research-only). Initial task message: research/TASK_CYCLE_1079.md.
 
@@ -18,3 +18,9 @@ Access status at handoff (2026-11-04T01:29:54Z, Cycle 1078):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker: HTTP 200 (reachable, not in spec)
+
+Completed prior agent task from durable handoff (Cycle 1079 per HANDOFF) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-04T01:31:21Z):
+  - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+  - Bybit V5 funding/history (linear BTCUSDT): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec).
+Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1078.md, research/TASK_CYCLE_1079.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1079.md complete with this entry, updated research/HANDOFF.md (Cycle 1079 completion + Cycle 1080 next task + initial task message), wrote research/TASK_CYCLE_1080.md (initial task message for next agent), and updated research/SEARCH_LOG.md (Cycle 1079 entry).
