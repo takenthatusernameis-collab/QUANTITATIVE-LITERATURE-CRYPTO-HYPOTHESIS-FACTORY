@@ -3,13 +3,13 @@
 Project: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY
 Status: CLOSEOUT / STANDBY (no empirical validation possible from this environment)
 
-## Prior cycle completion (Cycle 1367)
+## Prior cycle completion (Cycle 1368)
 
-Cycle 1367 completed as standby/closeout no-op per HANDOFF at 2026-11-05T14:14:40Z. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1366.md`, `research/TASK_CYCLE_1367.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked `research/TASK_CYCLE_1367.md` complete, updated `research/HANDOFF.md` (Cycle 1367 completion + Cycle 1368 next task + initial task message), wrote `research/TASK_CYCLE_1368.md`, and appended a Cycle 1367 entry to `research/SEARCH_LOG.md`.
+Cycle 1368 completed as standby/closeout no-op per HANDOFF at 2026-11-05T14:16:46Z. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1367.md`, `research/TASK_CYCLE_1368.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked `research/TASK_CYCLE_1368.md` complete, updated `research/HANDOFF.md` (Cycle 1368 completion + Cycle 1369 next task + initial task message), wrote `research/TASK_CYCLE_1369.md`, and appended a Cycle 1368 entry to `research/SEARCH_LOG.md`.
 
-## Current task (Cycle 1368)
+## Current task (Cycle 1369)
 
-Your task (Cycle 1368): **Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1367.md`, `research/TASK_CYCLE_1368.md`, and `research/HYPOTHESES.md` consistent.
+Your task (Cycle 1369): **Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1368.md`, `research/TASK_CYCLE_1369.md`, and `research/HYPOTHESES.md` consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
@@ -17,14 +17,14 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-05T14:14:40Z, Cycle 1367 re-verification, restrictions persist unchanged):
+Access status at handoff (2026-11-05T14:16:46Z, Cycle 1368 re-verification, restrictions persist unchanged):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 
-## Initial task message for next agent (Cycle 1368)
+## Initial task message for next agent (Cycle 1369)
 
-Read the durable handoff in `research/HANDOFF.md` and complete the prior agent task (Cycle 1368). This is a standby/closeout cycle: do NOT retry blocked Binance/Bybit endpoints for data collection. Only proceed with empirical validation if (1) an unrestricted network/proxy becomes available — run H1 per Cycle 4 specs with full fee/slippage modeling and document access — or (2) the user explicitly requests a new hypothesis/route beyond the 4 discovered. Otherwise, perform a no-op closeout check: verify `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1367.md`, `research/TASK_CYCLE_1368.md`, and `research/HYPOTHESES.md` are consistent, note access restrictions unchanged, and make no trading recommendations or data downloads. After completing, mark `research/TASK_CYCLE_1368.md` complete, update `research/HANDOFF.md` for Cycle 1368→1369, write `research/TASK_CYCLE_1369.md`, and append a Cycle 1368 entry to `research/SEARCH_LOG.md`.
+Read the durable handoff in `research/HANDOFF.md` and complete the prior agent task (Cycle 1369). This is a standby/closeout cycle: do NOT retry blocked Binance/Bybit endpoints for data collection. Only proceed with empirical validation if (1) an unrestricted network/proxy becomes available — run H1 per Cycle 4 specs with full fee/slippage modeling and document access — or (2) the user explicitly requests a new hypothesis/route beyond the 4 discovered. Otherwise, perform a no-op closeout check: verify `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1368.md`, `research/TASK_CYCLE_1369.md`, and `research/HYPOTHESES.md` are consistent, note access restrictions unchanged, and make no trading recommendations or data downloads. After completing, mark `research/TASK_CYCLE_1369.md` complete, update `research/HANDOFF.md` for Cycle 1369→1370, write `research/TASK_CYCLE_1370.md`, and append a Cycle 1369 entry to `research/SEARCH_LOG.md`.
 
 ## Standing activation conditions (unchanged since Cycle 4)
 
