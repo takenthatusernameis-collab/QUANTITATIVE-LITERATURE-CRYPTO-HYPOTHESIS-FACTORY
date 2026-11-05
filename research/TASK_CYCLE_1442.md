@@ -10,9 +10,5 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-05T23:10Z, Cycle 1441 completion, restrictions persist unchanged):
-  - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
-  - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
-  - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
-
-After completing: mark `research/TASK_CYCLE_1442.md` complete with a brief completion note; update `research/HANDOFF.md` (Cycle 1442 completion + Cycle 1443 next task + initial task message); write `research/TASK_CYCLE_1443.md`; prepend a Cycle 1442 entry to `research/SEARCH_LOG.md`. If activation occurs, record full details and follow the standing protocol.
+---
+Completion note: Cycle 1442 completed as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection. Access restrictions persist unchanged (not re-verified via curl per standing no-retry instruction): Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200 (sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1441.md`, `research/TASK_CYCLE_1442.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state.
