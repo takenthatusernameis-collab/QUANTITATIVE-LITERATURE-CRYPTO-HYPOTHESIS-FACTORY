@@ -10,5 +10,3 @@ Access status at handoff (2026-11-05T00:26:01Z, Cycle 1253, restrictions persist
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
-" filePath">
-./research/TASK_CYCLE_1254.md
