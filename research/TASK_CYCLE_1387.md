@@ -16,3 +16,7 @@ Access status at handoff (2026-11-05T16:18:18Z, Cycle 1387 re-verification, rest
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 
 After completing: mark `research/TASK_CYCLE_1387.md` complete with a brief completion note; update `research/HANDOFF.md` (Cycle 1387 completion + Cycle 1388 next task + initial task message); write `research/TASK_CYCLE_1388.md`; append a Cycle 1387 entry to `research/SEARCH_LOG.md`. If activation occurs, record full details and follow the standing protocol.
+
+## Completion note (Cycle 1387)
+
+Completed at 2026-11-05T16:19:25Z as standby/closeout no-op. Access re-verified unchanged: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. Artifacts consistent; no empirical validation or recommendations.
