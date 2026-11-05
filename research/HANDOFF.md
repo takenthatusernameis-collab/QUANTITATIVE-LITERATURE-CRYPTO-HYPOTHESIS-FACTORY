@@ -3,13 +3,13 @@
 Project: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY
 Status: CLOSEOUT / STANDBY (no empirical validation possible from this environment)
 
-## Prior cycle completion (Cycle 1353)
+## Prior cycle completion (Cycle 1354)
 
-Cycle 1353 completed as standby/closeout no-op per HANDOFF at 2026-11-05T12:21:05Z. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged via direct curl, status only: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1352.md`, `research/TASK_CYCLE_1353.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked `research/TASK_CYCLE_1353.md` complete with a completion note, updated `research/HANDOFF.md` (Cycle 1353 completion + Cycle 1354 next task + initial task message), wrote `research/TASK_CYCLE_1354.md`, and appended a Cycle 1353 entry to `research/SEARCH_LOG.md`.
+Cycle 1354 completed as standby/closeout no-op per HANDOFF at 2026-11-05T12:21:41Z. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1353.md`, `research/TASK_CYCLE_1354.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked `research/TASK_CYCLE_1354.md` complete with a completion note, updated `research/HANDOFF.md` (Cycle 1354 completion + Cycle 1355 next task + initial task message), wrote `research/TASK_CYCLE_1355.md`, and appended a Cycle 1354 entry to `research/SEARCH_LOG.md`.
 
-## Current task (Cycle 1354)
+## Current task (Cycle 1355)
 
-Your task (Cycle 1354): **Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1353.md`, `research/TASK_CYCLE_1354.md`, and `research/HYPOTHESES.md` consistent.
+Your task (Cycle 1355): **Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1354.md`, `research/TASK_CYCLE_1355.md`, and `research/HYPOTHESES.md` consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
@@ -17,14 +17,14 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-05T12:21:05Z, Cycle 1353 re-verification, restrictions persist unchanged):
+Access status at handoff (2026-11-05T12:21:41Z, Cycle 1354 re-verification, restrictions persist unchanged):
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 
-## Initial task message for next agent (Cycle 1354)
+## Initial task message for next agent (Cycle 1355)
 
-Read the durable handoff in `research/HANDOFF.md` and complete the prior agent task (Cycle 1354). This is a standby/closeout cycle: do NOT retry blocked Binance/Bybit endpoints for data collection. Only proceed with empirical validation if (1) an unrestricted network/proxy becomes available — run H1 per Cycle 4 specs with full fee/slippage modeling and document access — or (2) the user explicitly requests a new hypothesis/route beyond the 4 discovered. Otherwise, perform a no-op closeout check: verify `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1353.md`, `research/TASK_CYCLE_1354.md`, and `research/HYPOTHESES.md` are consistent, note access restrictions unchanged, and make no trading recommendations or data downloads. After completing, mark `research/TASK_CYCLE_1354.md` complete, update `research/HANDOFF.md` for Cycle 1354→1355, write `research/TASK_CYCLE_1355.md`, and append a Cycle 1354 entry to `research/SEARCH_LOG.md`.
+Read the durable handoff in `research/HANDOFF.md` and complete the prior agent task (Cycle 1355). This is a standby/closeout cycle: do NOT retry blocked Binance/Bybit endpoints for data collection. Only proceed with empirical validation if (1) an unrestricted network/proxy becomes available — run H1 per Cycle 4 specs with full fee/slippage modeling and document access — or (2) the user explicitly requests a new hypothesis/route beyond the 4 discovered. Otherwise, perform a no-op closeout check: verify `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1354.md`, `research/TASK_CYCLE_1355.md`, and `research/HYPOTHESES.md` are consistent, note access restrictions unchanged, and make no trading recommendations or data downloads. After completing, mark `research/TASK_CYCLE_1355.md` complete, update `research/HANDOFF.md` for Cycle 1355→1356, write `research/TASK_CYCLE_1356.md`, and append a Cycle 1355 entry to `research/SEARCH_LOG.md`.
 
 ## Standing activation conditions (unchanged since Cycle 4)
 
