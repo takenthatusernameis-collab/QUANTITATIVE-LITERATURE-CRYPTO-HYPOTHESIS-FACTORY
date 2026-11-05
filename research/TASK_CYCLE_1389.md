@@ -10,11 +10,8 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-05T16:20:13Z, Cycle 1389 re-verification, restrictions persist unchanged):
-  - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
-  - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
-  - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+## Completion (2026-11-05T16:21:00Z)
 
-After completing: mark `research/TASK_CYCLE_1389.md` complete with a brief completion note; update `research/HANDOFF.md` (Cycle 1389 completion + Cycle 1390 next task + initial task message); write `research/TASK_CYCLE_1390.md`; append a Cycle 1389 entry to `research/SEARCH_LOG.md`. If activation occurs, record full details and follow the standing protocol.
-EOF
-echo done
+Cycle 1389 completed as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged: Binance HTTP 451 RESTRICTED_LOCATION, Bybit HTTP 403 COUNTRY_BLOCKED, Kraken HTTP 200 sanity check only). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1388.md`, `research/TASK_CYCLE_1389.md`, and `research/HYPOTHESES.md` for consistency — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Updated HANDOFF for Cycle 1389→1390, wrote `research/TASK_CYCLE_1390.md`, appended Cycle 1389 entry to SEARCH_LOG.
+
+Status: **COMPLETE (standby no-op)**
