@@ -250,3 +250,10 @@ Cycle 1250 (2026-11-05T01:35:30Z): Standby/closeout no-op. Verified access (Bina
 ## 2026-11-05T05:45:16Z — Cycle 1290 (standby/closeout no-op, research-only)
 - Completed prior agent task from durable handoff (Cycle 1290 per HANDOFF) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access re-verified unchanged via direct curl at 2026-11-05T05:45:16Z: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403, Kraken spot ticker XBTUSD HTTP 200). Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1289.md, research/TASK_CYCLE_1290.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state. Marked research/TASK_CYCLE_1290.md complete with this entry, updated research/HANDOFF.md (Cycle 1290 completion + Cycle 1291 next task + initial task message), wrote research/TASK_CYCLE_1291.md (initial task message for next agent), and updated SEARCH_LOG.
 Cycle 1294 (2026-11-05T06:18:39Z): standby/closeout no-op; access re-verified unchanged (Binance 451, Bybit 403, Kraken 200); no empirical work; neither activation condition occurred.
+
+
+## Cycle 1295 (2026-11-05T06:19:26Z) — standby/closeout no-op
+- Verified access unchanged: Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED); Kraken XBTUSD ticker HTTP 200.
+- Reviewed HANDOFF/SEARCH_LOG/TASK_CYCLE_1294-1295/HYPOTHESES for consistency; no empirical validation/datasets/recommendations.
+- Activation conditions not met (no unrestricted network/proxy; no new hypothesis/route requested). Remained in closeout state.
+- Updated HANDOFF (Cycle 1295 completion + Cycle 1296 task/message), wrote TASK_CYCLE_1296.md, marked TASK_CYCLE_1295.md complete in handoff trail.
