@@ -1,8 +1,8 @@
-# Task Cycle 1312 (initial task for next agent)
+# Task Cycle 1313 (initial task for next agent)
 
-Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_1312.md.
+Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: research/HANDOFF.md. Research log: research/SEARCH_LOG.md. Hypotheses/findings: research/HYPOTHESES.md. Initial task message: research/TASK_CYCLE_1313.md.
 
-Your task (Cycle 1312): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1311.md, research/TASK_CYCLE_1312.md, and research/HYPOTHESES.md consistent.
+Your task (Cycle 1313): Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1312.md, research/TASK_CYCLE_1313.md, and research/HYPOTHESES.md consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
@@ -14,3 +14,5 @@ Access status at handoff (2026-11-05T08:23:26Z, Cycle 1311, restrictions persist
   - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+" filePath">
+/home/runner/work/QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY/QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY/research/TASK_CYCLE_1313.md
