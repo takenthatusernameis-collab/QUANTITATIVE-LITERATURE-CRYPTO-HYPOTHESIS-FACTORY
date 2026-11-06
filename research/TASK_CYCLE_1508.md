@@ -16,3 +16,7 @@ Access status at handoff (2026-11-06T06:42Z, Cycle 1507 completion):
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 
 After completing: mark `research/TASK_CYCLE_1508.md` complete with a brief completion note; update `research/HANDOFF.md` (Cycle 1508 completion + Cycle 1509 next task + initial task message); write `research/TASK_CYCLE_1509.md`; prepend a Cycle 1508 entry to `research/SEARCH_LOG.md`. If activation occurs, record full details and follow the standing protocol.
+
+## Completion note (Cycle 1508)
+
+Cycle 1508 completed as standby/closeout no-op at 2026-11-06T06:44Z. Did NOT retry blocked Binance/Bybit endpoints for data collection (per standing no-retry instruction). Re-verified access via curl: Kraken spot ticker (XBTUSD) HTTP 200 (sanity check only, not in spec); Binance Futures fundingRate HTTP 451 (RESTRICTED_LOCATION, unchanged); Bybit V5 funding/history HTTP 403 (COUNTRY_BLOCKED, unchanged). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1506.md`, `research/TASK_CYCLE_1507.md`, `research/TASK_CYCLE_1508.md`, and `research/HYPOTHESES.md` — all consistent. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains in closeout state. Marked `research/TASK_CYCLE_1508.md` complete; updated `research/HANDOFF.md` (Cycle 1508 completion + Cycle 1509 next task + initial task message); wrote `research/TASK_CYCLE_1509.md`; prepended a Cycle 1508 entry to `research/SEARCH_LOG.md`.
