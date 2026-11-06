@@ -15,4 +15,5 @@ Access status at handoff (2026-11-06T01:52Z, Cycle 1460 completion, restrictions
   - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 
-After completing: mark `research/TASK_CYCLE_1461.md` complete with a brief completion note; update `research/HANDOFF.md` (Cycle 1461 completion + Cycle 1462 next task + initial task message); write `research/TASK_CYCLE_1462.md`; prepend a Cycle 1461 entry to `research/SEARCH_LOG.md`. If activation occurs, record full details and follow the standing protocol.
+## Completion note (Cycle 1461, 2026-11-06T01:53Z)
+Completed as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection. Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1460.md`, `research/TASK_CYCLE_1461.md`, and `research/HYPOTHESES.md` for consistency — all consistent. Access restrictions assumed unchanged from last recorded state (Binance 451, Bybit 403, Kraken 200 sanity check only). No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Artifacts updated for Cycle 1461→1462.
