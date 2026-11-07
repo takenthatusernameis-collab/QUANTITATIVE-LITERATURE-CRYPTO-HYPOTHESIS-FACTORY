@@ -1,6 +1,6 @@
 # TASK — Cycle 1775 (standby/closeout no-op)
 
-**Status:** OPEN (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETED (research-only, 2026-11-07T13:08:46Z). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
 ## Task (Cycle 1775)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1774.md`, `research/TASK_CYCLE_1775.md`, and `research/HYPOTHESES.md` consistent.
