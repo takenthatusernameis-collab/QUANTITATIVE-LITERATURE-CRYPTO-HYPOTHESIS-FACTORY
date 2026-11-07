@@ -1,6 +1,7 @@
 
-## Cycle 1850 (2026-11-07T21:42:38Z)
-Standby/closeout no-op. No endpoints retried. Artifacts kept consistent.
+## Cycle 1851 (2026-11-07T21:43:30Z)
+Standby/closeout no-op. Completed prior task (`research/TASK_CYCLE_1851.md`). Did NOT retry blocked Binance/Bybit endpoints for data collection. Access re-verified (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1851.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Updated `research/HANDOFF.md` (Cycle 1851 completion + Cycle 1852 next task), marked `research/TASK_CYCLE_1851.md` complete, wrote `research/TASK_CYCLE_1852.md`.
+
 ## Cycle 1849 (2026-11-07T21:42:10Z)
 Standby/closeout no-op. No endpoints retried. Artifacts kept consistent.
 ## Cycle 1848 (2026-11-07T21:41:40Z)
