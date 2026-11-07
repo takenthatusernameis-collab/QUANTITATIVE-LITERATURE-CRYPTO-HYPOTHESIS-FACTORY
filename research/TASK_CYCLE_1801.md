@@ -1,6 +1,6 @@
 # TASK — Cycle 1801 (standby/closeout no-op)
 
-**Status:** PENDING (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETED (research-only) — 2026-11-07T16:51:07Z. Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
 ## Task (Cycle 1801)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1800.md`, `research/TASK_CYCLE_1801.md`, and `research/HYPOTHESES.md` consistent.
