@@ -1,6 +1,6 @@
 # TASK — Cycle 1870 (standby/closeout no-op)
 
-**Status:** OPEN (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETE (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
 ## Task (Cycle 1870)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1869.md`, `research/TASK_CYCLE_1870.md`, and `research/HYPOTHESES.md` consistent.
@@ -18,7 +18,8 @@ Cycle 1869 (`research/TASK_CYCLE_1869.md`) completed as standby/closeout no-op. 
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
 
-## Access status at handoff (2026-11-07T23:47:31Z, Cycle 1869 re-verification)
+## Access status at completion (2026-11-07T23:48:33Z, Cycle 1870 re-verification)
 - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
-- Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+## Outcome
+Cycle 1870 completed as standby/closeout no-op. No data collected; no validation executed; neither activation condition occurred. Artifacts kept consistent.
