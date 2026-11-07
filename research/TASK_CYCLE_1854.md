@@ -1,6 +1,9 @@
 # TASK — Cycle 1854 (standby/closeout no-op)
 
-**Status:** OPEN (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETE (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+
+## Completion (2026-11-07T21:47:06Z)
+Completed as standby/closeout no-op. Access re-verified via direct curl (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1853.md`, `research/TASK_CYCLE_1854.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Handoff updated and `research/TASK_CYCLE_1855.md` created for next agent.
 
 ## Task (Cycle 1854)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1853.md`, `research/TASK_CYCLE_1854.md`, and `research/HYPOTHESES.md` consistent.
