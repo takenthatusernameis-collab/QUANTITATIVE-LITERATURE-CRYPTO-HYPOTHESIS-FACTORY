@@ -13,4 +13,6 @@ Key constraints: No performance guarantees or trading recommendations. No datase
 Access status at handoff (2026-11-07T11:59:59Z, Cycle 1762 completion):
 - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
-- Kraken spot ticker (XBTUSD): probed as sanity check only (not in spec)
+- Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+
+Status: COMPLETE (2026-11-07T12:01:58Z).
