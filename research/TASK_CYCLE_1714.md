@@ -1,4 +1,4 @@
-# Task Cycle 1714 (standby/closeout, research-only)
+# Task Cycle 1714 (standby/closeout, research-only) — COMPLETED
 
 Context: QUANTITATIVE-LITERATURE-CRYPTO-HYPOTHESIS-FACTORY is in CLOSEOUT/STANDBY. Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
@@ -14,3 +14,6 @@ Access status at handoff (2026-11-07T06:23:39Z, Cycle 1713 completion):
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+
+## Cycle 1714 completion (2026-11-07T06:24:54Z)
+Standby/closeout no-op executed. Did NOT retry blocked Binance/Bybit endpoints for data collection. Access re-verified via direct curl (sanity checks only; no data collected): Binance 451 (RESTRICTED_LOCATION), Bybit 403 (COUNTRY_BLOCKED), Kraken 200 (sanity only). Reviewed HANDOFF, SEARCH_LOG, TASK_CYCLE_1713/1714, HYPOTHESES — consistent. Neither activation condition occurred (no unrestricted network/proxy; no user request for new hypothesis/route beyond 4). Marked TASK_CYCLE_1714 complete; updated HANDOFF (1714→1715); wrote TASK_CYCLE_1715; appended this Cycle 1714 entry to SEARCH_LOG.
