@@ -14,3 +14,5 @@ Access status at handoff (2026-11-07T10:00:21Z, Cycle 1744 completion):
 - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
+
+Status: COMPLETED (Cycle 1745 standby/closeout no-op executed 2026-11-07). Access re-verified (Binance 451, Bybit 403, Kraken 200). No activation conditions occurred.
