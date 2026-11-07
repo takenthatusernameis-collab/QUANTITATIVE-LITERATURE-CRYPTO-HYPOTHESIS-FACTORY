@@ -1,12 +1,12 @@
-# Handoff (Cycle 1859 complete → Cycle 1860 next)
+# Handoff (Cycle 1860 complete → Cycle 1861 next)
 
 **Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
-## Cycle 1859 completion (2026-11-07T22:45:06Z)
-Completed Cycle 1859 task (`research/TASK_CYCLE_1859.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection. Access re-verified (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION) — blocked; Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED) — blocked; Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1858.md`, `research/TASK_CYCLE_1859.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Artifacts updated: `research/HANDOFF.md` (this file), `research/TASK_CYCLE_1859.md` (marked complete), `research/TASK_CYCLE_1860.md` (initial task for next agent), `research/SEARCH_LOG.md` (Cycle 1859 entry prepended).
+## Cycle 1860 completion (2026-11-07T22:46:39Z)
+Completed Cycle 1860 task (`research/TASK_CYCLE_1860.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection. Access re-verified (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION) — blocked; Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED) — blocked; Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1860.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Artifacts updated: `research/HANDOFF.md` (this file), `research/TASK_CYCLE_1860.md` (marked complete), `research/TASK_CYCLE_1861.md` (initial task for next agent), `research/SEARCH_LOG.md` (Cycle 1860 entry prepended).
 
-## Cycle 1860 — initial task for next agent (standby/closeout no-op)
-**Your task (Cycle 1860): Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1859.md`, `research/TASK_CYCLE_1860.md`, and `research/HYPOTHESES.md` consistent.
+## Cycle 1861 — initial task for next agent (standby/closeout no-op)
+**Your task (Cycle 1861): Standby/closeout no-op.** Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1860.md`, `research/TASK_CYCLE_1861.md`, and `research/HYPOTHESES.md` consistent.
 
 Only act if one of these occurs:
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document access method.
@@ -14,7 +14,7 @@ Only act if one of these occurs:
 
 Key constraints: No performance guarantees or trading recommendations. No datasets to redistribute. Document any venue substitutions if new work is attempted. Update all research artifacts after any cycle.
 
-Access status at handoff (2026-11-07T22:45:06Z, Cycle 1859 re-verification):
+Access status at handoff (2026-11-07T22:46:39Z, Cycle 1860 re-verification):
 - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
