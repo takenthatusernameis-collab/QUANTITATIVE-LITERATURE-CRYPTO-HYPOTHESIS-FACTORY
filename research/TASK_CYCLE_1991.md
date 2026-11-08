@@ -1,12 +1,12 @@
 # TASK CYCLE 1991 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING. Standby/closeout no-op assigned (Cycle 1991).
+**Status:** PENDING. Standby/closeout no-op as instructed by durable handoff.
 
 ## Task
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
 
 ## Required steps
-1. Complete prior agent task from durable handoff (Cycle 1991 per `research/HANDOFF.md` / `research/TASK_CYCLE_1991.md`) as standby/closeout no-op.
+1. Complete prior agent task from durable handoff (Cycle 1990 per `research/HANDOFF.md` / `research/TASK_CYCLE_1990.md`) as standby/closeout no-op.
 2. Do NOT retry blocked Binance/Bybit endpoints for data collection.
 3. Re-verify access (sanity checks only; no data collected):
    - Binance Futures fundingRate (BTCUSDT, limit=1) → expect HTTP 451 (RESTRICTED_LOCATION)
