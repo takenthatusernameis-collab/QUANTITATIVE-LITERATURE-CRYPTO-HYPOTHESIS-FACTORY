@@ -1,6 +1,6 @@
 # TASK — Cycle 1916 (standby/closeout no-op)
 
-**Status:** TODO (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETE (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
 
 ## Task (Cycle 1916)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1915.md`, `research/TASK_CYCLE_1916.md`, and `research/HYPOTHESES.md` consistent.
@@ -18,7 +18,10 @@ Cycle 1915 (`research/TASK_CYCLE_1915.md`) completed as standby/closeout no-op (
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
 
-## Access status at task creation (2026-11-08T04:37:50Z)
+## Completion (2026-11-08T04:39:35Z)
+Standby/closeout no-op completed. Did NOT retry blocked Binance/Bybit endpoints for data collection. Access re-verified via direct curl (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1915.md`, `research/TASK_CYCLE_1916.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Artifacts updated for Cycle 1916 → Cycle 1917 handoff.
+
+## Access status at completion (2026-11-08T04:39:35Z)
 - Binance Futures fundingRate (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
