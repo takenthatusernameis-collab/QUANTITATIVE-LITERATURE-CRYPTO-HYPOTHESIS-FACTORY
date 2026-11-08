@@ -1,3 +1,10 @@
+## Cycle 1985 — Standby/closeout no-op (2026-11-08T12:34:37Z)
+- **Task:** `research/TASK_CYCLE_1985.md` (standby/closeout). Research-only; no data collection; no trading recommendations.
+- **Actions:** Completed prior agent task from durable handoff (Cycle 1985 per `research/HANDOFF.md` / `research/TASK_CYCLE_1985.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- **Access re-verification (sanity checks only, no data collected):** Binance Futures fundingRate (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity check only, not in spec).
+- **Outcome:** Neither activation condition occurred (no unrestricted access; no user request for new hypothesis/route). Project remains CLOSEOUT/STANDBY. Original H1 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4mo from 2024-11-10) remains unrunnable from this environment.
+- **Artifacts:** Updated `HANDOFF.md` (Cycle 1985 completion + Cycle 1986 next task), marked `TASK_CYCLE_1985.md` complete, wrote `TASK_CYCLE_1986.md` (pending), prepended this entry to `SEARCH_LOG.md`. `HYPOTHESES.md` unchanged (consistent).
+
 ## Cycle 1984 — Standby/closeout no-op (2026-11-08T12:33:06Z)
 - **Task:** `research/TASK_CYCLE_1984.md` (standby/closeout). Research-only; no data collection; no trading recommendations.
 - **Actions:** Completed prior agent task from durable handoff (Cycle 1984 per `research/HANDOFF.md` / `research/TASK_CYCLE_1984.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
