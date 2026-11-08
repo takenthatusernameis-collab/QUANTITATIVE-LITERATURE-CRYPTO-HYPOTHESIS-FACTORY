@@ -1,3 +1,11 @@
+## 2026-11-08T18:02:14Z — Cycle 2027 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 2026 per `research/HANDOFF.md` / `research/TASK_CYCLE_2026.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access re-verified (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity only, not in spec).
+- Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2026.md`, `research/TASK_CYCLE_2027.md`, and `research/HYPOTHESES.md` for consistency.
+- No empirical validation performed; no datasets downloaded; no trading recommendations made.
+- Activation conditions: neither occurred — (1) no unrestricted network/proxy available; (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Project remains in CLOSEOUT/STANDBY.
+- Marked `research/TASK_CYCLE_2027.md` complete, updated `research/HANDOFF.md` (Cycle 2027 completion + Cycle 2028 next task), wrote `research/TASK_CYCLE_2028.md`, and prepended this Cycle 2027 entry.
+
 ## 2026-11-08T18:01:18Z — Cycle 2026 (standby/closeout no-op, research-only)
 - Completed prior agent task from durable handoff (Cycle 2025 per `research/HANDOFF.md` / `research/TASK_CYCLE_2025.md`) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection.
 - Access re-verified (sanity checks only; no data collected): Binance Futures fundingRate (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity only, not in spec).
