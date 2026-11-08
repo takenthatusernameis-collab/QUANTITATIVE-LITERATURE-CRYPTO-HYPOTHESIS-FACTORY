@@ -1,6 +1,6 @@
 # TASK CYCLE 1992 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING. Standby/closeout no-op as instructed by durable handoff.
+**Status:** COMPLETE. Standby/closeout no-op executed (2026-11-08T13:55:07Z).
 
 ## Task
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
@@ -9,9 +9,9 @@ Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data co
 1. Complete prior agent task from durable handoff (Cycle 1991 per `research/HANDOFF.md` / `research/TASK_CYCLE_1991.md`) as standby/closeout no-op.
 2. Do NOT retry blocked Binance/Bybit endpoints for data collection.
 3. Re-verify access (sanity checks only; no data collected):
-   - Binance Futures fundingRate (BTCUSDT, limit=1) → expect HTTP 451 (RESTRICTED_LOCATION)
-   - Bybit V5 funding/history (linear, BTCUSDT, limit=1) → expect HTTP 403 (COUNTRY_BLOCKED)
-   - Kraken spot ticker (XBTUSD) → expect HTTP 200 (reachable, sanity only, not in spec)
+   - Binance Futures fundingRate (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION)
+   - Bybit V5 funding/history (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED)
+   - Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity only, not in spec)
 4. Review `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1991.md`, `research/TASK_CYCLE_1992.md`, and `research/HYPOTHESES.md` for consistency.
 5. No empirical validation; no datasets downloaded; no trading recommendations.
 6. Check activation conditions; if neither occurs, remain in closeout.
