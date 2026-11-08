@@ -1,6 +1,17 @@
 # TASK — Cycle 1953 (standby/closeout no-op)
 
-**Status:** PENDING. Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+**Status:** COMPLETED (2026-11-08T09:24:07Z) (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`.
+
+## Completed (2026-11-08T09:24:07Z)
+Standby/closeout no-op executed. Did NOT retry blocked Binance/Bybit endpoints for data collection. Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1952.md`, `research/TASK_CYCLE_1953.md`, and `research/HYPOTHESES.md` for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred.
+
+Project remains in CLOSEOUT/STANDBY.
+
+## Key constraints (maintained)
+- No performance guarantees or trading recommendations.
+- No datasets to redistribute.
+- No new hypothesis/route without explicit user request.
+- Original H1 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) unrunnable from this environment.
 
 ## Task (Cycle 1953)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_1952.md`, `research/TASK_CYCLE_1953.md`, and `research/HYPOTHESES.md` consistent.
