@@ -1,6 +1,6 @@
 # TASK CYCLE 2006 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING.
+**Status:** COMPLETE.
 
 ## Task
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
