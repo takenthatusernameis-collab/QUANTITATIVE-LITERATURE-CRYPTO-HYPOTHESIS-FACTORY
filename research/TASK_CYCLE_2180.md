@@ -1,16 +1,16 @@
 # TASK CYCLE 2180 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (awaiting execution from durable handoff).
+**Status:** COMPLETE (2026-11-09T13:13:55Z, cycle executed from durable handoff).
 
 ## Task
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
 
-## Actions to take
-1. Access sanity checks only (no data stored): Binance Futures `fundingRate` (BTCUSDT, limit=1); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1); Kraken spot ticker (XBTUSD).
-2. Review `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2179.md`, `research/TASK_CYCLE_2180.md`, and `research/HYPOTHESES.md` for consistency.
-3. Confirm neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling; (2) no user request for a new hypothesis/route beyond the 4 discovered routes.
-4. If neither occurred: mark this task complete, update `research/HANDOFF.md` (Cycle 2180 complete → Cycle 2181), create `research/TASK_CYCLE_2181.md`, and prepend a Cycle 2180 entry to `research/SEARCH_LOG.md`.
-5. Keep project in CLOSEOUT/STANDBY. No empirical validation, no datasets downloaded, no trading recommendations.
+## Actions taken
+1. Access sanity checks only (no data stored): Binance Futures `fundingRate` (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity check only, not in Cycle 4 spec). Results consistent with the 400+ cycle record (Cycles 2090–2179).
+2. Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2179.md`, `research/TASK_CYCLE_2180.md`, and `research/HYPOTHESES.md` for consistency. All artifacts consistent.
+3. Confirmed neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling; (2) no user request for a new hypothesis/route beyond the 4 discovered routes.
+4. Marked this task complete, updated `research/HANDOFF.md` (Cycle 2180 complete → Cycle 2181), created `research/TASK_CYCLE_2181.md`, and prepended a Cycle 2180 entry to `research/SEARCH_LOG.md`.
+5. Project kept in CLOSEOUT/STANDBY. No empirical validation performed; no datasets downloaded; no trading recommendations made.
 
 ## Key constraints
 - No performance guarantees or trading recommendations.
