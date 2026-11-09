@@ -321,3 +321,10 @@ Re-verified access from current environment per HANDOFF Cycle 2100 (sanity check
 - Bybit V5 (`https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1`): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
 - Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
 No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Neither activation condition occurred. No trading recommendations made.
+
+## Cycle 2181 — Access re-confirmation (2026-11-09T13:16:12Z, blocked)
+Re-verified access from current environment per HANDOFF Cycle 2181 (sanity checks only; no data stored):
+- Binance Futures (`https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1`): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 (`https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1`): HTTP 403 via CloudFront → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
+No datasets downloaded; no timestamp alignment/OOS/baselines/cost model/falsification tests executed. H1/H2 remain untested on original spec. Neither activation condition occurred. No trading recommendations made.
