@@ -1,6 +1,6 @@
 # TASK CYCLE 2261 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (research-only). Prior agent task from durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2260.md`) executed as standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Research-only scope maintained.
+**Status:** COMPLETE (2026-11-09T23:28:00Z, research-only). Prior agent task from durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2260.md`) executed as standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Research-only scope maintained.
 
 ## Completed actions
 1. Access sanity checks only (no data stored, 2026-11-09T23:25:56Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec).
