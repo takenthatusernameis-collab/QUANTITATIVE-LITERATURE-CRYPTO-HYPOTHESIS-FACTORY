@@ -1,18 +1,18 @@
 # TASK CYCLE 2114 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING.
+**Status:** COMPLETE (2026-11-09T03:46:03Z).
 
 ## Task
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
 
-## Steps
-1. Do NOT call Binance/Bybit APIs for data collection. Only optional sanity checks if needed (record HTTP status; no data stored).
-2. Review `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2113.md`, `research/TASK_CYCLE_2114.md`, and `research/HYPOTHESES.md` for consistency.
-3. Confirm neither activation condition occurred:
-   - (1) Unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling.
-   - (2) User explicitly requests a new hypothesis/route beyond the 4 discovered routes.
-4. If neither occurred: mark this task complete, update `research/HANDOFF.md` (Cycle 2114 complete → Cycle 2115), create `research/TASK_CYCLE_2115.md`, and prepend a Cycle 2114 entry to `research/SEARCH_LOG.md`.
-5. Keep project in CLOSEOUT/STANDBY. No empirical validation, no datasets downloaded, no trading recommendations.
+## Steps completed
+1. Did NOT call Binance/Bybit APIs for data collection. Sanity checks only (no data stored): Binance Futures fundingRate (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 funding/history (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec).
+2. Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2113.md`, `research/TASK_CYCLE_2114.md`, and `research/HYPOTHESES.md` for consistency.
+3. Confirmed neither activation condition occurred:
+   - (1) Unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. **No.**
+   - (2) User explicitly requests a new hypothesis/route beyond the 4 discovered routes. **No.**
+4. Marked this task complete, updated `research/HANDOFF.md` (Cycle 2114 complete → Cycle 2115), created `research/TASK_CYCLE_2115.md`, and prepended a Cycle 2114 entry to `research/SEARCH_LOG.md`.
+5. Project remains in CLOSEOUT/STANDBY. No empirical validation, no datasets downloaded, no trading recommendations.
 
 ## Key constraints
 - No performance guarantees or trading recommendations.
