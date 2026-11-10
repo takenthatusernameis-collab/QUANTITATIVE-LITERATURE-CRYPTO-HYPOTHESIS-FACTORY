@@ -1,6 +1,6 @@
 # TASK CYCLE 2347 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (handoff written 2026-11-10T12:53:35Z, research-only). Prior agent task from durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2346.md`) to be executed as standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Research-only scope maintained.
+**Status:** COMPLETE (2026-11-10T12:54:37Z, research-only). Standby/closeout no-op executed per durable handoff. Access sanity checks: Binance 451, Bybit 403, Kraken 200. No data collected. No activation condition occurred. Prior agent task from durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2346.md`) to be executed as standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Research-only scope maintained.
 
 ## Context
 Project remains in CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-10T12:53:35Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
