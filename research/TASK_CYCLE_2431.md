@@ -1,9 +1,9 @@
 # TASK CYCLE 2431 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (research-only, standby/closeout no-op per durable handoff `research/HANDOFF.md`).
+**Status:** COMPLETE (research-only, standby/closeout no-op executed 2026-11-11T01:19:11Z per durable handoff `research/HANDOFF.md`).
 
 ## Context
-Project remains in CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-11T01:17:08Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
+Project remains in CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) is unrunnable from this environment — Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-11T01:19:11Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made.
 
 ## Your task (Cycle 2431)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2430.md`, `research/TASK_CYCLE_2431.md`, and `research/HYPOTHESES.md` consistent.
@@ -21,6 +21,17 @@ Access sanity checks only (no data stored): Binance Futures `fundingRate` (BTCUS
 - Update all research artifacts after the cycle.
 
 ## Access status at handoff (2026-11-11T01:17:08Z, Cycle 2430)
+- Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
+- Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
+- Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
+
+## Cycle 2431 results (2026-11-11T01:19:11Z)
+- Access sanity checks repeated (no data stored): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). No datasets downloaded; no timestamps aligned; no OOS split; no baselines/cost model; no falsification tests executed.
+- Neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling; (2) no user request for a new hypothesis/route beyond the 4 discovered routes.
+- No empirical validation performed; no trading recommendations made.
+- Marked `research/TASK_CYCLE_2431.md` complete; updated `research/HANDOFF.md` (Cycle 2431 complete → Cycle 2432); created `research/TASK_CYCLE_2432.md`; prepended Cycle 2431 entry to `research/SEARCH_LOG.md`.
+
+## Access status (re-confirmed 2026-11-11T01:19:11Z, Cycle 2431)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
