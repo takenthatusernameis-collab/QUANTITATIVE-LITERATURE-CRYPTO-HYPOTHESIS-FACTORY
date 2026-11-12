@@ -1,6 +1,6 @@
 # TASK CYCLE 2720 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (awaiting execution). Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2720)").
+**Status:** COMPLETE (executed 2026-11-12T17:44:55Z). Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2720)").
 
 **Read this first:** The prior agent completed Cycle 2719 (`research/TASK_CYCLE_2719.md`). Your job is to do the same bounded standby cycle for Cycle 2720 and then advance the handoff to Cycle 2721. This is a research-only repository: do NOT run backtests, download datasets, or produce performance numbers.
 
@@ -50,3 +50,9 @@
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
+
+## Outcome (2026-11-12T17:44:55Z)
+- **Access sanity checks (no data stored):** Binance Futures `fundingRate` (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) → HTTP 200 (reachable, sanity check only, not in spec). Access status unchanged from Cycle 2719.
+- **Consistency review:** `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2719.md`, `research/TASK_CYCLE_2720.md`, and `research/HYPOTHESES.md` reviewed. No contradictions in access labels, cycle numbering, or conclusions.
+- **Cycle closed:** Marked COMPLETE, updated `research/HANDOFF.md` (Cycle 2720 complete → Cycle 2721), created `research/TASK_CYCLE_2721.md`, prepended Cycle 2720 entry to `research/SEARCH_LOG.md`.
+- **Scope:** No empirical validation, no datasets downloaded, no trading recommendations made. Neither activation condition occurred. Project remains in CLOSEOUT/STANDBY.
