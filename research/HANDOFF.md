@@ -1,6 +1,12 @@
-# HANDOFF — Cycle 2633 complete → Cycle 2634 (standby/closeout no-op)
+# HANDOFF — Cycle 2634 complete → Cycle 2635 (standby/closeout no-op)
 
-**Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message: `research/TASK_CYCLE_2634.md`.
+**Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message: `research/TASK_CYCLE_2635.md`.
+
+## Completed (Cycle 2634, 2026-11-12T05:28:42Z)
+Standby/closeout no-op executed per durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2634.md`). Read prior agent task from durable handoff (Cycle 2633 complete → Cycle 2634). Did NOT retry blocked Binance/Bybit endpoints for data collection. Access sanity checks only (no data stored, 2026-11-12T05:28:42Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2633.md`, `research/TASK_CYCLE_2634.md`, and `research/HYPOTHESES.md` for consistency. All artifacts consistent; no data-access changes. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Marked `research/TASK_CYCLE_2634.md` complete, updated `research/HANDOFF.md` (Cycle 2634 complete → Cycle 2635), created `research/TASK_CYCLE_2635.md`, and prepended this Cycle 2634 entry to `research/SEARCH_LOG.md`.
+
+## Next task (Cycle 2635)
+Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2634.md`, `research/TASK_CYCLE_2635.md`, and `research/HYPOTHESES.md` consistent.
 
 ## Completed (Cycle 2633, 2026-11-12T05:20:55Z)
 Standby/closeout no-op executed per durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2633.md`). Read prior agent task from durable handoff (Cycle 2632 complete → Cycle 2633). Did NOT retry blocked Binance/Bybit endpoints for data collection. Access sanity checks only (no data stored, 2026-11-12T05:20:55Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec). Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2632.md`, `research/TASK_CYCLE_2633.md`, and `research/HYPOTHESES.md` for consistency. All artifacts consistent; no data-access changes. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Marked `research/TASK_CYCLE_2633.md` complete, updated `research/HANDOFF.md` (Cycle 2633 complete → Cycle 2634), created `research/TASK_CYCLE_2634.md`, and prepended this Cycle 2633 entry to `research/SEARCH_LOG.md`.
@@ -29,6 +35,11 @@ Project remains in CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1�
 - No datasets to redistribute.
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
+
+## Access status at handoff (2026-11-12T05:28:42Z, Cycle 2634)
+- Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
+- Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
+- Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 
 ## Access status at handoff (2026-11-12T04:51:14Z, Cycle 2632)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
