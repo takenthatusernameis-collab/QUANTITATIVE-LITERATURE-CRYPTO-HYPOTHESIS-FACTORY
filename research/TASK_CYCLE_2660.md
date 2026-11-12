@@ -1,6 +1,6 @@
 # TASK CYCLE 2660 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING. Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2660)"). Read prior agent task from durable handoff (Cycle 2659 complete → Cycle 2660). Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
+**Status:** COMPLETE. Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2660)"). Read prior agent task from durable handoff (Cycle 2659 complete → Cycle 2660). Did NOT retry blocked Binance/Bybit endpoints for data collection. Maintained research-only scope.
 
 ## Your task (Cycle 2660)
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2659.md`, `research/TASK_CYCLE_2660.md`, and `research/HYPOTHESES.md` consistent.
