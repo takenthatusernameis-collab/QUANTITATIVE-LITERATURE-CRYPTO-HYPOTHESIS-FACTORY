@@ -1,6 +1,6 @@
 # TASK CYCLE 2643 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING. Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2643)"). Read prior agent task from durable handoff (Cycle 2642 complete → Cycle 2643). Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
+**Status:** COMPLETE (2026-11-12T06:27:59Z). Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2643)"). Read prior agent task from durable handoff (Cycle 2642 complete → Cycle 2643). Did NOT retry blocked Binance/Bybit endpoints for data collection. Maintained research-only scope.
 
 ## Execution
 - Access sanity checks only (no data stored):
@@ -31,6 +31,11 @@ Access sanity checks only (no data stored): Binance Futures `fundingRate` (BTCUS
 - Update all research artifacts after the cycle.
 
 ## Access status at handoff (2026-11-12T06:26:14Z, Cycle 2642)
+- Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
+- Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
+- Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
+
+## Access status at completion (2026-11-12T06:27:59Z, Cycle 2643)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
