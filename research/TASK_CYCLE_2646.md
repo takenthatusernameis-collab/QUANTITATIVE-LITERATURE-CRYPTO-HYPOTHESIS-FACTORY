@@ -1,12 +1,12 @@
 # TASK CYCLE 2646 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING. Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2646)"). Read prior agent task from durable handoff (Cycle 2645 complete → Cycle 2646). Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
+**Status:** COMPLETE. Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2646)"). Read prior agent task from durable handoff (Cycle 2645 complete → Cycle 2646). Did NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope.
 
 ## Execution
 - Access sanity checks only (no data stored):
-  - Binance Futures `fundingRate` (BTCUSDT, limit=1): expected HTTP 451 (RESTRICTED_LOCATION) — blocked
-  - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): expected HTTP 403 (COUNTRY_BLOCKED) — blocked
-  - Kraken spot ticker (XBTUSD): expected HTTP 200 (reachable, sanity check only, not in spec)
+  - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked
+  - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked
+  - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in spec)
 - Review `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2645.md`, `research/TASK_CYCLE_2646.md`, and `research/HYPOTHESES.md` for consistency.
 - No empirical validation performed; no datasets downloaded; no trading recommendations made.
 - Neither activation condition expected: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Project remains in CLOSEOUT/STANDBY.
