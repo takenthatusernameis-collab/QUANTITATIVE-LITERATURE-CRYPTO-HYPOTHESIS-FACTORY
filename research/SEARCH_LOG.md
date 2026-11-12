@@ -2,6 +2,13 @@
 
 (append newest entries at top)
 
+## 2026-11-12T09:26:27Z — Cycle 2664 (standby/closeout no-op, research-only)
+- Completed prior agent task from durable handoff (Cycle 2664 per `research/HANDOFF.md` / `research/TASK_CYCLE_2664.md`) as standby/closeout no-op. Read prior agent task from durable handoff (Cycle 2663 complete → Cycle 2664). Did NOT retry blocked Binance/Bybit endpoints for data collection.
+- Access sanity checks only (no data stored, 2026-11-12T09:26:27Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec).
+- Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2663.md`, `research/TASK_CYCLE_2664.md`, and `research/HYPOTHESES.md` for consistency. All artifacts consistent; no data-access changes. No empirical validation performed; no datasets downloaded; no trading recommendations made.
+- Neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Project remains in CLOSEOUT/STANDBY.
+- Marked `research/TASK_CYCLE_2664.md` complete, updated `research/HANDOFF.md` (Cycle 2664 complete → Cycle 2665), ensured `research/TASK_CYCLE_2665.md` is the initial task message, and prepended this Cycle 2664 entry to `research/SEARCH_LOG.md`.
+
 ## 2026-11-12T08:41:46Z — Cycle 2663 (standby/closeout no-op, research-only)
 - Completed prior agent task from durable handoff (Cycle 2663 per `research/HANDOFF.md` / `research/TASK_CYCLE_2663.md`) as standby/closeout no-op. Read prior agent task from durable handoff (Cycle 2662 complete → Cycle 2663). Did NOT retry blocked Binance/Bybit endpoints for data collection.
 - Access sanity checks only (no data stored, 2026-11-12T08:41:46Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 (reachable, sanity check only, not in spec).
