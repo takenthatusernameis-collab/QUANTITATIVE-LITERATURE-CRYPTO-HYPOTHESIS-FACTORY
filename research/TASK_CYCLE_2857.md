@@ -1,6 +1,6 @@
 # TASK CYCLE 2857 — Standby/Closeout No-Op (research-only)
 
-**Status:** COMPLETE (2026-11-13T16:42:19Z)
+**Status:** COMPLETE (2026-11-13T17:19:46Z)
 
 **Read this first:** The prior agent completed Cycle 2856 (`research/TASK_CYCLE_2856.md`). Your job is to perform the same bounded standby cycle for Cycle 2857 and then advance the handoff to Cycle 2858. This is a research-only repository: do NOT run backtests, download datasets, or produce performance numbers.
 
@@ -51,7 +51,7 @@
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 
-## Outcome (2026-11-13T16:42:19Z)
+## Outcome (2026-11-13T17:19:46Z)
 - **Access sanity checks only (no data stored, single lightweight probe per endpoint):**
   - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked.
   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked.
