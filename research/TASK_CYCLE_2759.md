@@ -1,6 +1,6 @@
 # TASK CYCLE 2759 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (awaiting execution). Standby/closeout no-op per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2759)").
+**Status:** COMPLETE (2026-11-13T01:28:58Z). Standby/closeout no-op executed per durable handoff (`research/HANDOFF.md` → "Next task (Cycle 2759)"). See OUTCOME at end of file.
 
 **Read this first:** The prior agent completed Cycle 2758 (`research/TASK_CYCLE_2758.md`). Your job is to do the same bounded standby cycle for Cycle 2759 and then advance the handoff to Cycle 2760. This is a research-only repository: do NOT run backtests, download datasets, or produce performance numbers.
 
@@ -50,5 +50,33 @@
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
+
+(End of file)---
+
+## OUTCOME — Cycle 2759 COMPLETE (2026-11-13T01:28:58Z)
+
+**Result:** Standby/closeout no-op executed. Access status unchanged from Cycle 2758. No out-of-scope work performed.
+
+### Access sanity checks (no data stored, 2026-11-13T01:28:58Z)
+| Endpoint | URL | HTTP status | Label |
+|---|---|---|---|
+| Binance Futures `fundingRate` | `https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1` | 451 | RESTRICTED_LOCATION (blocked) |
+| Bybit V5 `funding/history` | `https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1` | 403 | COUNTRY_BLOCKED (CloudFront geo-block; blocked) |
+| Kraken spot `Ticker` | `https://api.kraken.com/0/public/Ticker?pair=XBTUSD` | 200 | REACHABLE (sanity check only, not in Cycle 4 spec) |
+
+Single lightweight probe per endpoint via `curl --max-time 15` with output discarded (`-o /dev/null`); only the HTTP status code was recorded. No retries, no bypass attempts, no datasets persisted.
+
+### Consistency review
+Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2758.md`, `research/TASK_CYCLE_2759.md`, and `research/HYPOTHESES.md`.
+- Access labels consistent (Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE/not in spec).
+- Cycle numbering consistent (2758 complete → 2759 → 2760 next).
+- Conclusions consistent (project in CLOSEOUT/STANDBY; no empirical validation on original spec; no trading recommendations).
+- `research/HYPOTHESES.md` left unmodified (no factual inconsistency found in current entries; only historical/cosmetic artifacts remain in pre-2007 entries — empty parentheses, duplicated Cycle 346 headings, out-of-order historical cycle numbers — which do not contradict current access labels or conclusions).
+- Historical note (outside the five-file review set, left unchanged to avoid rewriting the record): `TASK_CYCLE_2730.md`, `TASK_CYCLE_2753.md`, and `TASK_CYCLE_2754.md` carry a stale `PENDING` header while their bodies end with a COMPLETE outcome. This does not affect current cycle numbering or conclusions.
+
+### Activation conditions
+Neither occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes.
+
+**Status:** COMPLETE.
 
 (End of file)
