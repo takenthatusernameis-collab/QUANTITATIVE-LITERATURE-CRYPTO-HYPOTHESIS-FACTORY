@@ -52,3 +52,30 @@
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 
 (End of file)
+
+---
+
+## OUTCOME — Cycle 2753 COMPLETE (2026-11-13T00:30:13Z)
+
+**Result:** Standby/closeout no-op executed. Access status unchanged from Cycle 2752. No out-of-scope work performed.
+
+### Access sanity checks (no data stored, 2026-11-13T00:30:13Z)
+| Endpoint | URL | HTTP status | Label |
+|---|---|---|---|
+| Binance Futures `fundingRate` | `https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&limit=1` | 451 | RESTRICTED_LOCATION (blocked) |
+| Bybit V5 `funding/history` | `https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&limit=1` | 403 | COUNTRY_BLOCKED (CloudFront geo-block; blocked) |
+| Kraken spot `Ticker` | `https://api.kraken.com/0/public/Ticker?pair=XBTUSD` | 200 | REACHABLE (sanity check only, not in Cycle 4 spec) |
+
+Single lightweight probe per endpoint; no retries, no bypass attempts, no datasets persisted.
+
+### Consistency review
+Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2752.md`, `research/TASK_CYCLE_2753.md`, and `research/HYPOTHESES.md`.
+- Access labels consistent (Binance=RESTRICTED_LOCATION, Bybit=COUNTRY_BLOCKED, Kraken=REACHABLE/not in spec).
+- Cycle numbering consistent (2752 complete → 2753 → 2754 next).
+- Conclusions consistent (project in CLOSEOUT/STANDBY; no empirical validation on original spec; no trading recommendations).
+- `research/HYPOTHESES.md` left unmodified (no factual inconsistency found).
+
+### Activation conditions
+Neither occurred: (1) no unrestricted network/proxy for H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes.
+
+**Status:** COMPLETE.
