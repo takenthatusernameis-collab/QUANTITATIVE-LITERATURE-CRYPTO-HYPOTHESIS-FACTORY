@@ -1,6 +1,6 @@
 # TASK CYCLE 2870 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING
+**Status:** COMPLETE — 2026-11-13T19:23:00Z
 
 **Read this first:** The prior agent completed Cycle 2869 (`research/TASK_CYCLE_2869.md`). Your job is to perform the same bounded standby cycle for Cycle 2870 and then advance the handoff to Cycle 2871. This is a research-only repository: do NOT run backtests, download datasets, or produce performance numbers.
 
@@ -50,3 +50,16 @@
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
+## Outcome (Cycle 2870, 2026-11-13T19:23:00Z)
+Standby/closeout no-op completed per durable handoff (`research/HANDOFF.md`, Cycle 2869 complete → Cycle 2870). Read the prior agent task from durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_2869.md` → Cycle 2870). Did NOT retry blocked Binance/Bybit endpoints for data collection.
+
+Access sanity checks only (single lightweight probe per endpoint, no data stored, 2026-11-13T19:22:57Z):
+- Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 → RESTRICTED_LOCATION (blocked).
+- Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 → COUNTRY_BLOCKED (blocked).
+- Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec).
+
+Access status unchanged from Cycle 2869. Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2869.md`, `research/TASK_CYCLE_2870.md`, and `research/HYPOTHESES.md`. `research/TASK_CYCLE_2869.md` Status confirmed COMPLETE (2026-11-13T18:29:25Z). Artifacts consistent: access labels (Binance 451 / Bybit 403 / Kraken 200), cycle numbering, and conclusions match across files. `research/HYPOTHESES.md` left unmodified (no factual inconsistency found).
+
+Neither activation condition occurred: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h, OOS ≥4 months from 2024-11-10); (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Project remains in CLOSEOUT/STANDBY.
+
+No empirical validation performed; no datasets downloaded or stored; no trading recommendations made. Marked this task COMPLETE, advanced `research/HANDOFF.md` (Cycle 2870 complete → Cycle 2871), created `research/TASK_CYCLE_2871.md`, and prepended the Cycle 2870 entry to `research/SEARCH_LOG.md`.
