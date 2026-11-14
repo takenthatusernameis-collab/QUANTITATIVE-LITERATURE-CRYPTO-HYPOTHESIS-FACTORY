@@ -1,7 +1,7 @@
 ## 2026-11-14T06:06:44Z — Cycles 2842–2923 (consolidated standby/closeout no-op, research-only)
 - **Earliest check:** 2026-11-13T13:16:49Z (Cycle 2842)
-- **Last checked:** 2026-11-14T06:06:44Z (Cycle 2923)
-- **Cycles covered:** 2842 through 2923 (82 consecutive standby cycles)
+- **Last checked:** 2026-11-14T06:12:57Z (Cycle 2924)
+- **Cycles covered:** 2842 through 2924 (83 consecutive standby cycles)
 - **Access status (unchanged throughout):**
   - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 → RESTRICTED_LOCATION (blocked)
   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 → COUNTRY_BLOCKED (blocked)
