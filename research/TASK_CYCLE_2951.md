@@ -2,7 +2,7 @@
 
 **Status:** PENDING
 
-**Read this first:** The prior agent completed Cycle 2950 (`research/TASK_CYCLE_2950.md`, timestamp TBD). This cycle is the next bounded standby cycle for Cycle 2951. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
+**Read this first:** The prior agent completed Cycle 2950 (`research/TASK_CYCLE_2950.md`, 2026-11-14T11:16:32Z). This cycle is the next bounded standby cycle for Cycle 2951. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
 
 ## Mission / scope boundary
 - Allowed: literature research, hypothesis generation, source appraisal, and documenting free-data feasibility.
@@ -26,7 +26,7 @@
 
 ## Context
 - Four literature routes explored (Cycles 1–4). H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) were synthesized.
-- Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last Cycle 2950).
+- Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-14T11:16:32Z Cycle 2950).
 - Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs.
 - No empirical validation has ever been performed on the original spec. No trading recommendations have been made.
 - Known bookkeeping-only defect, deliberately left unedited: duplicate "Cycle 346" and out-of-order 2182/2185 headings in `research/HYPOTHESES.md`; these are numbering cosmetics, not factual claims.
@@ -48,7 +48,7 @@
 - Cycle 2951 entry added to `research/SEARCH_LOG.md` (appended to consolidated running entry per step 2).
 - All artifacts internally consistent; no out-of-scope work performed.
 
-## Access status at handoff (Cycle 2950, timestamp TBD)
+## Access status at handoff (2026-11-14T11:16:32Z, Cycle 2950)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
