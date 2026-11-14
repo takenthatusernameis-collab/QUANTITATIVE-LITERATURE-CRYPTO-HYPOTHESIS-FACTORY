@@ -1,8 +1,18 @@
 # TASK CYCLE 2953 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-14T11:24:58Z)
 
-**Read this first:** The prior agent completed Cycle 2952 (`research/TASK_CYCLE_2952.md`, 2026-11-14T11:22:30Z). This cycle is the next bounded standby cycle for Cycle 2953. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
+**Read this first:** The prior agent completed Cycle 2952 (`research/TASK_CYCLE_2952.md`, 2026-11-14T11:22:30Z). This cycle executed the next bounded standby cycle for Cycle 2953. This is a research-only repository: no backtests, datasets, or performance numbers produced.
+
+## Outcome (Cycle 2953)
+1. **Access sanity checks (no data stored, 2026-11-14T11:24:58Z):**
+   - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked.
+   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked.
+   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in Cycle 4 spec).
+   - No retries/bypass attempts; no datasets collected or persisted.
+2. **Process improvement:** Appended Cycle 2953 closeout to consolidated running entry in `research/SEARCH_LOG.md` (Cycles 2842–2953). Also backfilled the missing Cycle 2952 closeout bullet (reconstructed from `research/TASK_CYCLE_2952.md` Outcome; it was absent from the log at the start of this cycle). No substantive research entries rewritten.
+3. **Consistency review:** `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2952.md`, `research/TASK_CYCLE_2953.md`, `research/HYPOTHESES.md` reviewed — consistent on access labels, cycle numbering, and conclusions. `research/TASK_CYCLE_2952.md` Status confirmed COMPLETE (2026-11-14T11:22:30Z). `research/HYPOTHESES.md` left unmodified (no factual inconsistency; newest cycle entry Cycle 2211; known bookkeeping-only defects: duplicate "Cycle 346" and out-of-order Cycle 2182/2185 headings — numbering cosmetics).
+4. **Closeout bookkeeping:** `research/TASK_CYCLE_2953.md` marked COMPLETE; `research/HANDOFF.md` advanced to Cycle 2954 with updated access-status timestamp; `research/TASK_CYCLE_2954.md` created; `research/SEARCH_LOG.md` updated.
 
 ## Mission / scope boundary
 - Allowed: literature research, hypothesis generation, source appraisal, and documenting free-data feasibility.
@@ -41,13 +51,13 @@
 - Update all research artifacts after the cycle.
 
 ## Definition of done (Cycle 2953)
-- `research/TASK_CYCLE_2953.md` marked COMPLETE with timestamp and access results (only after all bookkeeping is actually done).
-- `research/HANDOFF.md` advanced to Cycle 2954 with updated access-status timestamp.
-- `research/TASK_CYCLE_2954.md` created.
-- Cycle 2953 entry added to `research/SEARCH_LOG.md` (appended to consolidated running entry per step 2).
-- All artifacts internally consistent; no out-of-scope work performed.
+- [x] `research/TASK_CYCLE_2953.md` marked COMPLETE with timestamp and access results.
+- [x] `research/HANDOFF.md` advanced to Cycle 2954 with updated access-status timestamp.
+- [x] `research/TASK_CYCLE_2954.md` created.
+- [x] Cycle 2953 entry added to `research/SEARCH_LOG.md` (consolidated running entry).
+- [x] All artifacts internally consistent; no out-of-scope work performed.
 
-## Access status at handoff (2026-11-14T11:22:30Z, Cycle 2952)
+## Access status at handoff (2026-11-14T11:24:58Z, Cycle 2953)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
