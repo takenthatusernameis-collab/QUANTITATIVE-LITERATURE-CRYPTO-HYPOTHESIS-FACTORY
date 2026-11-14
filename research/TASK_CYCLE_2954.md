@@ -1,8 +1,18 @@
 # TASK CYCLE 2954 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-14T11:26:11Z)
 
-**Read this first:** The prior agent completed Cycle 2953 (`research/TASK_CYCLE_2953.md`, 2026-11-14T11:24:58Z). This cycle is the next bounded standby cycle for Cycle 2954. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
+**Read this first:** The prior agent completed Cycle 2953 (`research/TASK_CYCLE_2953.md`, 2026-11-14T11:24:58Z). This cycle executed the next bounded standby cycle for Cycle 2954. This is a research-only repository: no backtests, datasets, or performance numbers produced.
+
+## Outcome (Cycle 2954)
+1. **Access sanity checks (no data stored, 2026-11-14T11:26:11Z):**
+   - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked.
+   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked.
+   - Kraken spot ticker (XBTUSD): HTTP 200 (reachable, sanity check only, not in Cycle 4 spec).
+   - No retries/bypass attempts; no datasets collected or persisted.
+2. **Process improvement:** Appended Cycle 2954 closeout to consolidated running entry in `research/SEARCH_LOG.md` (Cycles 2842–2954, 113 consecutive standby cycles; "last checked" 2026-11-14T11:26:11Z). No substantive research entries rewritten.
+3. **Consistency review:** `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_2953.md`, `research/TASK_CYCLE_2954.md`, and `research/HYPOTHESES.md` reviewed — consistent on access labels, cycle numbering, and conclusions. `research/TASK_CYCLE_2953.md` Status confirmed COMPLETE (2026-11-14T11:24:58Z). `research/HYPOTHESES.md` left unmodified (no factual inconsistency; newest cycle entry Cycle 2211; known bookkeeping-only defects: duplicate "Cycle 346" and out-of-order Cycle 2182/2185 headings — numbering cosmetics).
+4. **Closeout bookkeeping:** `research/TASK_CYCLE_2954.md` marked COMPLETE; `research/HANDOFF.md` advanced to Cycle 2955 with updated access-status timestamp; `research/TASK_CYCLE_2955.md` created; `research/SEARCH_LOG.md` updated.
 
 ## Mission / scope boundary
 - Allowed: literature research, hypothesis generation, source appraisal, and documenting free-data feasibility.
