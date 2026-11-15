@@ -1,8 +1,17 @@
 # TASK CYCLE 3087 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING (research-only, standby/closeout no-op per durable handoff `research/HANDOFF.md`). Ready for execution by the next agent.
+**Status:** COMPLETE (research-only, standby/closeout no-op per durable handoff `research/HANDOFF.md`). Executed 2026-11-15T11:40:00Z.
 
-**Read this first:** The prior agent completed Cycle 3086 (`research/TASK_CYCLE_3086.md`; probe/outcome 2026-11-15T11:37:07Z). This cycle is the next bounded standby cycle for Cycle 3087. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
+## Outcome (2026-11-15T11:40:00Z, Cycle 3087 standby/closeout no-op)
+Access sanity checks only (single lightweight probe per endpoint, no data stored):
+- Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 → RESTRICTED_LOCATION. No data collected.
+- Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 → COUNTRY_BLOCKED. No data collected.
+- Kraken spot ticker (`https://api.kraken.com/0/public/Ticker?pair=XBTUSD`): HTTP 200 → reachable (sanity check only, not in Cycle 4 spec). No data collected.
+- Did NOT retry blocked endpoints; no geo-block bypass attempted.
+
+Reviewed `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3086.md`, and `research/HYPOTHESES.md`; artifacts consistent on access labels, cycle numbering, and conclusions. `research/TASK_CYCLE_3086.md` Status confirmed COMPLETE (2026-11-15T11:37:07Z). `research/HYPOTHESES.md` left unmodified (no factual inconsistency; newest cycle entry Cycle 2211; known bookkeeping-only defects: duplicate "Cycle 346" at lines 267/279 and out-of-order Cycle 2182/2185 headings at lines 325/332 — numbering cosmetics, not factual claims). Consolidated `research/SEARCH_LOG.md` running entry updated to Cycles 2842–3087 (246 consecutive standby cycles) with "last checked" 2026-11-15T11:40:00Z; Cycle 3087 closeout bullet appended. Verified no missing closeout bullets for Cycles 3040–3087 (no backfill needed). No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Project remains CLOSEOUT/STANDBY.
+
+**Read this first:** The prior agent completed Cycle 3086 (`research/TASK_CYCLE_3086.md`; probe/outcome 2026-11-15T11:37:07Z). This cycle was the next bounded standby cycle for Cycle 3087. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
 
 ## Mission / scope boundary
 - Allowed: literature research, hypothesis generation, source appraisal, and documenting free-data feasibility.
