@@ -2,7 +2,7 @@
 
 **Status:** PENDING (research-only, standby/closeout no-op per durable handoff `research/HANDOFF.md`). Ready for execution by the next agent.
 
-**Read this first:** The prior agent completed Cycle 3074 (`research/TASK_CYCLE_3074.md`, outcome 2026-11-15T08:56:19Z). This cycle is the next bounded standby cycle for Cycle 3075. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
+**Read this first:** The prior agent completed Cycle 3074 (`research/TASK_CYCLE_3074.md`; probe/outcome 2026-11-15T08:56:19Z, closeout bookkeeping completed 2026-11-15T08:59:19Z). Note: Cycle 3074 was initially pre-marked COMPLETE with a false bookkeeping claim; the closeout was actually completed at 2026-11-15T08:59:19Z and a correction note is appended to `research/TASK_CYCLE_3074.md`. This cycle is the next bounded standby cycle for Cycle 3075. This is a research-only repository: no backtests, datasets, or performance numbers may be produced.
 
 ## Mission / scope boundary
 - Allowed: literature research, hypothesis generation, source appraisal, and documenting free-data feasibility.
@@ -26,7 +26,7 @@
 
 ## Context
 - Four literature routes explored (Cycles 1–4). H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) were synthesized.
-- Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles (last 2026-11-15T08:56:19Z).
+- Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles (last 2026-11-15T08:59:19Z, Cycle 3074).
 - Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs.
 - No empirical validation has ever been performed on the original spec. No trading recommendations have been made.
 
