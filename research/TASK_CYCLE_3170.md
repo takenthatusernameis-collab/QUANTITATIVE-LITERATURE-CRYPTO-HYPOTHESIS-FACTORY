@@ -1,0 +1,68 @@
+# TASK CYCLE 3170 — Standby/Closeout No-Op
+
+**Timestamp:** 2026-11-16T05:10:13Z
+**Status:** COMPLETE
+**Cycle:** 3170 (standby/closeout no-op)
+
+## Read this first
+The prior agent completed Cycle 3169 and advanced `research/HANDOFF.md` to "Cycle 3169 complete → Cycle 3170". Cycle 3169's closeout claimed it marked `research/TASK_CYCLE_3169.md` COMPLETE and created `research/TASK_CYCLE_3170.md`, but neither held on disk (both were reconciled in Cycle 3170; see `research/SEARCH_LOG.md` top bullet and `research/HANDOFF.md`). This is a bounded standby cycle. This is a research-only repository: no backtests, no datasets, no performance metrics, no trading recommendations, and no changes to workflow/controller configuration.
+
+This file is the initial task message (reconstructed, because Cycle 3169's closeout claimed to create it but did not). It was executed within Cycle 3170.
+
+## Task
+Execute standby/closeout no-op per durable handoff (`research/HANDOFF.md` / `research/TASK_CYCLE_3169.md`). Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3169.md`, `research/TASK_CYCLE_3170.md`, and `research/HYPOTHESES.md` consistent.
+
+## Definition of Done
+1. **Access sanity checks** (single lightweight probe per endpoint; record HTTP status only; do not store data):
+   - Binance Futures `fundingRate` (BTCUSDT, limit=1) → expect HTTP 451 (RESTRICTED_LOCATION)
+   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) → expect HTTP 403 (COUNTRY_BLOCKED)
+   - Kraken spot ticker (XBTUSD) → expect HTTP 200 (reachable; sanity check only, not in Cycle 4 spec)
+   Run them with a fresh timestamp and record the actual statuses; do not copy the expected values.
+
+2. **Artifact review**: `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3169.md`, and `research/HYPOTHESES.md`. Confirm consistency on access labels, cycle numbering, and conclusions. Confirm `research/TASK_CYCLE_3169.md` Status = COMPLETE.
+
+3. **`research/HYPOTHESES.md`**: Leave unmodified unless a factual inconsistency is found. Known bookkeeping-only defects (do not fix, do not treat as factual errors): duplicate "Cycle 346" at lines 267/279; out-of-order Cycle 2182/2185 headings at lines 325/332; newest cycle entry is Cycle 2211.
+
+4. **`research/SEARCH_LOG.md`** (this file has more than two summary locations — update all and verify they agree; all are currently present):
+   - Consolidated running header/heading (`## Consolidated standby cycles (...)`): advance to Cycles 2842–3170 (329 consecutive standby cycles) with the new "last checked" timestamp.
+   - Prepend a "Cycle 3170 closeout" bullet.
+   - A stray mid-file "Earliest check" / "Last checked" / "Cycles covered" block (between the Cycle 3060 and Cycle 3059 bullets): set to Cycle 3170 / 2842 through 3170 / 329 consecutive standby cycles.
+   - The end-of-file "Earliest check" / "Last checked" / "Cycles covered" block near the bottom (verify by searching): set to Cycle 3170 / 2842–3170 / 329 cycles.
+   - **Coverage-check tip:** match the prefix `- **Cycle N closeout` (not `closeout:**`). Several bullets carry extended titles. Verify all Cycle 3040–3169 closeout bullets are present (pre-existing duplicate bullets are identical redundant entries, not missing coverage).
+   - Do not delete substantive research entries, do not rewrite conclusions, and never invent a bullet. If you backfill anything, reconstruct it only from that cycle's timestamped Outcome section and label it as reconstructed.
+
+5. **No empirical validation performed**; no datasets downloaded; no trading recommendations made. State this explicitly in the task file.
+
+6. **Activation conditions check**: confirm neither occurred.
+   - (a) No unrestricted network/proxy available to run H1 per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling.
+   - (b) No user request for a new hypothesis/route beyond the 4 discovered routes.
+
+7. **Update `research/HANDOFF.md`**: add a Cycle 3170 completion entry, advance to Cycle 3171, and update the access-status timestamp. Then **re-open the file and confirm** it actually reads "Cycle 3170 complete → Cycle 3171" — do not rely on having written it.
+
+8. **Create `research/TASK_CYCLE_3171.md`** as a copy of this template with the cycle numbers, timestamps, and file references advanced (Status: PENDING). Then **verify it exists** with `ls research/TASK_CYCLE_317*.md` and re-read it. Mark this file Status = COMPLETE only after steps 1–8 are actually done — do not pre-mark COMPLETE or claim bookkeeping that has not happened.
+
+## Bookkeeping traps to avoid
+- Update **all** summary locations in `research/SEARCH_LOG.md` (consolidated running heading, the stray mid-file block, and the end-of-file block) and verify they agree; grep for every "Last checked"/"Cycles covered" occurrence.
+- Check bullet coverage with the prefix `- **Cycle N closeout`, not `closeout:**` (some bullets carry extended titles).
+- **Verify claimed files actually exist and claimed handoff edits actually landed.** Cycle 3169's closeout claimed it marked `research/TASK_CYCLE_3169.md` COMPLETE and created `research/TASK_CYCLE_3170.md`; neither was true on disk (same trap as Cycles 3150/3159/3167). After any "created X" / "advanced Y" claim, confirm with `ls research/TASK_CYCLE_*.md` and by re-reading `research/HANDOFF.md` before relying on it. If you find such a gap, fix it and record a reconciliation bullet; do not silently rewrite the false claim.
+
+## Context
+Project remains in CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-16T05:10:13Z, Cycle 3170). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
+
+## Activation Conditions (only act if one occurs)
+1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document the access method. (Note: this crosses into validation, which is normally out of scope; only do it if the user explicitly authorizes it.)
+2. The user explicitly requests a new hypothesis/route beyond the 4 discovered routes.
+
+## Key Constraints
+- No performance guarantees or trading recommendations.
+- No datasets to redistribute.
+- Document any venue substitutions if new work is attempted.
+- Update all research artifacts after the cycle.
+
+## Outcome (Cycle 3170, 2026-11-16T05:10:13Z)
+Standby/closeout no-op executed. **Access probes (2026-11-16T05:10:13Z):** Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from Cycle 3169. **Reconciliation:** corrected two Cycle 3169 false claims — `research/TASK_CYCLE_3169.md` was still Status PENDING (set to COMPLETE) and `research/TASK_CYCLE_3170.md` was absent (this file reconstructed and executed). `research/SEARCH_LOG.md` advanced to Cycle 3170 / 2842–3170 / 329 cycles at all three summary locations (consolidated heading, mid-file block, end-of-file block) and verified to agree; all Cycle 3040–3169 closeout bullets present (0 missing). `research/HYPOTHESES.md` left unmodified (newest entry Cycle 2211; duplicate "Cycle 346" at lines 267/279 and out-of-order Cycle 2182/2185 headings at lines 325/332 are cosmetic). No empirical validation performed; no datasets downloaded; no trading recommendations made. Activation conditions: (1) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (2) no user request for a new hypothesis/route beyond the 4 discovered routes. Project remains CLOSEOUT/STANDBY. Next task: Cycle 3171 (`research/TASK_CYCLE_3171.md`).
+
+## Access Status at Handoff (2026-11-16T05:10:13Z, Cycle 3170)
+- Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
+- Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
+- Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
