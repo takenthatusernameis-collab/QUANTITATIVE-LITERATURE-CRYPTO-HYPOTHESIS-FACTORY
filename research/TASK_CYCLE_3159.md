@@ -1,8 +1,9 @@
 # TASK CYCLE 3159 — Standby/Closeout No-Op
 
 **Timestamp:** 2026-11-16T01:31:40Z
-**Status:** PENDING
+**Status:** COMPLETE
 **Cycle:** 3159 (standby/closeout no-op)
+**Completed:** 2026-11-16T01:35:13Z
 
 ## Read this first
 The prior agent completed Cycle 3158 (`research/TASK_CYCLE_3158.md`; probes and closeout 2026-11-16T01:31:40Z). This is the next bounded standby cycle. This is a research-only repository: no backtests, no datasets, no performance metrics, no trading recommendations, and no changes to workflow/controller configuration.
@@ -14,10 +15,10 @@ Execute standby/closeout no-op per durable handoff (`research/HANDOFF.md` / `res
 
 ## Definition of Done
 1. **Access sanity checks** (single lightweight probe per endpoint; record HTTP status only; do not store data):
-   - Binance Futures `fundingRate` (BTCUSDT, limit=1) → expect HTTP 451 (RESTRICTED_LOCATION)
-   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) → expect HTTP 403 (COUNTRY_BLOCKED)
-   - Kraken spot ticker (XBTUSD) → expect HTTP 200 (reachable; sanity check only, not in Cycle 4 spec)
-   Record the probe timestamp and results in the Cycle 3159 task file.
+   - Binance Futures `fundingRate` (BTCUSDT, limit=1) → HTTP 451 (RESTRICTED_LOCATION) ✓
+   - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) → HTTP 403 (COUNTRY_BLOCKED) ✓
+   - Kraken spot ticker (XBTUSD) → HTTP 200 (reachable; sanity check only, not in Cycle 4 spec) ✓
+   Probe timestamp: 2026-11-16T01:35:13Z. Results recorded.
 
 2. **Artifact review**: `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3158.md`, and `research/HYPOTHESES.md`. Confirm consistency on access labels, cycle numbering, and conclusions. Confirm `research/TASK_CYCLE_3158.md` Status = COMPLETE.
 
