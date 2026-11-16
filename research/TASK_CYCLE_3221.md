@@ -1,8 +1,11 @@
 # TASK CYCLE 3221 — Standby/Closeout No-Op (research-only)
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-16T23:32:52Z, status reconciled during Cycle 3222)
 **Timestamp:** 2026-11-16T23:27:09Z
 **Cycle:** 3221 (standby/closeout no-op)
+
+## Reconciliation note
+This file was left PENDING despite the Cycle 3221 closeout evidence in `research/HANDOFF.md` and `research/SEARCH_LOG.md`, and its successor `research/TASK_CYCLE_3222.md` was absent. The status is reconciled during Cycle 3222; the Cycle 3221 probes were re-run at 2026-11-16T23:32:52Z with unchanged results, and the missing successor was reconstructed rather than silently rewriting the prior claim.
 
 ## Read this first
 The prior agent completed Cycle 3220 (`research/TASK_CYCLE_3220.md`, reconciled/complete 2026-11-16T23:27:09Z; Cycle 3219 complete 2026-11-16T22:37:46Z) and advanced `research/HANDOFF.md` to "Cycle 3220 complete → Cycle 3221". This is the next bounded standby cycle.
