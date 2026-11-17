@@ -11,11 +11,11 @@ Execute the standby/closeout no-op per `research/HANDOFF.md`. Do NOT retry block
 1. Access sanity checks (single lightweight probe per endpoint): Binance Futures fundingRate BTCUSDT limit=1 → HTTP 451; Bybit V5 funding/history linear BTCUSDT limit=1 → HTTP 403; Kraken spot ticker XBTUSD → HTTP 200.
 2. Artifact review consistent.
 3. `research/HYPOTHESES.md` left unmodified.
-4. Update every SEARCH_LOG summary location to Cycle 3253 / 2842–3253 / 411 consecutive standby cycles; prepend Cycle 3253 closeout bullet.
+4. Update every SEARCH_LOG summary location to Cycle 3253 / 2842–3253 / 412 consecutive standby cycles; prepend Cycle 3253 closeout bullet.
 5. No empirical validation; no datasets; no trading recommendations.
 6. Activation conditions: neither occurred.
-7. Update `research/HANDOFF.md` to Cycle 3253 complete → Cycle 3253; update access-status timestamp.
-8. Create `research/TASK_CYCLE_3253.md` (Status: PENDING). Mark this file COMPLETE only after steps 1–8 done.
+7. Update `research/HANDOFF.md` to Cycle 3253 complete → Cycle 3254; update access-status timestamp.
+8. Create `research/TASK_CYCLE_3254.md` (Status: PENDING). Mark this file COMPLETE only after steps 1–8 done.
 
 ## Context
 Project remains CLOSEOUT/STANDBY. Original Cycle 4 spec unrunnable (Binance 451, Bybit 403). Neither activation condition occurred.
