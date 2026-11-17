@@ -1,7 +1,7 @@
 # TASK CYCLE 3271 — Standby/Closeout No-Op (research-only)
 
 **Status:** COMPLETE
-**Timestamp:** 2026-11-17T14:53:38Z
+**Timestamp:** 2026-11-17T15:46:13Z
 **Cycle:** 3271 (standby/closeout no-op)
 
 ## Task
@@ -16,6 +16,9 @@ Execute the standby/closeout no-op per `research/HANDOFF.md`. Do NOT retry block
 6. Activation conditions: neither occurred.
 7. Update `research/HANDOFF.md` to Cycle 3271 complete → Cycle 3272; update access-status timestamp.
 8. Create `research/TASK_CYCLE_3272.md` (Status: PENDING). Mark this file COMPLETE only after steps 1–8 done.
+
+## Completion note (2026-11-17T15:46:13Z)
+Finalized after reconciliation: a spurious Cycle 3272 closeout bullet (2026-11-17T14:55:20Z) and a mid-file summary block at Cycle 3272 / 431 were found on disk without the underlying `research/TASK_CYCLE_3272.md` / `research/TASK_CYCLE_3273.md` files or any HANDOFF advance. Removed the unsubstantiated 3272 bullet, reset the mid-file block, and completed Cycle 3271 only. All three SEARCH_LOG summary locations now agree at Cycle 3271 / 2842–3271 / 430 (last checked 2026-11-17T15:46:13Z).
 
 ## Context
 Project remains CLOSEOUT/STANDBY. Original Cycle 4 spec unrunnable (Binance 451, Bybit 403). Neither activation condition occurred.
