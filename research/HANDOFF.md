@@ -1,4 +1,4 @@
-# HANDOFF — Cycle 3227 complete → Cycle 3228 (standby/closeout no-op)
+# HANDOFF — Cycle 3228 complete → Cycle 3229 (standby/closeout no-op)
 
 **Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3228.md`.
 
@@ -62,7 +62,7 @@ Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4)
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
 
-## Access status at handoff (2026-11-17T00:33:10Z, Cycle 3227)
+## Access status at handoff (2026-11-17T01:28:40Z, Cycle 3228)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
