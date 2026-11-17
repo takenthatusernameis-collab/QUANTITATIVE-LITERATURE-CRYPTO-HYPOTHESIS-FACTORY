@@ -1,12 +1,15 @@
-# HANDOFF — Cycle 3234 complete → Cycle 3235 (standby/closeout no-op)
+# HANDOFF — Cycle 3235 complete → Cycle 3236 (standby/closeout no-op)
 
 **Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3235.md`.
+
+## Completed (Cycle 3235, 2026-11-17T04:07:30Z)
+Executed standby/closeout no-op per `research/TASK_CYCLE_3235.md`. Probes (2026-11-17T04:07:30Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from Cycle 3234. Marked `research/TASK_CYCLE_3235.md` Status = COMPLETE (2026-11-17T04:07:30Z); confirmed `research/TASK_CYCLE_3234.md` Status = COMPLETE (2026-11-17T04:04:13Z). Advanced all three `research/SEARCH_LOG.md` summary locations (consolidated heading, mid-file block, end-of-file block) to Cycle 3235 / 2842–3235 / 394 consecutive standby cycles at last checked 2026-11-17T04:07:30Z and verified they agree; prepended the Cycle 3235 closeout bullet. Verified all Cycle 3040–3234 closeout bullets present via the prefix check `- **Cycle N closeout` (0 missing; pre-existing duplicate bullets are identical redundant entries). Left `research/HYPOTHESES.md` unmodified (newest cycle entry Cycle 2211; known bookkeeping-only defects: duplicate "Cycle 346" at lines 267/279; out-of-order Cycle 2182/2185 headings at lines 325/332 — cosmetic, not factual claims). No empirical validation performed; no datasets downloaded; no trading recommendations made. Confirmed neither activation condition occurred. Advanced `research/HANDOFF.md` to "Cycle 3235 complete → Cycle 3236" and created `research/TASK_CYCLE_3236.md` (Status: PENDING), verified on disk.
 
 ## Completed (Cycle 3234, 2026-11-17T04:04:13Z)
 Executed standby/closeout no-op per `research/TASK_CYCLE_3234.md`. Probes (2026-11-17T04:04:13Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from Cycle 3233. Marked `research/TASK_CYCLE_3234.md` Status = COMPLETE (2026-11-17T04:04:13Z); confirmed `research/TASK_CYCLE_3233.md` Status = COMPLETE (2026-11-17T03:12:54Z). Advanced all three `research/SEARCH_LOG.md` summary locations (consolidated heading near line 94, mid-file block near lines 227–230, end-of-file block near lines 417–421) to Cycle 3234 / 2842–3234 / 393 consecutive standby cycles at last checked 2026-11-17T04:04:13Z and verified they agree; prepended the Cycle 3234 closeout bullet. Verified all Cycle 3040–3233 closeout bullets present via the prefix check `- **Cycle N closeout` (0 missing; pre-existing duplicate bullets are identical redundant entries). Left `research/HYPOTHESES.md` unmodified (newest cycle entry Cycle 2211; known bookkeeping-only defects: duplicate "Cycle 346" at lines 267/279; out-of-order Cycle 2182/2185 headings at lines 325/332 — cosmetic, not factual claims). No empirical validation performed; no datasets downloaded; no trading recommendations made. Confirmed neither activation condition occurred. Advanced `research/HANDOFF.md` to "Cycle 3234 complete → Cycle 3235" and created `research/TASK_CYCLE_3235.md` (Status: PENDING), verified on disk.
 
-## Next task (Cycle 3235)
-Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3234.md`, and `research/HYPOTHESES.md` consistent. See `research/TASK_CYCLE_3235.md` for the full task message and definition of done.
+## Next task (Cycle 3236)
+Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3235.md`, and `research/HYPOTHESES.md` consistent. See `research/TASK_CYCLE_3236.md` for the full task message and definition of done.
 
 ## Context
 Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 400+ cycles including recent re-confirmations (last 2026-11-17T04:04:13Z, Cycle 3234 closeout). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
@@ -21,7 +24,7 @@ Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4)
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
 
-## Access status at handoff (2026-11-17T04:04:13Z, Cycle 3234)
+## Access status at handoff (2026-11-17T04:07:30Z, Cycle 3235)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
