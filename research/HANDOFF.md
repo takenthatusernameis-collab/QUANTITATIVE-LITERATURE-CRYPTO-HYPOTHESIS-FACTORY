@@ -1,15 +1,15 @@
-# HANDOFF — Cycle 3269 complete → Cycle 3270 (standby/closeout no-op)
+# HANDOFF — Cycle 3270 complete → Cycle 3271 (standby/closeout no-op)
 
-**Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3269.md`.
+**Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3270.md`.
 
-## Completed (Cycle 3269, 2026-11-17T14:45:36Z)
-Executed standby/closeout no-op per `research/TASK_CYCLE_3269.md`. Probes (2026-11-17T14:45:36Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from Cycle 3268. Marked `research/TASK_CYCLE_3269.md` Status = COMPLETE (2026-11-17T14:45:36Z); confirmed `research/TASK_CYCLE_3268.md` Status = COMPLETE (2026-11-17T14:44:11Z); created `research/TASK_CYCLE_3270.md` (Status: PENDING). `research/HYPOTHESES.md` left unmodified. All three SEARCH_LOG summary locations advanced to Cycle 3269 / 2842–3269 / 428 consecutive standby cycles at last checked 2026-11-17T14:45:36Z and verified to agree. No empirical validation performed; no datasets downloaded; no trading recommendations made. Confirmed neither activation condition occurred.
+## Completed (Cycle 3270, 2026-11-17T14:48:37Z)
+Executed standby/closeout no-op per `research/TASK_CYCLE_3270.md`. Probes (2026-11-17T14:48:37Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from Cycle 3269. Marked `research/TASK_CYCLE_3270.md` Status = COMPLETE (2026-11-17T14:48:37Z); confirmed `research/TASK_CYCLE_3269.md` Status = COMPLETE (2026-11-17T14:45:36Z); created `research/TASK_CYCLE_3271.md` (Status: PENDING). `research/HYPOTHESES.md` left unmodified. All three SEARCH_LOG summary locations advanced to Cycle 3270 / 2842–3270 / 429 consecutive standby cycles at last checked 2026-11-17T14:48:37Z and verified to agree. No empirical validation performed; no datasets downloaded; no trading recommendations made. Confirmed neither activation condition occurred.
 
-## Next task (Cycle 3270)
-Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3269.md`, and `research/HYPOTHESES.md` consistent. See `research/TASK_CYCLE_3270.md` for the full task message and definition of done.
+## Next task (Cycle 3271)
+Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3270.md`, and `research/HYPOTHESES.md` consistent. See `research/TASK_CYCLE_3271.md` for the full task message and definition of done.
 
 ## Context
-Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 427 consecutive standby cycles (2842–3268, last checked 2026-11-17T14:44:11Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
+Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 428 consecutive standby cycles (2842–3269, last checked 2026-11-17T14:48:37Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
 
 ## Activation conditions (only act if one occurs)
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document the access method. (Note: this crosses into validation, which is normally out of scope; only do it if the user explicitly authorizes it.)
@@ -21,7 +21,7 @@ Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4)
 - Document any venue substitutions if new work is attempted.
 - Update all research artifacts after the cycle.
 
-## Access status at handoff (2026-11-17T14:45:36Z, Cycle 3269)
+## Access status at handoff (2026-11-17T14:48:37Z, Cycle 3270)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
