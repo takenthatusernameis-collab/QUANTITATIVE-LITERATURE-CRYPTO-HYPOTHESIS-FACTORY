@@ -1,4 +1,4 @@
-# HANDOFF — Cycle 3310 complete → Cycle 3311 (standby/closeout no-op)
+# HANDOFF — Cycle 3311 complete → Cycle 3312 (standby/closeout no-op)
 
 **Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3311.md`.
 
@@ -9,7 +9,7 @@ Executed standby/closeout no-op per `research/TASK_CYCLE_3310.md`. Fresh access 
 Standby/closeout no-op. Do NOT retry blocked Binance/Bybit endpoints for data collection. Maintain research-only scope. Keep `research/HANDOFF.md`, `research/SEARCH_LOG.md`, `research/TASK_CYCLE_3310.md`, and `research/HYPOTHESES.md` consistent. See `research/TASK_CYCLE_3311.md` for the full task message and definition of done.
 
 ## Context
-Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 469 consecutive standby cycles (2842–3310, last checked 2026-11-18T04:23:35Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
+Project remains CLOSEOUT/STANDBY. Four literature routes explored (Cycles 1–4); H1 (cross-venue funding spread persistence) and H2 (anchoring-intensity basis premium) synthesized. Original Cycle 4 spec (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) is unrunnable from this environment: Binance = RESTRICTED_LOCATION (HTTP 451), Bybit = COUNTRY_BLOCKED (HTTP 403), confirmed across 470 consecutive standby cycles (2842–3311, last checked 2026-11-18T04:24:30Z). Venue-substituted replications (Hyperliquid vs KuCoin for H1; Deribit for H2) falsified both hypotheses for tradability under documented costs. No empirical validation performed on original spec; no trading recommendations made. Neither activation condition occurred.
 
 ## Activation conditions (only act if one occurs)
 1. An unrestricted network/proxy becomes available → run H1 exactly per Cycle 4 specs (Binance−Bybit, 2024-01-11–2025-03-17, 8h intervals, OOS ≥4 months from 2024-11-10) with full fee/slippage modeling. Document the access method. (Note: this crosses into validation, which is normally out of scope; only do it if the user explicitly authorizes it.)
