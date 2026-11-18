@@ -1,4 +1,4 @@
-# HANDOFF — Cycle 3353 complete → Cycle 3354 (standby/closeout no-op)
+# HANDOFF — Cycle 3354 complete → Cycle 3355 (standby/closeout no-op)
 
 **Status:** CLOSEOUT/STANDBY (research-only). Durable handoff: `research/HANDOFF.md`. Research log: `research/SEARCH_LOG.md`. Hypotheses/findings: `research/HYPOTHESES.md`. Initial task message for the next agent: `research/TASK_CYCLE_3354.md`.
 
