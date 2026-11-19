@@ -1,6 +1,6 @@
 # TASK CYCLE 3412 — Manual Handoff Message (research-only) — CHAIN TERMINATED
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-19T11:43:06Z)
 **Cycle:** 3412 (manual handoff message; not an automatic standby cycle)
 **Supersedes:** Cycle 3411 manual handoff message.
 **Read first:** `research/HANDOFF.md` (durable handoff), then this file.
@@ -24,12 +24,21 @@ Otherwise do exactly this:
 - Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 - Re-verify all three SEARCH_LOG summary locations on disk each cycle.
 
-## Access status (last verified 2026-11-19T11:40:00Z)
+## Access status (last verified 2026-11-19T11:43:06Z)
 - Binance Futures fundingRate: HTTP 451 (RESTRICTED_LOCATION) — blocked
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 
+## Verification (performed in Cycle 3412, 2026-11-19T11:43:06Z)
+- Probes: Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from 2026-11-19T11:40:00Z.
+- `research/TASK_CYCLE_3411.md` Status = COMPLETE (2026-11-19T11:40:00Z).
+- `research/TASK_CYCLE_3412.md` marked COMPLETE (2026-11-19T11:43:06Z).
+- `research/HANDOFF.md` = "Cycle 3388 complete → CLOSED (chain terminated)".
+- SEARCH_LOG summary locations verified on disk: heading (line 311) reads 2842–3388 / 547 consecutive standby cycles, last checked 2026-11-19T05:03:25Z; mid-file block (lines 458–460) and end-of-file block (lines 650–653) read 2842–3388 (547 cycles) — all three in agreement, unchanged as expected for a terminated chain.
+- `research/HYPOTHESES.md` unmodified (md5 38edf583b5d29c652407099c0ba33699).
+- No reconciliation needed.
+
 ## Result
 Chain remains terminated at Cycle 3388 (547 consecutive no-op standby cycles). Unless the user authorizes validation (activation condition 1) or requests a new route (activation condition 2), the project should remain formally closed.
 
-**Status:** PENDING — awaiting the next agent to execute (or the user to trigger an activation condition).
+**Status:** COMPLETE (2026-11-19T11:43:06Z)
