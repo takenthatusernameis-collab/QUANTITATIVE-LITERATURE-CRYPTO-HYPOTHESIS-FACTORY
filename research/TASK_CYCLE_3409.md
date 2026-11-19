@@ -1,6 +1,6 @@
 # TASK CYCLE 3409 — Manual Handoff Message (research-only) — CHAIN TERMINATED
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-19T10:44:38Z)
 **Cycle:** 3409 (manual handoff message; not an automatic standby cycle)
 **Supersedes:** Cycle 3408 manual handoff message.
 **Read first:** `research/HANDOFF.md` (durable handoff), then this file.
@@ -31,16 +31,17 @@ Otherwise do exactly this:
 - Bybit V5 funding/history: HTTP 403 (COUNTRY_BLOCKED) — blocked
 - Kraken spot ticker: HTTP 200 (reachable, sanity check only, not in spec)
 
-## Verification (performed in Cycle 3408, 2026-11-19T10:39:24Z)
-- Probes: Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451; Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403; Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from 2026-11-19T10:35:57Z.
-- `research/TASK_CYCLE_3407.md` Status = COMPLETE (2026-11-19T10:35:57Z).
-- `research/TASK_CYCLE_3408.md` marked COMPLETE (2026-11-19T10:39:24Z).
+## Verification (performed in Cycle 3409, 2026-11-19T10:44:38Z)
+- Probes: Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from 2026-11-19T10:39:24Z.
+- `research/TASK_CYCLE_3408.md` Status = COMPLETE (2026-11-19T10:39:24Z).
+- `research/TASK_CYCLE_3409.md` marked COMPLETE (2026-11-19T10:44:38Z).
 - `research/HANDOFF.md` = "Cycle 3388 complete → CLOSED (chain terminated)".
 - SEARCH_LOG summary locations verified on disk: heading (line 311) 2842–3388 / 547 consecutive standby cycles, last checked 2026-11-19T05:03:25Z; mid-file block (lines 314–316) and end-of-file block (lines 648–651) read 2842–3388 (547 cycles) — all three in agreement, unchanged as expected for a terminated chain.
 - `research/HYPOTHESES.md` unmodified (md5 38edf583b5d29c652407099c0ba33699).
 - No reconciliation needed.
 
-## Result
-Chain remains terminated at Cycle 3388 (547 consecutive no-op standby cycles). Unless the user authorizes validation (activation condition 1) or requests a new route (activation condition 2), the project should remain formally closed.
+## Result (2026-11-19T10:44:38Z)
+Verified the closed state from the filesystem rather than trusting prior closeout prose. Fresh access probes (2026-11-19T10:44:38Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from 2026-11-19T10:39:24Z. All three SEARCH_LOG summary locations in agreement at Cycle 3388 / 2842–3388 / 547 consecutive standby cycles (heading line 311; mid-file lines 314–316; end-of-file lines 648–651). `research/HYPOTHESES.md` unmodified (md5 38edf583b5d29c652407099c0ba33699). No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred — the user requested only handoff completion, not validation or a new route. Chain remains terminated at Cycle 3388. Wrote `research/TASK_CYCLE_3410.md` as the initial task message for the next agent (manual; not an automatic cycle).
 
-**Status:** PENDING — awaiting the next agent to execute (or the user to trigger an activation condition).
+**Status:** COMPLETE (2026-11-19T10:44:38Z)
+The chain is terminated at Cycle 3388. Unless the user authorizes validation (activation condition 1) or requests a new route (activation condition 2), the project should remain formally closed. Do NOT create automatic cycles.
