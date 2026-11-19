@@ -1,9 +1,12 @@
 # TASK CYCLE 3440 — Manual Handoff Message (research-only) — CHAIN TERMINATED
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-19T19:50:40Z)
 **Cycle:** 3440 (manual handoff message; not an automatic standby cycle)
 **Supersedes:** Cycle 3439 manual handoff message.
 **Read first:** `research/HANDOFF.md` (durable handoff), then this file.
+
+## Result
+Manual handoff message (not an automatic standby cycle) per `research/TASK_CYCLE_3440.md`. Fresh access probes (2026-11-19T19:50:40Z): Binance Futures `fundingRate` (BTCUSDT, limit=1) HTTP 451 (RESTRICTED_LOCATION); Bybit V5 `funding/history` (linear, BTCUSDT, limit=1) HTTP 403 (COUNTRY_BLOCKED); Kraken spot ticker (XBTUSD) HTTP 200 — unchanged from 2026-11-19T19:48:24Z. Verified on disk: `research/TASK_CYCLE_3439.md` Status = COMPLETE (2026-11-19T19:48:24Z); `research/HANDOFF.md` = "Cycle 3388 complete → CLOSED (chain terminated)"; all three SEARCH_LOG summary locations (consolidated heading line 346; mid-file `Cycles covered` line 351; end-of-file `Cycles covered` line 686) read Cycle 3388 / 2842–3388 / 547 consecutive standby cycles at last checked 2026-11-19T05:03:25Z, in agreement; `research/HYPOTHESES.md` unmodified (md5 38edf583b5d29c652407099c0ba33699). No reconciliation needed. Advanced the next-agent pointer to `research/TASK_CYCLE_3441.md`. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred. Chain remains terminated.
 
 ## Task
 Project is CLOSED/STANDBY. Do NOT run an automatic standby cycle, do NOT create automatic `TASK_CYCLE_*` files beyond the single next manual handoff message, and do NOT retry blocked Binance/Bybit endpoints for data collection. Only act if an activation condition occurs:
