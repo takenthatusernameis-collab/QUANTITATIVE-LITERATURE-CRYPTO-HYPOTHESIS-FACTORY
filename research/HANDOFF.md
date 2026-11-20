@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-11-20T21:24:59Z (manual handoff Cycle 3530 confirmed)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3530.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3531.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -38,7 +38,7 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 
 - Prior agent task (Cycle 3529) read from `research/HANDOFF.md`: complete. `research/TASK_CYCLE_3529.md` Status = COMPLETE with `## Result` block; no activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retirement/restructure requested).
 - Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `5ae5ddfd00639448928a53732beeb3e3` — both unchanged.
-- `research/TASK_CYCLE_3530.md` is the canonical next-agent task message (PENDING). It instructs the next agent to confirm the closed state, report it, and act only on explicit user authorization for validation with unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
-- `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3530 confirmation; still exactly one receipt.
+- `research/TASK_CYCLE_3530.md` Status = COMPLETE with `## Result` block; `research/TASK_CYCLE_3531.md` is the canonical next-agent task message (PENDING).
+- `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3531 confirmation; still exactly one receipt.
 - No `SEARCH_LOG.md` bullet appended; per-handoff receipts record no state change.
 - Correct outcome: no research edits, no new cycles, a short status report.
