@@ -1,12 +1,12 @@
 # TASK CYCLE 3476 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-20T02:56:19Z)
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
 ## Situation in one paragraph
 
-The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1, Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403, both re-confirmed 2026-11-20T00:51:54Z; Kraken spot returns 200 but is not part of the spec). Full detail and numbers: `research/HYPOTHESES.md`.
+The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1, Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403, last confirmed 2026-11-20T02:53:02Z; Kraken spot returns 200 but is not part of the spec). Full detail and numbers: `research/HYPOTHESES.md`.
 
 ## Your task
 
@@ -29,14 +29,16 @@ If neither happens, the correct outcome is: no file changes, no new cycles, a sh
 - Do not present re-verification of a closed project as research progress.
 - `research/HANDOFF.md` must stay compact: one durable summary, not an append-only log of near-identical entries. If you do meaningfully change state, edit it in place and add at most one dated receipt line.
 
-## Current facts you can rely on (verified 2026-11-20T00:51:54Z)
+## Current facts you can rely on (verified 2026-11-20T00:51:54Z; probes re-confirmed unchanged 2026-11-20T02:53:02Z)
 
 - Binance Futures `fundingRate`: HTTP 451 (RESTRICTED_LOCATION) — blocked.
 - Bybit V5 `funding/history`: HTTP 403 (COUNTRY_BLOCKED) — blocked.
 - Kraken spot ticker: HTTP 200 (sanity check only).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
-- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3475 were handoff bookkeeping only.
+- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3476 were handoff bookkeeping only.
 
 ## Result
 
-(pending)
+Cycle 3476 verified: no activation condition occurred. No validation authorized, no unrestricted network/proxy supplied, no new hypothesis or route requested. Research artifacts unchanged: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` unchanged. Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user.
+
+**Next-agent pointer advanced to `research/TASK_CYCLE_3477.md`.**
