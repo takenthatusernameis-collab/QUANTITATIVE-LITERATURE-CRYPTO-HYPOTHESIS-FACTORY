@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-20T07:12:10Z (manual handoff Cycle 3494)
+**Last updated:** 2026-11-20T08:07:50Z (manual handoff Cycle 3495)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3494.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3495.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -12,7 +12,7 @@
 - **H2** — anchoring-intensity basis premium / basis mean reversion (Deribit BTC-PERPETUAL substitution, 3720 obs, 2024-02-29 → 2025-03-17). Mean reversion exists but is extremely fast (half-life ≈0.16 funding intervals), unstable OOS (test β sign flips), and shows no funding-magnitude scaling (corr ≈ −0.004); effect size far below ~7e-4 round-trip cost → **falsified for tradability**.
 - **No empirical validation** was ever performed on the original Binance/Bybit H1 spec.
 
-## Access status (last probed 2026-11-20T07:05:32Z — unchanged since 2026-11-20T04:57:31Z)
+## Access status (last probed 2026-11-20T08:07:50Z — unchanged since 2026-11-20T07:05:32Z)
 
 | Probe | Endpoint | Result |
 |---|---|---|
@@ -58,5 +58,14 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - Verified on disk, not by re-derivation: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `a62fde8a207fb142801fa14baa2fedad` — both match baselines recorded at Cycle 3493, so no research artifact changed.
 - `research/TASK_CYCLE_3493.md` marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3494.md` written as the canonical next-agent task message.
 - `HANDOFF.md` header/access-status timestamps advanced to 2026-11-20T07:12:10Z; next-agent pointer advanced to `research/TASK_CYCLE_3494.md`.
+- Deliberate deviation: no `SEARCH_LOG.md` bullet appended this cycle. Per-handoff log entries record no state change; the receipt above is the authoritative record.
+- Correct outcome for the next agent if nothing changes: no research edits, no new cycles, a short status report.
+
+## Receipt (2026-11-20T08:07:50Z) — Cycle 3495
+
+- No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested). No probes run (standing instruction: re-probing is not progress).
+- Verified on disk, not by re-derivation: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `a62fde8a207fb142801fa14baa2fedad` — both match baselines recorded at Cycle 3494, so no research artifact changed.
+- `research/TASK_CYCLE_3494.md` marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3495.md` written as the canonical next-agent task message.
+- `HANDOFF.md` header/access-status timestamps advanced to 2026-11-20T08:07:50Z; next-agent pointer advanced to `research/TASK_CYCLE_3495.md`.
 - Deliberate deviation: no `SEARCH_LOG.md` bullet appended this cycle. Per-handoff log entries record no state change; the receipt above is the authoritative record.
 - Correct outcome for the next agent if nothing changes: no research edits, no new cycles, a short status report.
