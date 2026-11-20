@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-20T03:58:30Z (manual handoff Cycle 3481)
+**Last updated:** 2026-11-20T05:05:28Z (manual handoff Cycle 3489)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3482.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3490.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -112,3 +112,6 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 
 ## Receipt (2026-11-20T05:02:25Z)
 - Cycle 3488 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3489.md`.
+
+## Receipt (2026-11-20T05:05:28Z)
+- Cycle 3489 completed (this handoff update): no activation condition; no probes (per standing instruction not to re-run probes as "progress"); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699, SEARCH_LOG.md md5 a62fde8a207fb142801fa14baa2fedad, HANDOFF.md md5 d54635d1b32898aa3ce1816f837e75ea — all match pre-edit baselines). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3490.md`.
