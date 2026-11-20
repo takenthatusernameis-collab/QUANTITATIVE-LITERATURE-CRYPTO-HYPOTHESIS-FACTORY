@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-20T05:05:28Z (manual handoff Cycle 3489)
+**Last updated:** 2026-11-20T06:04:05Z (manual handoff Cycle 3492)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3490.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3492.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_34xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -12,7 +12,7 @@
 - **H2** — anchoring-intensity basis premium / basis mean reversion (Deribit BTC-PERPETUAL substitution, 3720 obs, 2024-02-29 → 2025-03-17). Mean reversion exists but is extremely fast (half-life ≈0.16 funding intervals), unstable OOS (test β sign flips), and shows no funding-magnitude scaling (corr ≈ −0.004); effect size far below ~7e-4 round-trip cost → **falsified for tradability**.
 - **No empirical validation** was ever performed on the original Binance/Bybit H1 spec.
 
-## Access status (probed 2026-11-20T00:51:54Z — unchanged since 2026-11-19T05:03:25Z)
+## Access status (last probed 2026-11-20T04:57:31Z — unchanged since 2026-11-19T05:03:25Z)
 
 | Probe | Endpoint | Result |
 |---|---|---|
@@ -30,91 +30,14 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 ## Standing state of the record
 
 - Cycle 3388 (2026-11-19T05:03:25Z) was the last cycle that advanced the standby counter: 547 consecutive no-op standby cycles (2842–3388), zero research output. The chain was terminated there.
-- Cycles 3389–3463 were manual handoff messages that re-verified the closed state and changed no conclusion. They are logged in `SEARCH_LOG.md` but add nothing substantive.
-- This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with this single durable summary. Prior verbose text remains recoverable in git history (`research/HANDOFF.md` before commit for Cycle 3463) and in `research/HANDOFF.md.bak.*`.
+- Cycles 3389–3492 were manual handoff messages (user-requested) that re-verified the closed state and changed no conclusion. They are logged in `SEARCH_LOG.md` (through Cycle 3490) but add nothing substantive.
+- This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with this single durable summary; it was compacted again at Cycle 3492 to fold ~40 appended per-cycle receipts back into this summary. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Verification receipt for Cycle 3463
+## Receipt (2026-11-20T06:04:05Z) — Cycle 3492
 
-- Probes (2026-11-20T00:51:54Z): Binance 451, Bybit 403, Kraken 200 — unchanged.
-- `research/TASK_CYCLE_3462.md` Status = COMPLETE (2026-11-20T00:49:43Z).
-- All three `SEARCH_LOG.md` summary locations agreed at Cycle 3388 / 2842–3388 / 547 before this cycle's edit.
-- `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` — unmodified.
-
-## Receipt (2026-11-20T02:53:02Z)
-- Cycle 3475 completed: no activation condition; no probes beyond the three standard endpoints; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3476.md`.
-
-## Receipt (2026-11-20T00:53:11Z)
-- Cycle 3464 completed: no activation condition; no probes; artifacts unchanged. Next-agent pointer advanced to `research/TASK_CYCLE_3465.md`.
-
-## Receipt (2026-11-20T00:56:11Z)
-- Cycle 3465 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3466.md`.
-
-## Receipt (2026-11-20T00:56:57Z)
-- Cycle 3466 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3467.md`.
-
-## Receipt (2026-11-20T01:51:02Z)
-- Cycle 3467 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3468.md`.
-
-## Receipt (2026-11-20T01:52:06Z)
-- Cycle 3468 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3469.md`.
-
-## Receipt (2026-11-20T01:52:39Z)
-- Cycle 3469 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3470.md`.
-
-## Receipt (2026-11-20T01:56:45Z)
-- Cycle 3472 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3473.md`.
-
-## Receipt (2026-11-20T01:57:03Z)
-- Cycle 3473 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3474.md`.
-
-## Receipt (2026-11-20T01:57:55Z)
-- Cycle 3474 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3475.md`.
-
-## Receipt (2026-11-20T02:56:19Z)
-- Cycle 3476 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3477.md`.
-
-## Receipt (2026-11-20T03:54:14Z)
-- Cycle 3479 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3480.md`.
-
-## Receipt (2026-11-20T02:59:39Z)
-- Cycle 3477 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3478.md`.
-
-## Receipt (2026-11-20T03:04:07Z)
-- Cycle 3479 completed: no activation condition; probes re-confirmed unchanged (Binance 451, Bybit 403, Kraken 200, last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3480.md`.
-
-## Receipt (2026-11-20T03:02:35Z)
-- Cycle 3478 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged). Next-agent pointer advanced to `research/TASK_CYCLE_3479.md`.
-
-## Receipt (2026-11-20T03:54:58Z)
-- Cycle 3480 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3481.md`.
-
-## Receipt (2026-11-20T03:56:00Z)
-- Cycle 3481 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3482.md`.
-
-## Receipt (2026-11-20T04:01:09Z)
-- Cycle 3482 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. No new TASK_CYCLE file created per standing instruction.
-
-## Receipt (2026-11-20T04:02:35Z)
-- Cycle 3483 (this handoff update): no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter remains frozen at Cycle 3388. Created `research/TASK_CYCLE_3483.md` as the canonical next-agent task message per user request.
-
-## Receipt (2026-11-20T04:04:15Z)
-- Cycle 3484 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3485.md`.
-
-## Receipt (2026-11-20T04:54:39Z)
-- Cycle 3485 completed: no activation condition; no probes beyond the three standard endpoints (last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3486.md`.
-
-## Receipt (2026-11-20T04:57:31Z)
-- Cycle 3486 completed (this handoff update): no activation condition; probes re-confirmed unchanged (Binance 451, Bybit 403, Kraken 200, last confirmed 2026-11-20T02:53:02Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3487.md`.
-
-## Receipt (2026-11-20T05:00:43Z)
-- Cycle 3487 completed (this handoff update): no activation condition; probes re-confirmed unchanged (Binance 451, Bybit 403, Kraken 200, last confirmed 2026-11-20T04:57:31Z); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3488.md`.
-
-## Receipt (2026-11-20T05:02:25Z)
-- Cycle 3488 completed: no activation condition; no probes; artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699 unchanged, SEARCH_LOG.md unchanged). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3489.md`.
-
-## Receipt (2026-11-20T05:05:28Z)
-- Cycle 3489 completed (this handoff update): no activation condition; no probes (per standing instruction not to re-run probes as "progress"); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699, SEARCH_LOG.md md5 a62fde8a207fb142801fa14baa2fedad, HANDOFF.md md5 d54635d1b32898aa3ce1816f837e75ea — all match pre-edit baselines). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3490.md`.
-
-## Receipt (2026-11-20T05:07:44Z)
-- Cycle 3490 completed: no activation condition; no probes (per standing instruction); artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699, SEARCH_LOG.md md5 a62fde8a207fb142801fa14baa2fedad — both match verified baselines). Standby counter frozen at Cycle 3388. Correct outcome: no file changes to research artifacts, no new cycles, short status report to user. Next-agent pointer advanced to `research/TASK_CYCLE_3491.md`.
+- No activation condition triggered. No probes run (standing instruction: re-probing is not progress).
+- Verified on disk, not by re-derivation: `HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `SEARCH_LOG.md` md5 `a62fde8a207fb142801fa14baa2fedad` — both match the baselines recorded at Cycle 3490, so no research artifact changed.
+- `research/TASK_CYCLE_3491.md` marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3492.md` written as the canonical next-agent task message.
+- Deliberate deviation: no `SEARCH_LOG.md` bullet appended this cycle. The per-handoff log entries were the source of the file's bloat and record no state change; the receipt above is the authoritative record.
+- Correct outcome for the next agent if nothing changes: no research edits, no new cycles, a short status report.
