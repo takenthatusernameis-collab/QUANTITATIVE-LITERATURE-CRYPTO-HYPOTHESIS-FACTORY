@@ -35,3 +35,13 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Update `research/HANDOFF.md` in place: advance the header timestamp, advance the next-agent pointer, replace the single `## Receipt` block with the new one (keep exactly one receipt).
 - Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
 - Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
+
+## Result
+
+- Timestamp: 2026-11-21T17:34:13Z
+- Prior task (Cycle 3655, PENDING) read from `research/TASK_CYCLE_3655.md`: complete. Verified its outputs on disk.
+- User explicitly requested a handoff refresh (read the prior agent task, complete it, update the handoff, write the next agent's initial task message), matching the bookkeeping rule.
+- No activation condition triggered: no validation authorization, no unrestricted network/proxy, no new hypothesis/route requested, no retire/restructure request.
+- Verified on disk: `research/TASK_CYCLE_3655.md` Status = PENDING; `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d069e6c08c61ddb89958d7f45c8b0bb0` (identical to the hashes recorded in the Cycle 3654 receipt); `research/SEARCH_LOG.md` consolidated heading and both `Cycles covered` blocks read Cycle 3388 / 2842–3388 / 547, in agreement.
+- Actions: marked `research/TASK_CYCLE_3655.md` COMPLETE; wrote `research/TASK_CYCLE_3656.md` (PENDING, canonical next-agent task message); updated `research/HANDOFF.md` in place (header timestamp advanced to Cycle 3656 refresh, next-agent pointer set to `TASK_CYCLE_3656.md`, single receipt replaced).
+- Artifacts unchanged: `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` not edited; no probes run; no research content added; no new standby cycles created.
