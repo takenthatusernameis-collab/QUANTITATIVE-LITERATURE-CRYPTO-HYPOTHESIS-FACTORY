@@ -26,6 +26,12 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
+## Result
+
+- Timestamp: 2026-11-21T15:27:08Z (Cycle 3653 handoff refresh)
+- Actions taken: Read `research/HANDOFF.md` and `research/TASK_CYCLE_3652.md` (Status = PENDING); confirmed closed/standby state; no research edits; no probes. Marked this task COMPLETE. Wrote `research/TASK_CYCLE_3653.md` (Status = PENDING). Updated `research/HANDOFF.md` in place: header timestamp advanced to Cycle 3653 refresh, next-agent pointer advanced to `TASK_CYCLE_3653.md`, single `## Receipt` block replaced.
+- Outcome: Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
+
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
 When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
