@@ -44,3 +44,10 @@ If none of these happens, the correct outcome is: no research file changes, no n
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `d0183d24178d7e9c3621f8157bdebc8f`.
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3601 were handoff bookkeeping only.
+
+## Result (2026-11-21T06:22:07Z) — Cycle 3602
+
+- Prior agent task (Cycle 3602) read from durable handoff `research/HANDOFF.md`: complete. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retirement/restructure requested).
+- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `30b6a15a30caa4731f446a083b37915f` — unchanged by this cycle.
+- `research/TASK_CYCLE_3602.md` marked COMPLETE with this `## Result` block; `research/TASK_CYCLE_3603.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3602 refresh, next-agent pointer advanced to 3603, still exactly one receipt.
+- Correct outcome: no research edits, no new cycles beyond the canonical next-agent task message, a short status report.
