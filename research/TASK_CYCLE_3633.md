@@ -1,6 +1,6 @@
 TASK CYCLE 3633 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-21T13:18:47Z)
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -26,13 +26,11 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
-## Bookkeeping rule (only when the user asks for a handoff refresh)
+## Result (2026-11-21T13:18:47Z) — Cycle 3633 complete
 
-When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
-- Read `research/HANDOFF.md` and the current `research/TASK_CYCLE_NNNN.md` (Status = PENDING).
-- Mark the prior task file COMPLETE by adding a `## Result` block with timestamp, actions taken, and outcome.
-- Write the next `research/TASK_CYCLE_NNNN.md` (increment cycle number) as the canonical initial task message (Status = PENDING), mirroring this file's structure.
-- Update `research/HANDOFF.md` in place: advance the header timestamp, advance the next-agent pointer, replace the single `## Receipt` block with the new one (keep exactly one receipt).
-- Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
-- Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
+Actions taken: Read `research/HANDOFF.md` and this task file. Confirmed project CLOSED / STANDBY, research-only. Both activation conditions absent: no unrestricted network/proxy supplied, no new hypothesis or route requested, no retirement/restructure requested. Neither Binance (HTTP 451 RESTRICTED_LOCATION) nor Bybit (HTTP 403 COUNTRY_BLOCKED) is accessible; Kraken spot is reachable but not in the Cycle 4 spec. No probes run, no datasets downloaded, no timestamp alignment/OOS/baseline/cost-model/falsification work executed. No research file changes made beyond this task cycle bookkeeping.
+
+Outcome: No activation condition triggered. Correct outcome applied: no research edits, no new research cycles, no new hypotheses, no validation, no trading recommendations. Chain remains terminated at Cycle 3388. Artifacts unchanged (`research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d069e6c08c61ddb89958d7f45c8b0bb0`).
+
+Status: COMPLETE — handoff advanced to `research/TASK_CYCLE_3634.md` as the canonical next-agent task message.
 EOF
