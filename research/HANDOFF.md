@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-21T21:36:09Z (manual handoff Cycle 3682 refresh)
+**Last updated:** 2026-11-21T21:36:35Z (Cycle 999 completion → Cycle 1000 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3682.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_1000.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -12,7 +12,7 @@
 - **H2** — anchoring-intensity basis premium / basis mean reversion (Deribit BTC-PERPETUAL substitution, 3720 obs, 2024-02-29 → 2025-03-17). Mean reversion exists but is extremely fast (half-life ≈0.16 funding intervals), unstable OOS (test β sign flips), and shows no funding-magnitude scaling (corr ≈ −0.004); effect size far below ~7e-4 round-trip cost → **falsified for tradability**.
 - **No empirical validation** was ever performed on the original Binance/Bybit H1 spec.
 
-## Access status (last probed 2026-11-20T11:17:20Z — unchanged since 2026-11-20T07:05:32Z; not re-probed since, per the no-probe rule)
+## Access status (last probed 2026-11-03T13:16:19Z — unchanged since Cycle 5; not re-probed since, per the no-probe rule)
 
 | Probe | Endpoint | Result |
 |---|---|---|
@@ -34,10 +34,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-21T21:36:09Z) — Cycle 3682 handoff refresh
+## Receipt (2026-11-21T21:36:35Z) — Cycle 999 completion / Cycle 1000 handoff
 
-- Prior agent task (Cycle 3681) read from `research/TASK_CYCLE_3681.md`: complete. Status = COMPLETE with `## Result` block (2026-11-21T21:36:09Z). `research/TASK_CYCLE_3682.md` is on disk (Status = PENDING) as the canonical next-agent initial task message, mirroring `TASK_CYCLE_3681.md` structure.
-- Handoff bookkeeping completed: header advanced to Cycle 3682 refresh; next-agent pointer advanced to `research/TASK_CYCLE_3682.md`; single `## Receipt` block replaced.
+- Prior agent task (Cycle 999) read from `research/TASK_CYCLE_999.md`: complete. Status = COMPLETE with `## Result` block (2026-11-21T21:36:35Z). `research/TASK_CYCLE_1000.md` is on disk (Status = PENDING) as the canonical next-agent initial task message.
+- Handoff bookkeeping completed: header advanced to Cycle 999 completion → Cycle 1000 next; next-agent pointer advanced to `research/TASK_CYCLE_1000.md`; single `## Receipt` block replaced.
 - No research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
 - Project remains CLOSED / STANDBY.
 
