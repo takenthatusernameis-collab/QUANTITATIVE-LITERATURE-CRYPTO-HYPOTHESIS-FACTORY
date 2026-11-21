@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-21T17:32:01Z (manual handoff Cycle 3654 refresh)
+**Last updated:** 2026-11-21T17:32:43Z (manual handoff Cycle 3655 refresh)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3654.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3655.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -12,7 +12,7 @@
 - **H2** — anchoring-intensity basis premium / basis mean reversion (Deribit BTC-PERPETUAL substitution, 3720 obs, 2024-02-29 → 2025-03-17). Mean reversion exists but is extremely fast (half-life ≈0.16 funding intervals), unstable OOS (test β sign flips), and shows no funding-magnitude scaling (corr ≈ −0.004); effect size far below ~7e-4 round-trip cost → **falsified for tradability**.
 - **No empirical validation** was ever performed on the original Binance/Bybit H1 spec.
 
-## Access status (last probed 2026-11-20T11:17:20Z — unchanged since 2026-11-20T07:05:32Z)
+## Access status (last probed 2026-11-20T11:17:20Z — unchanged since 2026-11-20T07:05:32Z; not re-probed since, per the no-probe rule)
 
 | Probe | Endpoint | Result |
 |---|---|---|
@@ -30,15 +30,15 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 ## Standing state of the record
 
 - Cycle 3388 (2026-11-19T05:03:25Z) was the last cycle that advanced the standby counter: 547 consecutive no-op standby cycles (2842–3388), zero research output. The chain was terminated there.
-- Cycles 3389–3586 were manual handoff messages (user-requested) that re-verified the closed state and changed no conclusion. They are logged in `SEARCH_LOG.md` through Cycle 3500; later ones are recorded only in the single receipt below.
+- Cycles 3389–3655 were manual handoff messages (user-requested) that re-verified the closed state and changed no conclusion. Only a representative subset is logged in `SEARCH_LOG.md` (through Cycle 3610); the rest are recorded only in the single receipt below.
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-21T17:32:01Z) — Cycle 3654 handoff refresh
+## Receipt (2026-11-21T17:32:43Z) — Cycle 3655 handoff refresh
 
-- Prior agent task (Cycle 3653) read from `research/TASK_CYCLE_3653.md`: complete. The user explicitly requested a handoff refresh (complete the prior task, update the handoff, write a clear next-agent task message), which matches the bookkeeping rule. No research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized).
-- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d069e6c08c61ddb89958d7f45c8b0bb0` — unchanged by this cycle.
-- `research/TASK_CYCLE_3653.md` marked COMPLETE with `## Result` block; `research/TASK_CYCLE_3654.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3654 refresh, next-agent pointer set to `TASK_CYCLE_3654.md`, still exactly one receipt.
+- Prior agent task (Cycle 3654) read from `research/TASK_CYCLE_3654.md`: complete. The user explicitly requested a handoff refresh (complete the prior task, update the handoff, write a clear next-agent task message), which matches the bookkeeping rule. No research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized).
+- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d069e6c08c61ddb89958d7f45c8b0bb0` — both identical to the hashes recorded at Cycle 3654, i.e. unchanged by this cycle. `SEARCH_LOG.md` consolidated heading and both `Cycles covered` blocks agree at Cycle 3388 / 2842–3388 / 547.
+- `research/TASK_CYCLE_3654.md` marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3655.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3655 refresh, next-agent pointer set to `TASK_CYCLE_3655.md`, access-probe section annotated as not re-probed, still exactly one receipt.
 - Correct outcome: no research edits, no new cycles beyond the canonical next-agent task message, a short status report.
 
 (End of file)
