@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-21T21:34:44Z (manual handoff Cycle 3679 refresh)
+**Last updated:** 2026-11-21T21:35:10Z (manual handoff Cycle 3680 refresh)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3679.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3680.md` (the single canonical initial task message for the next agent — replaces the `TASK_CYCLE_35xx.md` pointer chain).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -34,10 +34,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-21T21:34:44Z) — Cycle 3679 handoff refresh
+## Receipt (2026-11-21T21:35:10Z) — Cycle 3680 handoff refresh
 
-- Prior agent task (Cycle 3678) read from `research/TASK_CYCLE_3678.md`: complete. Status = COMPLETE with `## Result` block (2026-11-21T21:34:44Z). `research/TASK_CYCLE_3679.md` is on disk (Status = PENDING) as the canonical next-agent initial task message, mirroring `TASK_CYCLE_3678.md` structure.
-- Handoff bookkeeping completed: header advanced to Cycle 3679 refresh; next-agent pointer advanced to `research/TASK_CYCLE_3679.md`; single `## Receipt` block replaced.
+- Prior agent task (Cycle 3679) read from `research/TASK_CYCLE_3679.md`: complete. Status = COMPLETE with `## Result` block (2026-11-21T21:35:10Z). `research/TASK_CYCLE_3680.md` is on disk (Status = PENDING) as the canonical next-agent initial task message, mirroring `TASK_CYCLE_3679.md` structure.
+- Handoff bookkeeping completed: header advanced to Cycle 3680 refresh; next-agent pointer advanced to `research/TASK_CYCLE_3680.md`; single `## Receipt` block replaced.
 - No research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
 - Project remains CLOSED / STANDBY.
 
