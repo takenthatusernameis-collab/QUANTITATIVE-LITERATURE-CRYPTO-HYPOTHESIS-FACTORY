@@ -1,12 +1,18 @@
 # TASK CYCLE 3589 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
 ## Situation in one paragraph
 
 The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1; Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403; Kraken spot returns 200 but is not part of the spec). Full detail and numbers: `research/HYPOTHESES.md`.
+
+## Result
+
+- Prior agent task (Cycle 3588) read from `research/HANDOFF.md`: complete. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested).
+- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d0183d24178d7e9c3621f8157bdebc8f` — unchanged.
+- `research/TASK_CYCLE_3590.md` written as canonical next-agent task message (Status = PENDING); `HANDOFF.md` updated in place.
 
 ## Your task
 
