@@ -1,6 +1,6 @@
 # TASK CYCLE 3597 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -35,7 +35,7 @@ If none of these happens, the correct outcome is: no research file changes, no n
 - Do not present re-verification of a closed project as research progress.
 - Do not create `TASK_CYCLE_*.md` files except as the single canonical next-agent task message when a handoff is explicitly requested.
 
-## Current facts you can rely on (verified 2026-11-21T05:21:03Z)
+## Current facts you can rely on (verified 2026-11-21T06:15:53Z)
 
 - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked.
 - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked.
@@ -43,5 +43,10 @@ If none of these happens, the correct outcome is: no research file changes, no n
 - Access facts last probed 2026-11-20T11:17:20Z; not re-probed during Cycle 3596 (closed-state rule).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `d0183d24178d7e9c3621f8157bdebc8f`.
-- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3596 were handoff bookkeeping only.
-EOF
+- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3597 were handoff bookkeeping only.
+## Result (2026-11-21T06:15:53Z) — Cycle 3597
+
+- Prior agent task read from durable handoff `research/HANDOFF.md`: complete. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retirement/restructure requested).
+- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `d0183d24178d7e9c3621f8157bdebc8f` — unchanged.
+- `research/TASK_CYCLE_3597.md` marked COMPLETE with `## Result` block; `research/TASK_CYCLE_3598.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3597 refresh; still exactly one receipt.
+- Correct outcome: no research edits, no new cycles beyond the canonical next-agent task message, a short status report.
