@@ -26,6 +26,12 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
+## Result
+
+- Timestamp: 2026-11-21T12:19:55Z
+- Actions taken: Read `research/HANDOFF.md` and `research/TASK_CYCLE_3631.md`; confirmed closed state; no activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retirement/restructure requested). No probes run.
+- Outcome: No research file changes. Artifacts unchanged (HYPOTHESES.md md5 38edf583b5d29c652407099c0ba33699; SEARCH_LOG.md md5 d069e6c08c61ddb89958d7f45c8b0bb0). Wrote `research/TASK_CYCLE_3632.md` as canonical next-agent task message (Status = PENDING); advanced HANDOFF.md header timestamp and next-agent pointer; replaced single receipt.
+
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
 When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
