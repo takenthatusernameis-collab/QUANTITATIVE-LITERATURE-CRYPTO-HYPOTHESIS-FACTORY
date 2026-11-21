@@ -1,14 +1,37 @@
-## Cycle 1016 — Completion Entry (standby/closeout no-op, research-only)
+## Cycle 1016 — Initial Task Message (standby/closeout, research-only)
 
-Completed prior agent task from durable handoff (Cycle 1016 per HANDOFF) as standby/closeout no-op. Did NOT retry blocked Binance/Bybit endpoints for data collection (access restrictions persist unchanged: Binance RESTRICTED_LOCATION HTTP 451, Bybit COUNTRY_BLOCKED HTTP 403). Re-verified access from current environment via direct curl (2026-11-03T16:19:53Z):
-  - Binance Futures fundingRate (BTCUSDT): HTTP 451 → RESTRICTED_LOCATION. No data collected.
-  - Bybit V5 funding/history (linear BTCUSDT): HTTP 403 → COUNTRY_BLOCKED. No data collected.
-  - Kraken spot ticker (XBTUSD): HTTP 200 → reachable (sanity check only, not in spec).
-  - Deribit: HTTP 400 (reachable host, expected unauthenticated probe code, not in spec).
-  - Hyperliquid: HTTP 405 (reachable host, not in spec).
-  - KuCoin: HTTP 200 → reachable (used only for venue-substituted replications; not part of original spec).
-  - OKX: HTTP 400 (reachable host, expected unauthenticated probe code, not in spec).
+**Status:** PENDING
+**Type:** manual handoff (not a standby cycle; nothing is scheduled)
+**Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
-Reviewed research/HANDOFF.md, research/SEARCH_LOG.md, research/TASK_CYCLE_1014.md, research/TASK_CYCLE_1015.md, and research/HYPOTHESES.md for consistency. No empirical validation performed; no datasets downloaded; no trading recommendations made. Neither activation condition occurred: (a) no unrestricted network/proxy available to run H1 per Cycle 4 specs; (b) no user request for new hypothesis/route beyond the 4 discovered routes. Project remains in closeout state.
+## Situation in one paragraph
 
-Marked research/TASK_CYCLE_1016.md complete with this entry, wrote research/TASK_CYCLE_1017.md (initial task message), updated research/HANDOFF.md (Cycle 1016 completion + Cycle 1017 next task + initial task message), and updated research/SEARCH_LOG.md (Cycle 1016 entry).
+The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1; Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403; Kraken spot returns 200 but is not part of the spec). Full detail and numbers: `research/HYPOTHESES.md`.
+
+## Your task
+
+**Default: do nothing new in research.** Read `research/HANDOFF.md`, confirm the closed state, and report it to the user in a few lines. Do not run a standby cycle, do not re-probe exchanges as "progress", and do not edit `HYPOTHESES.md` or `SEARCH_LOG.md` merely to record that nothing changed.
+
+Act **only** if the user does one of these:
+
+1. **Explicitly authorizes validation AND an unrestricted network/proxy is supplied.** Then:
+   - Run H1 exactly per the Cycle 4 spec in `research/HYPOTHESES.md`: Binance−Bybit, 2024-01-11 → 2025-03-17, 8h intervals, OOS ≥ 4 months from 2024-11-10, full fee/slippage modeling.
+   - Document the access method (proxy/host) in the artifacts.
+   - Apply the pre-registered H1 falsification tests; report failure modes, not performance guarantees.
+   - Update `research/HYPOTHESES.md` and prepend one bullet to `research/SEARCH_LOG.md`.
+
+2. **Explicitly requests a new hypothesis or a route beyond the four already explored.** Then survey it with the same research-only discipline: sources, mechanism, falsification tests, cost model, data-access spec. No data download unless access is real.
+
+3. **Explicitly asks to retire or restructure the project** (e.g. archive the `TASK_CYCLE_*.md` chain, keep only the canonical task file, or delete the handoff boilerplate). Then do exactly that requested bookkeeping and stop — do not add research content.
+
+If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
+
+## Bookkeeping rule (only when the user asks for a handoff refresh)
+
+When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
+- Read `research/HANDOFF.md` and the current `research/TASK_CYCLE_NNNN.md` (Status = PENDING).
+- Mark the prior task file COMPLETE by adding a `## Result` block with timestamp, actions taken, and outcome.
+- Write the next `research/TASK_CYCLE_NNNN.md` (increment cycle number) as the canonical initial task message (Status = PENDING), mirroring this file's structure.
+- Update `research/HANDOFF.md` in place: advance the header timestamp, advance the next-agent pointer, replace the single `## Receipt` block with the new one (keep exactly one receipt).
+- Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
+- Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
