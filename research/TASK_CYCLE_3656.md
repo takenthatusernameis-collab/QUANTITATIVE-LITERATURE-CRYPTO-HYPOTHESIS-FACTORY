@@ -35,3 +35,12 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Update `research/HANDOFF.md` in place: advance the header timestamp, advance the next-agent pointer, replace the single `## Receipt` block with the new one (keep exactly one receipt).
 - Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
 - Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
+
+## Result
+
+- Timestamp: 2026-11-21T17:35:32Z
+- Prior task (Cycle 3656, PENDING) read from `research/TASK_CYCLE_3656.md`: complete. Confirmed the CLOSED / STANDBY state; no activation condition triggered (no validation authorization, no unrestricted network/proxy supplied, no new hypothesis or route requested, no retire/restructure request).
+- User explicitly requested a handoff refresh (read the prior agent task, complete it, update the handoff, write the next agent's initial task message), matching the bookkeeping rule.
+- Verified on disk: `research/TASK_CYCLE_3656.md` Status = PENDING before this cycle; `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged; `SEARCH_LOG.md` consolidated heading and `Cycles covered` blocks unchanged at Cycle 3388 / 2842–3388 / 547.
+- Actions: marked `research/TASK_CYCLE_3656.md` COMPLETE with this `## Result` block; wrote `research/TASK_CYCLE_3657.md` (Status = PENDING, canonical next-agent task message); updated `research/HANDOFF.md` in place (header timestamp advanced to Cycle 3657 refresh, next-agent pointer set to `TASK_CYCLE_3657.md`, single `## Receipt` block replaced).
+- Artifacts unchanged: `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` not edited; no probes run; no research content added; no new standby cycles created.
