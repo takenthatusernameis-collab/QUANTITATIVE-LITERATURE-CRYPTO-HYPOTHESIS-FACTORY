@@ -43,4 +43,11 @@ If none of these happens, the correct outcome is: no research file changes, no n
 - Access facts last probed 2026-11-20T11:17:20Z; not re-probed during Cycle 3563 (closed-state rule).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `153e40f27378bd54403894258da2d10c`.
-- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3562 were handoff bookkeeping only.
+- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3563 were handoff bookkeeping only.
+
+## Result
+
+- Cycle 3563 task completed: read `research/HANDOFF.md`, confirmed closed/standby state. No activation condition triggered. No research file changes.
+- Handoff refresh performed: TASK_CYCLE_3563.md marked COMPLETE; TASK_CYCLE_3564.md written as canonical next-agent task message (Status = PENDING); HANDOFF.md header timestamp advanced to Cycle 3564 refresh and next-agent pointer updated; exactly one receipt retained.
+- Verified on disk: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (unchanged); `research/SEARCH_LOG.md` md5 `153e40f27378bd54403894258da2d10c` (unchanged). Correct outcome: no research edits, no new cycles beyond the canonical next-agent task message, a short status report.
+EOF
