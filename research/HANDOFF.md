@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-22T04:27:13Z (Cycle 3522 completion → Cycle 3523 next)
+**Last updated:** 2026-11-22T04:30:34Z (Cycle 3523 completion → Cycle 3524 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3523.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3524.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -34,12 +34,12 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-22T04:27:13Z) — Cycle 3522 completion / Cycle 3523 handoff
+## Receipt (2026-11-22T04:30:34Z) — Cycle 3523 completion / Cycle 3524 handoff
 
-- Prior agent task (Cycle 3522) was read from `research/TASK_CYCLE_3522.md` (Status = PENDING) and is now COMPLETE with a `## Result` block (2026-11-22T04:27:13Z); its canonical next-agent file `research/TASK_CYCLE_3523.md` is written (Status = PENDING) as the canonical next-agent initial task message.
-- Verified on disk: `research/TASK_CYCLE_3521.md` Status = COMPLETE with `## Result`; `research/TASK_CYCLE_3522.md` Status = COMPLETE with `## Result`; `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` unchanged; `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` unchanged. The `5ae5ddfd…` value quoted in older task files is stale boilerplate (the log was legitimately edited at Cycle 3387; handoff cycles 3389+ add no log entry) — recorded as a note in `TASK_CYCLE_3522.md`, not treated as drift.
-- Handoff bookkeeping completed: Cycle 3522 marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3523.md` written (Status = PENDING) as the canonical next-agent initial task message; header advanced to Cycle 3522 completion → Cycle 3523 next; next-agent pointer advanced to `research/TASK_CYCLE_3523.md`; single `## Receipt` block replaced.
-- **Divergence flagged (not resolved):** the repo contains a parallel, off-book chain at `research/TASK_CYCLE_3521.md` … `research/TASK_CYCLE_3682.md` (139 COMPLETE + 24 PENDING files, partly logged in `SEARCH_LOG.md` through Cycle 3610) produced by separate checkpoint sessions. It is NOT referenced by this authoritative handoff. Per the single-canonical-task-message invariant, this cycle treats `HANDOFF.md` + `TASK_CYCLE_3522/3523.md` as authoritative and did not bulk-delete or reconcile the parallel chain (that would be an unauthorized restructure). The next agent must treat the high-numbered files as stale unless the user explicitly authorizes a reconciliation.
+- Prior agent task (Cycle 3523) was read from `research/TASK_CYCLE_3523.md` (Status = PENDING) and is now COMPLETE with a `## Result` block (2026-11-22T04:30:34Z); its canonical next-agent file `research/TASK_CYCLE_3524.md` is written (Status = PENDING) as the canonical next-agent initial task message.
+- Verified on disk: `research/TASK_CYCLE_3522.md` Status = COMPLETE with `## Result`; `research/TASK_CYCLE_3523.md` Status = COMPLETE with `## Result`; `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` unchanged; `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` unchanged. The `5ae5ddfd…` value quoted in older task files is stale boilerplate (the log was legitimately edited at Cycle 3387; handoff cycles 3389+ add no log entry) — recorded as a note in `TASK_CYCLE_3523.md`, not treated as drift.
+- Handoff bookkeeping completed: Cycle 3523 marked COMPLETE with a `## Result` block; `research/TASK_CYCLE_3524.md` written (Status = PENDING) as the canonical next-agent initial task message; header advanced to Cycle 3523 completion → Cycle 3524 next; next-agent pointer advanced to `research/TASK_CYCLE_3524.md`; single `## Receipt` block replaced.
+- **Divergence flagged (not resolved):** the repo contains a parallel, off-book chain at `research/TASK_CYCLE_3521.md` … `research/TASK_CYCLE_3682.md` (139 COMPLETE + 24 PENDING files, partly logged in `SEARCH_LOG.md` through Cycle 3610) produced by separate checkpoint sessions. It is NOT referenced by this authoritative handoff. Per the single-canonical-task-message invariant, this cycle treats `HANDOFF.md` + `TASK_CYCLE_3523/3524.md` as authoritative and did not bulk-delete or reconcile the parallel chain (that would be an unauthorized restructure). The next agent must treat the high-numbered files as stale unless the user explicitly authorizes a reconciliation.
 - No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retire/restructure request). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged by this cycle. No probes run.
 - Project remains CLOSED / STANDBY.
 
