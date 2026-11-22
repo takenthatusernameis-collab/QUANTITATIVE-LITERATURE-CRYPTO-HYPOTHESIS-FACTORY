@@ -1,15 +1,12 @@
 # TASK CYCLE 3512 — Initial task message for the next agent
 
-**Status:** COMPLETE
+**Status:** PENDING
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
-## Result (2026-11-20T13:22:33Z)
-Confirmed project CLOSED/STANDBY. No activation condition met (no unrestricted network/proxy supplied, no new hypothesis/route requested, no retirement/restructure requested). Access state unchanged: Binance HTTP 451, Bybit HTTP 403, Kraken HTTP 200. No research edits, no new cycles. Short status report provided to user. Handoff refreshed per user request.
-
 ## Situation in one paragraph
 
-The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1, Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403, reconfirmed 2026-11-20T13:21:44Z; Kraken spot returns 200 but is not part of the spec, so it proves nothing about H1 feasibility). Full detail and numbers: `research/HYPOTHESES.md`.
+The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1, Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403, reconfirmed 2026-11-20T11:17:20Z; Kraken spot returns 200 but is not part of the spec, so it proves nothing about H1 feasibility). Full detail and numbers: `research/HYPOTHESES.md`.
 
 ## Your task
 
@@ -17,9 +14,13 @@ The project is CLOSED / STANDBY and research-only. Four literature routes were s
 
 Act **only** if the user does one of these:
 
-1. **Explicitly authorizes validation AND an unrestricted network/proxy is supplied.** Then run H1 exactly per the Cycle 4 spec in `research/HYPOTHESES.md` (Binance−Bybit, 2024-01-11 → 2025-03-17, 8h intervals, OOS ≥ 4 months from 2024-11-10, full fee/slippage modeling), document the access method, apply the pre-registered H1 falsification tests, and update `research/HYPOTHESES.md` + prepend one bullet to `research/SEARCH_LOG.md`.
+1. **Explicitly authorizes validation AND an unrestricted network/proxy is supplied.** Then:
+   - Run H1 exactly per the Cycle 4 spec in `research/HYPOTHESES.md`: Binance−Bybit, 2024-01-11 → 2025-03-17, 8h intervals, OOS ≥ 4 months from 2024-11-10, full fee/slippage modeling.
+   - Document the access method (proxy/host) in the artifacts.
+   - Apply the pre-registered H1 falsification tests; report failure modes, not performance guarantees.
+   - Update `research/HYPOTHESES.md` and prepend one bullet to `research/SEARCH_LOG.md`.
 2. **Explicitly requests a new hypothesis or a route beyond the four already explored.** Then survey it with the same research-only discipline: sources, mechanism, falsification tests, cost model, data-access spec. No data download unless access is real.
-3. **Explicitly asks to retire or restructure the project.** Then do exactly that requested bookkeeping and stop — do not add research content.
+3. **Explicitly asks to retire or restructure the project** (e.g. archive the `TASK_CYCLE_*.md` chain, keep only the canonical task file, or delete the handoff boilerplate). Then do exactly that requested bookkeeping and stop — do not add research content.
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
@@ -34,7 +35,7 @@ If none of these happens, the correct outcome is: no research file changes, no n
 - Do not present re-verification of a closed project as research progress.
 - Do not create `TASK_CYCLE_*.md` files except as the single canonical next-agent task message when a handoff is explicitly requested.
 
-## Current facts you can rely on (verified 2026-11-20T13:21:44Z)
+## Current facts you can rely on (verified 2026-11-20T11:17:20Z)
 
 - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked.
 - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked.
