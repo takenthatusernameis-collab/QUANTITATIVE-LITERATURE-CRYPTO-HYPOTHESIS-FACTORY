@@ -26,6 +26,12 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
+
+## Result (2026-11-22T18:52:42Z) — task complete
+
+Actions taken: Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3740.md`. Confirmed project CLOSED / STANDBY (research-only). No activation condition triggered (no unrestricted network/proxy supplied; no validation authorized; no new hypothesis or route requested; no request to retire/restructure). No research probes run; no standby cycle run.
+Outcome: no research file changes, no new cycles. Artifacts unchanged (`research/HYPOTHESES.md`, `research/SEARCH_LOG.md`). Handoff refreshed → Cycle 3741 next.
+
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
 When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
