@@ -54,5 +54,5 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (stable since Cycle 3450-era).
 - `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` on disk. The `5ae5ddfd…` value quoted in older task files is stale boilerplate: `SEARCH_LOG.md` was legitimately edited (Cycle 3387 reconciliation) after those files were written, and no cycle entry is added for handoff cycles 3389+. Do not "restore" it.
-- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3539 were handoff bookkeeping only.
-- Remote `origin/main` SHA = local HEAD = `4779aa65c137f1fa4ff3d7144909f4fc7de52150` (persistence verified).
+- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3541 were handoff bookkeeping only.
+- Remote `origin/main` SHA = local HEAD = `7287e6589b9d0fdd8dcfb62ea351eccabac82d29` (persistence verified 2026-11-22T07:21:14Z; was `4779aa65…` at Cycle 3540).
