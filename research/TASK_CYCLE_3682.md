@@ -36,4 +36,4 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
 - Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
 
-(End of file - total 39 lines)
+(End of file)
