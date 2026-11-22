@@ -24,7 +24,12 @@ Act **only** if the user does one of these:
 
 3. **Explicitly asks to retire or restructure the project** (e.g. archive the `TASK_CYCLE_*.md` chain, keep only the canonical task file, or delete the handoff boilerplate). Then do exactly that requested bookkeeping and stop — do not add research content.
 
-If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
+## Result
+
+- Completed 2026-11-22T21:47:07Z as a manual handoff refresh. Read `research/HANDOFF.md` and this task file (Status = PENDING). Confirmed CLOSED / STANDBY.
+- No activation condition triggered (no validation authorized, no unrestricted network/proxy supplied, no new hypothesis/route requested, no retire/restructure request).
+- No research content changed; no probes; no standby cycles. `research/HYPOTHESES.md` (md5 `38edf583b5d29c652407099c0ba33699`) and `research/SEARCH_LOG.md` (md5 `3286eeb61b649779296ede065f029c17`) verified unchanged.
+- This file is now COMPLETE. Next canonical task message: `research/TASK_CYCLE_3756.md` (Status = PENDING).
 
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
