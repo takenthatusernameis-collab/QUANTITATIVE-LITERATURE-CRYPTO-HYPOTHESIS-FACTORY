@@ -1,6 +1,6 @@
 # TASK CYCLE 3547 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -8,7 +8,7 @@
 
 The project is CLOSED / STANDBY and research-only. Four literature routes were surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) were synthesized and then falsified **for tradability** under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1; Deribit for H2). H1 was never tested on its original Binance/Bybit spec because both endpoints are geo-blocked from this environment (Binance HTTP 451, Bybit HTTP 403; Kraken spot returns 200 but is not part of the spec). Full detail and numbers: `research/HYPOTHESES.md`.
 
-Git persistence note (verified 2026-11-22T08:15:26Z): local commit `fe82f24ee1bb13ccc06051c673552ff188eff5ff` is on `origin/main` as a clean fast-forward and the remote SHA was verified to match local HEAD. All local commits are preserved; no history was rewritten. Persistence confirmed. Do not claim persistence until the remote SHA matches local HEAD.
+Git persistence note (verified 2026-11-22T08:16:03Z): local commit `2be7b5f8de1dd84cc1b0061b349798ec393bb42f` is on `origin/main` as a clean fast-forward and the remote SHA was verified to match local HEAD. All local commits are preserved; no history was rewritten. Persistence confirmed. Do not claim persistence until the remote SHA matches local HEAD.
 
 ## Your task
 
@@ -47,12 +47,18 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - **Known divergence (do not silently resolve):** the repo also contains a parallel, off-book chain at `research/TASK_CYCLE_3521.md` … `research/TASK_CYCLE_3682.md` (139 COMPLETE + 24 PENDING files, partly logged in `SEARCH_LOG.md` through Cycle 3610) produced by separate checkpoint sessions and NOT referenced by `research/HANDOFF.md`. The authoritative record is `research/HANDOFF.md` + the single canonical task file named there. Treat the high-numbered files as stale unless the user explicitly authorizes a reconciliation/restructure. Do not delete them as part of a routine handoff.
 - **Persistence safety:** never claim a checkpoint is persisted until `git ls-remote origin refs/heads/main` returns a SHA equal to local `git rev-parse HEAD`. Do not reset or discard local commits; do not rewrite history unless a confirmed root cause requires it, and then only after preserving a recovery bundle and documenting the rollback plan.
 
-## Current facts you can rely on (verified 2026-11-22T08:15:26Z)
+## Current facts you can rely on (verified 2026-11-22T08:16:03Z)
 
 - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since, per the no-probe rule).
 - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since, per the no-probe rule).
 - Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (stable since Cycle 3450-era).
 - `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` on disk. The `5ae5ddfd…` value quoted in older task files is stale boilerplate: `SEARCH_LOG.md` was legitimately edited (Cycle 3387 reconciliation) after those files were written, and no cycle entry is added for handoff cycles 3389+. Do not "restore" it.
-- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3546 were handoff bookkeeping only.
-- Remote `origin/main` SHA = local HEAD = `fe82f24ee1bb13ccc06051c673552ff188eff5ff` (persistence verified 2026-11-22T08:15:26Z).
+- Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3547 were handoff bookkeeping only.
+- Remote `origin/main` SHA = local HEAD = `2be7b5f8de1dd84cc1b0061b349798ec393bb42f` (persistence verified 2026-11-22T08:16:03Z).
+
+## Result
+
+**Timestamp:** 2026-11-22T08:16:03Z
+**Actions taken:** User explicitly requested a handoff refresh. Read `research/HANDOFF.md` and `research/TASK_CYCLE_3547.md` (Status was PENDING). Marked `research/TASK_CYCLE_3547.md` COMPLETE. Created `research/TASK_CYCLE_3548.md` as the next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md` in place: advanced header timestamp, advanced next-agent pointer to `TASK_CYCLE_3548.md`, replaced the Receipt block.
+**Outcome:** No research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged. Project remains CLOSED / STANDBY.
