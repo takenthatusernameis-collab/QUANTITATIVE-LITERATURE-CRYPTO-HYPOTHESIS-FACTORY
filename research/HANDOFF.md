@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-22T08:18:56Z (handoff refresh: Cycle 3679 COMPLETE → Cycle 3680 next)
+**Last updated:** 2026-11-22T09:13:15Z (handoff refresh: Cycle 3680 COMPLETE → Cycle 3681 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3680.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3681.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -34,10 +34,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-22T08:18:56Z) — handoff refresh
+## Receipt (2026-11-22T09:13:15Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3679.md` (Status was PENDING). Confirmed closed/standby state; no research changes, no probes, no new cycles.
-- Marked prior task file COMPLETE (added `## Result` block, header Status updated). `research/TASK_CYCLE_3680.md` (Status = PENDING) stands as the canonical next-agent initial task message.
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3680.md` (Status was PENDING). Confirmed closed/standby state; no research changes, no probes, no new cycles.
+- Marked prior task file COMPLETE (added `## Result` block, header Status updated). `research/TASK_CYCLE_3681.md` (Status = PENDING) stands as the canonical next-agent initial task message.
 - Verified artifacts unchanged: `HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17`. Verified remote `origin/main` SHA = local HEAD = `2be7b5f8de1dd84cc1b0061b349798ec393bb42f` (persistence confirmed).
 - Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no retire/restructure request). `HYPOTHESES.md` and `SEARCH_LOG.md` unchanged by this refresh.
 
