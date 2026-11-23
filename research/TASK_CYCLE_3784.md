@@ -36,3 +36,10 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
 - Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
 EOF
+
+## Result
+
+**Timestamp:** 2026-11-23T01:40:16Z (Cycle 3784 handoff refresh)
+**Actions taken:** User explicitly requested a handoff refresh (complete prior task, update handoff, write next agent's initial task message). Read `research/HANDOFF.md` and `research/TASK_CYCLE_3784.md` (Status was PENDING). Marked `research/TASK_CYCLE_3784.md` COMPLETE. Created `research/TASK_CYCLE_3785.md` as the next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md` in place: advanced header timestamp, advanced next-agent pointer to `TASK_CYCLE_3785.md`, replaced the Receipt block.
+**Outcome:** Prior task marked COMPLETE; handoff refresh bookkeeping performed; no research activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized); `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
+**Next:** `research/TASK_CYCLE_3785.md` (Status = PENDING) is the canonical initial task message for the next agent.
