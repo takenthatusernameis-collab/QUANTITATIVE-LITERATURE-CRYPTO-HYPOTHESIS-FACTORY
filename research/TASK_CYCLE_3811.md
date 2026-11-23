@@ -26,6 +26,10 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
+## Result (2026-11-23T05:24:13Z)
+
+Read durable handoff `research/HANDOFF.md` and current task file `research/TASK_CYCLE_3811.md` (Status = PENDING). Confirmed closed/standby state; no research changes, no probes, no new cycles. No activation condition occurred (no unrestricted network/proxy supplied; no new hypothesis/route requested; no validation authorized; no retire/restructure request). Completed per bookkeeping rule: marked this task COMPLETE, updated `research/HANDOFF.md` header and receipt, and created `research/TASK_CYCLE_3812.md` (PENDING) as the canonical initial task message for the next agent. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged; no research content added.
+
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
 When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
