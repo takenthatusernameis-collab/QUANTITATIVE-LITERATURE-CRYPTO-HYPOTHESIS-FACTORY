@@ -26,6 +26,12 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
+## Result
+
+- Timestamp: 2026-11-23T10:34:11Z (Cycle 3847 handoff refresh)
+- Actions taken: Read durable handoff `research/HANDOFF.md` and current task file `research/TASK_CYCLE_3847.md` (Status = PENDING). Confirmed closed/standby state; no research changes, no probes, no new cycles.
+- Outcome: prior task marked COMPLETE; handoff refresh bookkeeping performed; `research/TASK_CYCLE_3848.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3847 refresh, next-agent pointer advanced to 3848, single receipt preserved.
+
 ## Bookkeeping rule (only when the user asks for a handoff refresh)
 
 When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
