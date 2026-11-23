@@ -1,6 +1,6 @@
 # TASK CYCLE 3872 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -26,12 +26,10 @@ Act **only** if the user does one of these:
 
 If none of these happens, the correct outcome is: no research file changes, no new cycles, a short status report.
 
-## Bookkeeping rule (only when the user asks for a handoff refresh)
+## Result
 
-When the user explicitly asks for a handoff refresh, do exactly this and nothing more:
-- Read `research/HANDOFF.md` and the current `research/TASK_CYCLE_NNNN.md` (Status = PENDING).
-- Mark the prior task file COMPLETE by adding a `## Result` block with timestamp, actions taken, and outcome.
-- Write the next `research/TASK_CYCLE_NNNN.md` (increment cycle number) as the canonical initial task message (Status = PENDING), mirroring this file's structure.
-- Update `research/HANDOFF.md` in place: advance the header timestamp, advance the next-agent pointer, replace the single `## Receipt` block with the new one (keep exactly one receipt).
-- Do not edit `research/HYPOTHESES.md` or `research/SEARCH_LOG.md`. Do not run probes. Do not add research content.
-- Report to the user: project still CLOSED / STANDBY; no activation condition triggered; artifacts unchanged.
+- Timestamp: 2026-11-23T16:40:18Z (Cycle 3872 handoff refresh)
+- Actions taken: Read durable handoff `research/HANDOFF.md` and current task file `research/TASK_CYCLE_3872.md` (Status = PENDING). Confirmed closed/standby state; no research changes, no probes, no new cycles.
+- Outcome: prior task marked COMPLETE; handoff refresh bookkeeping performed; `research/TASK_CYCLE_3873.md` written as the canonical next-agent task message (Status = PENDING); `HANDOFF.md` edited in place: header timestamp advanced to Cycle 3872 refresh, next-agent pointer advanced to 3873, single receipt preserved.
+
+(End of file)
