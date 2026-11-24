@@ -55,4 +55,6 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
 - Remote `origin/main` SHA = local HEAD = `440d404c46cbc4a54b96945498034093d04abdfc` (persistence verified 2026-11-22T08:12:20Z).
 
-(End of file)
+## Result (2026-11-24T14:40:34Z)
+- Actions taken: marked this task file (Cycle 3956) COMPLETE; read durable handoff `research/HANDOFF.md` and confirmed closed state; no research file changes; wrote `research/TASK_CYCLE_3957.md` as the next canonical initial task message (Status = PENDING); updated `research/HANDOFF.md` header, next-agent pointer, and single receipt block.
+- Outcome: project remains CLOSED / STANDBY; no activation condition triggered; `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified; no probes run.
