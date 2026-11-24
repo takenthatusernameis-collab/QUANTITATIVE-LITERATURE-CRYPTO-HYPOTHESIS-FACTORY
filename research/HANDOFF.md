@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-24T15:46:23Z (handoff refresh: Cycle 3963 COMPLETE → Cycle 3964 next)
+**Last updated:** 2026-11-24T20:49:55Z (handoff refresh: Cycle 3964 COMPLETE → Cycle 3965 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3964.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3965.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -35,11 +35,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
 
-## Receipt (2026-11-24T15:46:23Z) — handoff refresh
+## Receipt (2026-11-24T20:49:55Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and the prior task file `research/TASK_CYCLE_3963.md` (Status = PENDING). Fixed the stale `Status: PENDING` header in `research/TASK_CYCLE_3963.md` to `Status: COMPLETE` (it already carried a `## Result` block, per the "fix stale headers" rule). `research/TASK_CYCLE_3964.md` is the next PENDING canonical initial task message (Status = PENDING), mirroring the prior task structure: default no-op, report closed state, act only on explicit validation authorization with an unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
-- Verified artifacts unchanged: `research/HYPOTHESES.md` (md5 `38edf583b5d29c652407099c0ba33699`) and `research/SEARCH_LOG.md` (md5 `79690e2acf1c83255dc39a66c659a451` on disk) left unmodified. Git persistence confirmed: local HEAD = remote `origin/main` = `db9398204c7f61f335a4dd909642570ac903d688`. The `dd28cff245877d3378c5b130b9640c29607fae24` and `e38b88323b1cd534226cc97ceae1908859354079` values quoted in older task files are stale boilerplate (see `TASK_CYCLE_3964.md` "Current facts").
-- Verified the off-book parallel chain at `research/TASK_CYCLE_3521.md` … `research/TASK_CYCLE_3682.md` still contains exactly 162 files (139 COMPLETE + 23 PENDING) as claimed; 22 of those PENDING headers carry stale `## Result` blocks (Cycles 3539, 3563, 3602, 3622, 3625, 3626, 3629, 3630, 3635–3639, 3643–3646, 3649, 3653–3656) — left untouched per the "do not silently resolve" rule. Cycle 3548 is the one PENDING file with no `## Result` block at all; left as-is.
-- Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis/route requested; no validation authorized; no retire/restructure request). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged by this refresh.
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3964.md` (Status = PENDING). Marked `research/TASK_CYCLE_3964.md` COMPLETE (added `## Result` block). Created `research/TASK_CYCLE_3965.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp, advanced next-agent pointer to Cycle 3965, replaced single `## Receipt` block.
+- Verified artifacts unchanged: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` md5 `79690e2acf1c83255dc39a66c659a451`. Git persistence: local HEAD = remote `origin/main` = `ae6a2104ddcf243e726b80d47b6d8b8e7a84a8d5`.
+- Project remains CLOSED / STANDBY. No activation condition triggered. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
 
 (End of file)
