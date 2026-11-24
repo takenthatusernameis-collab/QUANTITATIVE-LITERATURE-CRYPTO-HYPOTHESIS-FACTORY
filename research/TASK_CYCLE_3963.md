@@ -54,3 +54,9 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - `research/SEARCH_LOG.md` md5 `79690e2acf1c83255dc39a66c659a451` on disk (commit 24e02a7c). Older task files quote `3286eeb61b649779296ede065f029c17` (commit dad7da7d) and `5ae5ddfd…`; both are stale boilerplate from prior commits and were legitimately edited since. Do not "restore" them.
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
 - Remote `origin/main` SHA = local HEAD = `dd28cff245877d3378c5b130b9640c29607fae24` (persistence verified 2026-11-24T15:40:12Z). The `e38b88323b1cd534226cc97ceae1908859354079` value quoted in older task files is stale.
+
+## Result
+
+**Timestamp:** 2026-11-24T15:43:37Z
+**Action:** Handoff refresh requested by user. Read `research/HANDOFF.md` and `research/TASK_CYCLE_3963.md` (Status = PENDING). Verified persistence (`git rev-parse HEAD` = `git ls-remote origin refs/heads/main` = `2e4a41de9043ca64d2ec82a43d83fca4424ad254`); verified artifact checksums (`research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` md5 `79690e2acf1c83255dc39a66c659a451`); verified off-book chain `research/TASK_CYCLE_3521.md`…`research/TASK_CYCLE_3682.md` = 162 files (139 COMPLETE + 23 PENDING, of which 22 carry stale `## Result` blocks — Cycle 3548 has none). Marked `research/TASK_CYCLE_3963.md` COMPLETE. Created `research/TASK_CYCLE_3964.md` as the next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp, advanced next-agent pointer to Cycle 3964, replaced the single `## Receipt` block with the new receipt.
+**Outcome:** Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis/route requested; no validation authorized; no retire/restructure request). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
