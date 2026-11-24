@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-24T22:02:57Z (handoff refresh: Cycle 3973 COMPLETE → Cycle 3974 next)
+**Last updated:** 2026-11-24T22:03:33Z (handoff refresh: Cycle 3974 COMPLETE → Cycle 3975 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3974.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3975.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -35,9 +35,9 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
 
-## Receipt (2026-11-24T22:02:57Z) — handoff refresh
+## Receipt (2026-11-24T22:03:33Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3973.md` (Status = PENDING). Marked `research/TASK_CYCLE_3973.md` COMPLETE (added `## Result` block). Created `research/TASK_CYCLE_3974.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp, advanced next-agent pointer to Cycle 3974, refreshed the cycle-range note, replaced single `## Receipt` block, corrected stale HEAD SHA.
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3974.md` (Status = PENDING). Marked `research/TASK_CYCLE_3974.md` COMPLETE (added `## Result` block). Created `research/TASK_CYCLE_3975.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp, advanced next-agent pointer to Cycle 3975, refreshed the cycle-range note, replaced single `## Receipt` block.
 - Verified artifacts unchanged: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` md5 `bf4d5a9c335502de1931d800af1ad7fe`. Git persistence: working tree clean; local HEAD = `origin/main` = `7161e0cbfaf47035b58a3dc6e4a5b08156f4f532`.
 - Project remains CLOSED / STANDBY. No activation condition triggered. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
 
