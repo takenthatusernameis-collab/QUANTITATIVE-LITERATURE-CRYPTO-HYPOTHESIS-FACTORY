@@ -1,6 +1,6 @@
 # TASK CYCLE 3960 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-24T15:35:24Z, handoff refresh)
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -55,4 +55,6 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
 - Remote `origin/main` SHA = local HEAD = `e38b88323b1cd534226cc97ceae1908859354079` (persistence verified 2026-11-24T14:53:07Z). The `440d404c46cbc4a54b96945498034093d04abdfc` value quoted in older task files is stale.
 
-(End of file)
+## Result
+
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3960.md` (Status = PENDING). Marked `research/TASK_CYCLE_3960.md` COMPLETE. `research/TASK_CYCLE_3961.md` is the next PENDING canonical initial task message. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified. No probes run. No activation condition triggered. Project remains CLOSED / STANDBY.
