@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-24T14:44:37Z (handoff refresh: Cycle 3957 COMPLETE → Cycle 3958 next)
+**Last updated:** 2026-11-24T14:50:01Z (handoff refresh: Cycle 3958 COMPLETE → Cycle 3959 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3958.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3959.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -30,15 +30,15 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 ## Standing state of the record
 
 - Cycle 3388 (2026-11-19T05:03:25Z) was the last cycle that advanced the standby counter: 547 consecutive no-op standby cycles (2842–3388), zero research output. The chain was terminated there.
-- Cycles 3389–3746 were manual handoff messages (user-requested) that re-verified the closed state and changed no conclusion. Only a representative subset is logged in `SEARCH_LOG.md` (through Cycle 3610, which belongs to a divergent parallel chain — see receipt below); the rest are recorded only in the single receipt below.
+- Cycles 3389–3958 were manual handoff messages (user-requested) that re-verified the closed state and changed no conclusion. Only a representative subset is logged in `SEARCH_LOG.md` (through Cycle 3610, which belongs to a divergent parallel chain — see receipt below); the rest are recorded only in the single receipt below.
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
 
-## Receipt (2026-11-24T14:44:37Z) — handoff refresh
+## Receipt (2026-11-24T14:50:01Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and the prior task file `research/TASK_CYCLE_3957.md` (Status = PENDING). Marked `research/TASK_CYCLE_3957.md` COMPLETE by adding a `## Result` block. `research/TASK_CYCLE_3958.md` is the next PENDING canonical initial task message (Status = PENDING), mirroring the prior task structure: default no-op, report closed state, act only on explicit validation authorization with an unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
-- Verified artifacts unchanged: `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified.
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and the prior task file `research/TASK_CYCLE_3958.md` (Status = PENDING). Marked `research/TASK_CYCLE_3958.md` COMPLETE by adding a `## Result` block. `research/TASK_CYCLE_3959.md` is the next PENDING canonical initial task message (Status = PENDING), mirroring the prior task structure: default no-op, report closed state, act only on explicit validation authorization with an unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
+- Verified artifacts unchanged: `research/HYPOTHESES.md` (md5 `38edf583b5d29c652407099c0ba33699`) and `research/SEARCH_LOG.md` (md5 `79690e2acf1c83255dc39a66c659a451` on disk) left unmodified. Git persistence confirmed: local HEAD = remote `origin/main` = `af14cee25e32120ea67e95ba8bb36ee285caf7fe`. The `440d404c…` and `3286eeb…` md5 values quoted in older task files are stale boilerplate (see `TASK_CYCLE_3959.md` "Current facts").
 - Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis/route requested; no validation authorized; no retire/restructure request). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged by this refresh.
 
 (End of file)

@@ -1,6 +1,6 @@
 # TASK CYCLE 3958 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -54,3 +54,8 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` on disk. The `5ae5ddfd…` value quoted in older task files is stale boilerplate: `SEARCH_LOG.md` was legitimately edited (Cycle 3387 reconciliation) after those files were written, and no cycle entry is added for handoff cycles 3389+. Do not "restore" it.
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
 - Remote `origin/main` SHA = local HEAD = `440d404c46cbc4a54b96945498034093d04abdfc` (persistence verified 2026-11-22T08:12:20Z).
+
+## Result (2026-11-24T14:50:01Z)
+- Actions taken: read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3958.md` (Status = PENDING); confirmed closed/standby state; verified artifact md5s (`research/HYPOTHESES.md` `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` `79690e2acf1c83255dc39a66c659a451` on disk) and git persistence (local HEAD = remote `origin/main` = `af14cee25e32120ea67e95ba8bb36ee285caf7fe`); no research file changes; no probes run. Marked `research/TASK_CYCLE_3958.md` COMPLETE; wrote `research/TASK_CYCLE_3959.md` (Status = PENDING) as the canonical next-agent task message; updated `research/HANDOFF.md` header, next-agent pointer, and single receipt block.
+- Outcome: project remains CLOSED / STANDBY; no activation condition triggered; `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified; no new cycles created.
+- Note: the `research/SEARCH_LOG.md` md5 quoted in this file's "Current facts" block (`3286eeb61b649779296ede065f029c17`) was stale at the time of this refresh — it is the value at an older commit (dad7da7d); the on-disk value is `79690e2acf1c83255dc39a66c659a451` (commit 24e02a7c), consistent with the standing note that older md5 values are stale boilerplate. The `440d404c…` remote SHA was likewise stale (current: `af14cee2…`). `research/TASK_CYCLE_3959.md` carries the corrected current values.
