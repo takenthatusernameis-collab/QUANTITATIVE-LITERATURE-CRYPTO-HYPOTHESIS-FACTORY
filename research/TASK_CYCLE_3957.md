@@ -1,6 +1,6 @@
 # TASK CYCLE 3957 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -54,3 +54,7 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - `research/SEARCH_LOG.md` md5 `3286eeb61b649779296ede065f029c17` on disk. The `5ae5ddfd…` value quoted in older task files is stale boilerplate: `SEARCH_LOG.md` was legitimately edited (Cycle 3387 reconciliation) after those files were written, and no cycle entry is added for handoff cycles 3389+. Do not "restore" it.
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
 - Remote `origin/main` SHA = local HEAD = `440d404c46cbc4a54b96945498034093d04abdfc` (persistence verified 2026-11-22T08:12:20Z).
+
+## Result (2026-11-24T14:44:37Z)
+- Actions taken: marked this task file (Cycle 3957) COMPLETE; read durable handoff `research/HANDOFF.md` and confirmed closed state; no research file changes; wrote `research/TASK_CYCLE_3958.md` as the next canonical initial task message (Status = PENDING); updated `research/HANDOFF.md` header, next-agent pointer, and single receipt block.
+- Outcome: project remains CLOSED / STANDBY; no activation condition triggered; `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified; no probes run.
