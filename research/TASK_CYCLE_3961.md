@@ -1,6 +1,6 @@
 # TASK CYCLE 3961 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE (2026-11-24T15:38:21Z, handoff refresh)
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -53,6 +53,10 @@ When the user explicitly asks for a handoff refresh, do exactly this and nothing
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (stable since Cycle 3450-era).
 - `research/SEARCH_LOG.md` md5 `79690e2acf1c83255dc39a66c659a451` on disk (commit 24e02a7c). Older task files quote `3286eeb61b649779296ede065f029c17` (commit dad7da7d) and `5ae5ddfd…`; both are stale boilerplate from prior commits and were legitimately edited since. Do not "restore" them.
 - Standby counter frozen at Cycle 3388 (547 consecutive no-op cycles, 2842–3388); Cycles 3389–3543 were handoff bookkeeping only.
-- Remote `origin/main` SHA = local HEAD = `e38b88323b1cd534226cc97ceae1908859354079` (persistence verified 2026-11-24T14:53:07Z). The `440d404c46cbc4a54b96945498034093d04abdfc` value quoted in older task files is stale.
+- Remote `origin/main` SHA = local HEAD = `dd28cff245877d3378c5b130b9640c29607fae24` (persistence verified 2026-11-24T15:38:21Z). The `e38b88323b1cd534226cc97ceae1908859354079` value quoted in older task files is stale.
+
+## Result
+
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_3961.md` (Status = PENDING). Marked `research/TASK_CYCLE_3961.md` COMPLETE. `research/TASK_CYCLE_3962.md` is the next PENDING canonical initial task message. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` left unmodified. No probes run. No activation condition triggered. Project remains CLOSED / STANDBY.
 
 (End of file)
