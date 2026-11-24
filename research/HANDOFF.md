@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-24T14:50:01Z (handoff refresh: Cycle 3958 COMPLETE → Cycle 3959 next)
+**Last updated:** 2026-11-24T14:53:07Z (handoff refresh: Cycle 3959 COMPLETE → Cycle 3960 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3959.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_3960.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -35,10 +35,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
 
-## Receipt (2026-11-24T14:50:01Z) — handoff refresh
+## Receipt (2026-11-24T14:53:07Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and the prior task file `research/TASK_CYCLE_3958.md` (Status = PENDING). Marked `research/TASK_CYCLE_3958.md` COMPLETE by adding a `## Result` block. `research/TASK_CYCLE_3959.md` is the next PENDING canonical initial task message (Status = PENDING), mirroring the prior task structure: default no-op, report closed state, act only on explicit validation authorization with an unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
-- Verified artifacts unchanged: `research/HYPOTHESES.md` (md5 `38edf583b5d29c652407099c0ba33699`) and `research/SEARCH_LOG.md` (md5 `79690e2acf1c83255dc39a66c659a451` on disk) left unmodified. Git persistence confirmed: local HEAD = remote `origin/main` = `af14cee25e32120ea67e95ba8bb36ee285caf7fe`. The `440d404c…` and `3286eeb…` md5 values quoted in older task files are stale boilerplate (see `TASK_CYCLE_3959.md` "Current facts").
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and the prior task file `research/TASK_CYCLE_3959.md` (Status = PENDING). Marked `research/TASK_CYCLE_3959.md` COMPLETE by adding a `## Result` block. `research/TASK_CYCLE_3960.md` is the next PENDING canonical initial task message (Status = PENDING), mirroring the prior task structure: default no-op, report closed state, act only on explicit validation authorization with an unrestricted network/proxy, a new hypothesis/route request, or a retire/restructure request.
+- Verified artifacts unchanged: `research/HYPOTHESES.md` (md5 `38edf583b5d29c652407099c0ba33699`) and `research/SEARCH_LOG.md` (md5 `79690e2acf1c83255dc39a66c659a451` on disk) left unmodified. Git persistence confirmed: local HEAD = remote `origin/main` = `e38b88323b1cd534226cc97ceae1908859354079`. The `af14cee2…` and `440d404c…` md5 values quoted in older task files are stale boilerplate (see `TASK_CYCLE_3960.md` "Current facts").
 - Project remains CLOSED / STANDBY. No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis/route requested; no validation authorized; no retire/restructure request). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged by this refresh.
 
 (End of file)
