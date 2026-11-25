@@ -1,8 +1,8 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-25T07:05:16Z (handoff refresh: Cycle 4021 COMPLETE → Cycle 4022 next)
+**Last updated:** 2026-11-25T07:10:52Z (handoff refresh: Cycle 4022 COMPLETE → Cycle 4023 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4022.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4023.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
 
 ## What was actually done
@@ -34,9 +34,10 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-25T07:05:16Z) — handoff refresh
+## Receipt (2026-11-25T07:10:52Z) — handoff refresh
 
-- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_4021.md` (Status = PENDING). Marked `research/TASK_CYCLE_4021.md` COMPLETE (added `## Result` block). Created `research/TASK_CYCLE_4022.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp to 2026-11-25T07:05:16Z, advanced next-agent pointer to Cycle 4022, replaced single `## Receipt` block.
-- Verified artifacts unchanged: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` md5 `bf4d5a9c335502de1931d800af1ad7fe`. Working tree clean; local HEAD = `849bed8bc5d6fabdfa759f2273e5b11c2f65d2a4` (in sync with origin/main). Project remains CLOSED / STANDBY. No activation condition triggered. `research/HYPOTHESES.md` unchanged; `research/SEARCH_LOG.md` has this cycle's closeout entry prepended.
+- Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_4022.md` (Status = PENDING). Marked `research/TASK_CYCLE_4022.md` COMPLETE (added `## Result` block). Created `research/TASK_CYCLE_4023.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp to 2026-11-25T07:10:52Z, advanced next-agent pointer to Cycle 4023, replaced single `## Receipt` block.
+- No activation condition triggered (no unrestricted network/proxy supplied; no new hypothesis or route requested; no validation authorized; no retire/restructure request). No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` deliberately left unmodified (per the task's constraint against no-op log churn; this corrects the prior practice of prepending a no-op SEARCH_LOG closeout bullet). Project remains CLOSED / STANDBY.
+- Corrected record: the "Current facts" in `TASK_CYCLE_4022.md` had drifted. Verified on disk at 2026-11-25T07:10:52Z: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (unchanged); `research/SEARCH_LOG.md` md5 `afcf2710310673d14e7e2184fd27879b` (changed from `bf4d5a9c335502de1931d800af1ad7fe` by the Cycle 4021 closeout prepend); local HEAD = `ff708e964b77ca7aeb11d5062676c9a28dfccc47` (advanced from `849bed8b…` via `chore(kilo): checkpoint agent session` commits; working tree clean; in sync with origin/main).
 
 (End of file)
