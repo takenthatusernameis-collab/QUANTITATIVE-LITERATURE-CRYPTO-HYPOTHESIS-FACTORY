@@ -243,3 +243,9 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - Corrected record: verified on disk at 2026-11-25T22:50:09Z: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (unchanged); `research/SEARCH_LOG.md` md5 `6723bd26ec6937524261c9a617b6d24f` (unchanged); local HEAD = `9435efc01cd0cd6818c51ef9b68cbbf3f39f829d` (working tree clean at start of this cycle).
 
 (End of file)
+
+## Receipt (2026-11-25T22:52:21Z) — handoff refresh
+
+- Prior agent task `research/TASK_CYCLE_4075.md` verified COMPLETE (Status: now marked COMPLETE with `## Result` block at 2026-11-25T22:52:21Z). Confirmed project remains CLOSED / STANDBY; no activation condition triggered. No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` deliberately left unmodified (md5 `38edf583b5d29c652407099c0ba33699` / `6723bd26ec6937524261c9a617b6d24f`). Project remains CLOSED / STANDBY. Chain remains terminated at Cycle 3388.
+- Next canonical initial task message: `research/TASK_CYCLE_4076.md` (Status = PENDING). Refreshed verified-facts timestamp to 2026-11-25T22:52:21Z; substance unchanged and clear.
+- Corrected record: verified on disk at 2026-11-25T22:52:21Z: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (unchanged); `research/SEARCH_LOG.md` md5 `6723bd26ec6937524261c9a617b6d24f` (unchanged); local HEAD = `b96636968e89b50869cf4aa7d6d0d1f4f9b05050` (working tree clean at start of this cycle).
