@@ -1,6 +1,6 @@
 # TASK CYCLE 4016 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -26,11 +26,8 @@ If none happens, the correct outcome is: no research file changes, no new cycles
 - Do not present re-verification of a closed project as research progress.
 - Do not create `TASK_CYCLE_*.md` files except as the single canonical next-agent task message when a handoff is explicitly requested.
 
-## Current facts you can rely on (verified 2026-11-25T05:59:50Z)
+## Result — 2026-11-25T06:00:29Z
 
-- Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since, per the no-probe rule).
-- Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since).
-- Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
-- `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
-- `research/SEARCH_LOG.md` md5 `bf4d5a9c335502de1931d800af1ad7fe`.
-- Local HEAD = `482531ee9e48c5729af4b7e57e4e07970249a763` (verified 2026-11-25T05:59:50Z; working tree clean; in sync with origin/main).
+Handoff refresh performed on request. Read durable handoff `research/HANDOFF.md` and prior task file `research/TASK_CYCLE_4016.md` (Status = PENDING). Marked `research/TASK_CYCLE_4016.md` COMPLETE (added this `## Result` block). Created `research/TASK_CYCLE_4017.md` as next canonical initial task message (Status = PENDING). Updated `research/HANDOFF.md`: advanced header timestamp to 2026-11-25T06:00:29Z, advanced next-agent pointer to Cycle 4017, replaced single `## Receipt` block.
+
+Verified artifacts unchanged: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`, `research/SEARCH_LOG.md` md5 `bf4d5a9c335502de1931d800af1ad7fe`. Working tree clean; local HEAD = `4d708cd1c75632b1d59a84820db9b33d7a37d863` (in sync with origin/main). Project remains CLOSED / STANDBY. No activation condition triggered. `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` unchanged.
