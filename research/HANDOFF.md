@@ -1,6 +1,6 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-25T09:09:42Z (handoff refresh: Cycle 4036 COMPLETE → Cycle 4037 next)
+**Last updated:** 2026-11-25T09:10:14Z (handoff refresh: Cycle 4037 COMPLETE → Cycle 4038 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
 **Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4037.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
