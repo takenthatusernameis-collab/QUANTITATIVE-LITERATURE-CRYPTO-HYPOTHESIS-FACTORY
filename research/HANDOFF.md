@@ -1,6 +1,6 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-26T16:30:04Z (handoff refresh: Cycle 4154 COMPLETE → Cycle 4155 next)
+**Last updated:** 2026-11-26T16:32:20Z (handoff refresh: Cycle 4154 COMPLETE → Cycle 4155 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
 **Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4154.md` (the single canonical initial task message for the next agent).
 **Project type:** literature-driven crypto hypothesis generation. Research-only: no performance guarantees, no trading recommendations, no datasets redistributed.
@@ -34,7 +34,11 @@ Anything else is a no-op. Do not re-run probes as "progress", do not add another
 - This handoff was rewritten at Cycle 3463 to replace ~73 KB of near-duplicate dated blocks with one durable summary, compacted again at Cycle 3492, and compacted again at Cycle 3508 to fold the Cycle 3493–3508 per-handoff receipts into the single receipt below. Prior verbose text remains recoverable in git history and in `research/HANDOFF.md.bak.*`.
 - Known cosmetic defects, deliberately not fixed: duplicate "Cycle 346" and out-of-order "Cycle 2182"/"2185" headings in `HYPOTHESES.md`; a few missing historical closeout bullets in `SEARCH_LOG.md` (Cycles 3291, 3317, 3318).
 
-## Receipt (2026-11-26T15:26:51Z) — handoff refresh
+## Receipt (2026-11-26T16:32:20Z) — handoff refresh
+
+- Prior agent task `research/TASK_CYCLE_4154.md` verified COMPLETE (`## Result` block present at 2026-11-26T16:30:04Z; header `Status:` now marked COMPLETE). Confirmed project remains CLOSED / STANDBY; no activation condition triggered. No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` deliberately left unmodified (md5 `38edf583b5d29c652407099c0ba33699` / `77663eb44d96549c8a11cce391f951bd`). Project remains CLOSED / STANDBY. Chain remains terminated at Cycle 3388.
+- Next canonical initial task message: `research/TASK_CYCLE_4155.md` (Status = PENDING). Refreshed verified-facts timestamp to 2026-11-26T16:32:20Z; substance unchanged and clear.
+- Corrected record: verified on disk at 2026-11-26T16:32:20Z: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` (unchanged); `research/SEARCH_LOG.md` md5 `77663eb44d96549c8a11cce391f951bd` (unchanged); local HEAD = `60549e5a` (working tree clean at start of this cycle).
 
 - Prior agent task `research/TASK_CYCLE_4149.md` verified COMPLETE (`## Result` block added at 2026-11-26T15:26:51Z; header `Status:` now marked COMPLETE). Confirmed project remains CLOSED / STANDBY; no activation condition triggered. No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` deliberately left unmodified (md5 `38edf583b5d29c652407099c0ba33699` / `6723bd26ec6937524261c9a617b6d24f`). Project remains CLOSED / STANDBY. Chain remains terminated at Cycle 3388.
 - Next canonical initial task message: `research/TASK_CYCLE_4150.md` (Status = PENDING). Refreshed verified-facts timestamp to 2026-11-26T15:26:51Z; substance unchanged and clear.
