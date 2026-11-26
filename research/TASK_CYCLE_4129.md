@@ -1,8 +1,12 @@
 # TASK CYCLE 4129 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
+
+## Result (2026-11-26T08:47:20Z)
+
+Confirmed project state: CLOSED / STANDBY (research-only). Four literature routes surveyed; H1 (Binance−Bybit funding-spread persistence) and H2 (anchoring-intensity basis premium) synthesized and falsified for tradability under documented costs using venue-substituted data (Hyperliquid/KuCoin for H1; Deribit for H2). H1 never tested on original Binance/Bybit spec — both endpoints blocked from this environment (Binance HTTP 451, Bybit HTTP 403). No activation condition triggered. No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` and `research/SEARCH_LOG.md` deliberately left unmodified. Project remains CLOSED / STANDBY.
 
 ## Situation in one paragraph
 
