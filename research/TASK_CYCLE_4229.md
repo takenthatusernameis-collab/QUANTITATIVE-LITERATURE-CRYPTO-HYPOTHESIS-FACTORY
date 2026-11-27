@@ -36,8 +36,6 @@ If none happens, the correct outcome is: no research file changes, no new cycles
 - Remote `origin/main` SHA = local HEAD = `96de25fbc7980bab3fd6ace627c9faf90557ee4c` (verified 2026-11-27T07:08:50Z; working tree clean; branch `main` up to date with origin/main).
 
 ## Next canonical initial task message: `research/TASK_CYCLE_4229.md` (Status = PENDING).
-EOF
-echo done
 
 ## Result
 
