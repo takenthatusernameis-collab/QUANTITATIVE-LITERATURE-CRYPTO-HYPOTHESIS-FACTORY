@@ -33,6 +33,6 @@ If none happens, the correct outcome is: no research file changes, no new cycles
 - Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `7201b6fe5cabca99063a96efe9d2d9b5`.
-- Remote `origin/main` SHA = local HEAD = `1c841686ba482f0ce1c7a3b2262e2bd78866116d` (verified 2026-11-27T08:04:34Z; working tree clean; branch `main` up to date with origin/main).
+- Remote `origin/main` SHA = local HEAD = `c93a771cb26d319e8f6801548a69caffa9ad38ed` (re-verified 2026-11-27T08:05:27Z; working tree clean; branch `main` up to date with origin/main).
 
 ## Next canonical initial task message: `research/TASK_CYCLE_4238.md` (Status = PENDING).
