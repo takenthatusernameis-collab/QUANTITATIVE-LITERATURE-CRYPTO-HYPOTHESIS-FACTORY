@@ -1,6 +1,6 @@
 # TASK CYCLE 4239 — Initial task message for the next agent
 
-**Status:** COMPLETE
+**Status:** PENDING
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -26,13 +26,13 @@ If none happens, the correct outcome is: no research file changes, no new cycles
 - Do not present re-verification of a closed project as research progress.
 - Do not create `TASK_CYCLE_*.md` files except as the single canonical next-agent task message when a handoff is explicitly requested.
 
-## Current facts you can rely on (verified 2026-11-27T08:12:20Z)
+## Current facts you can rely on (verified 2026-11-27T09:02:34Z)
 
 - Binance Futures `fundingRate` (BTCUSDT, limit=1): HTTP 451 (RESTRICTED_LOCATION) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since, per the no-probe rule).
 - Bybit V5 `funding/history` (linear, BTCUSDT, limit=1): HTTP 403 (COUNTRY_BLOCKED) — blocked (last probed 2026-11-03T13:16:19Z; not re-probed since).
 - Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `7201b6fe5cabca99063a96efe9d2d9b5`.
-- Remote `origin/main` SHA = local HEAD = `86222038eaf07a8eaef6c474e71de7669f7167db` (re-verified 2026-11-27T08:12:20Z; working tree clean; branch `main` up to date with origin/main).
+- Remote `origin/main` SHA = local HEAD = `d9b21c4a5ace22e743585b7155c73ab1d2dd9a77` (re-verified 2026-11-27T09:02:34Z; working tree clean; branch `main` up to date with origin/main).
 
 ## Next canonical initial task message: `research/TASK_CYCLE_4240.md` (Status = PENDING).
