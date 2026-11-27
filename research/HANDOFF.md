@@ -1,8 +1,14 @@
 # HANDOFF — project CLOSED / STANDBY (research-only)
 
-**Last updated:** 2026-11-27T08:04:09Z (handoff refresh: Cycle 4235 COMPLETE → Cycle 4236 next)
+**Last updated:** 2026-11-27T08:04:34Z (handoff refresh: Cycle 4236 COMPLETE → Cycle 4237 next)
 **Status:** CLOSED / STANDBY. No automatic cycles. Nothing runs until the user acts.
-**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4236.md` (the single canonical initial task message for the next agent).
+**Artifacts:** `research/HYPOTHESES.md` (findings), `research/SEARCH_LOG.md` (cycle log), `research/TASK_CYCLE_4237.md` (the single canonical initial task message for the next agent).
+
+## Receipt (2026-11-27T08:04:34Z) — handoff refresh
+
+- Prior agent task `research/TASK_CYCLE_4236.md` verified COMPLETE (header `Status:` marked COMPLETE; `## Result` block added this cycle at 2026-11-27T08:04:34Z). Confirmed project remains CLOSED / STANDBY; no activation condition triggered. No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` deliberately left unmodified (md5 `38edf583b5d29c652407099c0ba33699`, verified). `research/SEARCH_LOG.md` deliberately left unmodified (md5 `7201b6fe5cabca99063a96efe9d2d9b5`, verified). Project remains CLOSED / STANDBY. Chain remains terminated at Cycle 3388.
+- Next canonical initial task message: `research/TASK_CYCLE_4237.md` (Status = PENDING). Written this cycle; verified-facts timestamp 2026-11-27T08:04:34Z.
+- Corrected record: verified on disk at 2026-11-27T08:04:34Z: `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`; `research/SEARCH_LOG.md` md5 `7201b6fe5cabca99063a96efe9d2d9b5`; local HEAD = `1c841686ba482f0ce1c7a3b2262e2bd78866116d` = remote `origin/main` (working tree clean; branch `main`).
 
 ## Receipt (2026-11-27T08:04:09Z) — handoff refresh
 
