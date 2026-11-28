@@ -1,6 +1,6 @@
 # TASK CYCLE 4325 — Initial task message for the next agent
 
-**Status:** PENDING
+**Status:** COMPLETE
 **Type:** manual handoff (not a standby cycle; nothing is scheduled)
 **Read first:** `research/HANDOFF.md` — it is the single durable summary. This file only tells you what to do (and not do) now.
 
@@ -33,5 +33,9 @@ If none happens, the correct outcome is: no research file changes, no new cycles
 - Kraken spot ticker (XBTUSD): HTTP 200 (sanity check only; not part of the H1 spec).
 - `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699`.
 - `research/SEARCH_LOG.md` md5 `da4bf34fd61ed5ba035be82a26893625` (working tree clean).
-- Remote `origin/main` SHA = local HEAD = `64bf49f6f5cd9d5fe98359cfb9e96961604ec97f` (working tree clean; branch `main` up to date with origin/main).
+- Remote `origin/main` SHA = local HEAD = `97f7161e` (working tree clean; branch `main` up to date with origin/main).
 EOF
+
+## Result
+
+Completed 2026-11-28T03:14:18Z. Read `research/HANDOFF.md` and this task file; confirmed project CLOSED / STANDBY (research-only; chain terminated at Cycle 3388; no activation condition met — no validation authorization with an unrestricted network/proxy, no new hypothesis/route request, no retire/restructure request). No exchange re-probe performed (no-probe rule). `research/HYPOTHESES.md` md5 `38edf583b5d29c652407099c0ba33699` verified unmodified. `research/SEARCH_LOG.md` md5 `da4bf34fd61ed5ba035be82a26893625` verified on disk. Remote `origin/main` SHA = local HEAD = `97f7161e` (working tree clean; branch `main` up to date with origin/main). No new research cycles. Next canonical initial task message: `research/TASK_CYCLE_4326.md` (PENDING).
